@@ -1,56 +1,61 @@
-/* Version A (D-26): near-black header band with the store name; brand bars; one white block per promotion.
-   One font, sizes 28 / 20 / 16 / 14, 8px spacing steps, radius 2px on controls only.
-   Allowed: a very light page background, white blocks with 1px borders, the accent color on amounts.
-   Not allowed: gradients, large shadows, pill tags, emoji, marketing copy.
-   Two functional colors: --instant and --claim. --amount is the accent for amounts only.
-   All text colors reach WCAG AA (4.5:1) in light and dark mode. */
+/* Card layout (D-31, relaxes D-23 and D-26): white header with the company name in the store red; a dark rounded
+   hero card; a very light grey page with white rounded cards (12px), 24-32px apart; solid rounded buttons (8px);
+   small tinted tags; one card per brand with a light block per promotion.
+   Still not allowed: gradients, glow, large shadows, emoji, marketing copy.
+   One font, sizes 32 / 24 / 20 / 16 / 14. One red (--red) for the company name and the amounts.
+   All text colors reach WCAG AA (4.5:1) on the background they sit on, in light and dark mode. */
 :root {
-  --page: #f3f3f1;            /* very light grey page */
-  --surface: #ffffff;         /* promotion blocks */
-  --ink: #1c1c1c;
-  --muted: #595959;
-  --line: #d6d6d2;
-  --bar: #e4e4e0;             /* brand bars */
-  --accent: #1f2329;          /* controls: picked brand button, links, focus */
-  --on-accent: #ffffff;
-  --amount: #8c1c22;          /* deep red: amounts only (9.1:1 on white) */
-  --instant: #1d6b3a;
-  --claim: #1f4f8f;
-  --head-bg: #1c1f24;         /* header band */
-  --head-ink: #ffffff;
-  --head-muted: #c9ccd1;
-  --head-line: #1c1f24;
-  --notice-bg: #f7f0e1;       /* header notice: light, warm, solid 1px edge */
-  --notice-line: #dccfb0;
+  --page: #f1f2f4;            /* very light grey page */
+  --surface: #ffffff;         /* cards */
+  --block: #f4f5f7;           /* one promotion inside a brand card */
+  --ink: #1a1d23;
+  --muted: #555b66;           /* 6.0:1 on block */
+  --line: #e2e5ea;
+  --red: #c43a2b;             /* company name and amounts: 5.3:1 on white, 4.8:1 on block */
+  --solid: #16213a;           /* dark navy: hero card, picked brand, Details, call buttons */
+  --on-solid: #ffffff;
+  --hero-ink: #ffffff;
+  --hero-muted: #c8cfdc;      /* 10.3:1 on navy */
+  --notice-bg: #24314f;       /* notice panel inside the hero card */
+  --notice-line: #3d4d73;
+  --tag-instant-bg: #e2f1e7; --tag-instant: #17532d;
+  --tag-claim-bg: #e3ebf7;   --tag-claim: #1d4479;
+  --tag-soon-bg: #fbe9c8;    --tag-soon: #6a3f00;
   --control-bg: #ffffff;
+  --link: #1d4479;
   --amount-col: 192px;        /* "Up to $5,368" at 28px bold fits on one line */
   --label-col: 144px;
+  --r-card: 12px;
+  --r-btn: 8px;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --page: #121212;
-    --surface: #1d1d1c;
-    --ink: #ececea;
-    --muted: #a8a8a4;         /* 7.1:1 on surface */
-    --line: #3a3a37;
-    --bar: #2b2b29;
-    --accent: #f2f2ef;
-    --on-accent: #141414;
-    --amount: #f4847e;        /* lighter red for dark mode: 6.8:1 on surface */
-    --instant: #7fd39b;
-    --claim: #9cc3f5;
-    --head-bg: #000000;
-    --head-ink: #ffffff;
-    --head-muted: #b4b7bc;
-    --head-line: #3a3a37;     /* the band needs an edge against the dark page */
-    --notice-bg: #29251d;
-    --notice-line: #4d4535;
-    --control-bg: #1d1d1c;
+    --page: #0f1115;
+    --surface: #181b21;
+    --block: #22262e;
+    --ink: #eceef2;
+    --muted: #a9b0bc;         /* 6.9:1 on block */
+    --line: #2f343d;
+    --red: #ff8a7a;           /* lighter red for dark mode: 6.6:1 on block, 7.5:1 on surface */
+    --solid: #e6e9ef;         /* picked brand, Details, call buttons: light solid with dark text */
+    --on-solid: #12151b;
+    --hero-bg: #1a2744;
+    --hero-line: #2f3f63;
+    --hero-ink: #ffffff;
+    --hero-muted: #c8cfdc;
+    --notice-bg: #24345a;
+    --notice-line: #3d5080;
+    --tag-instant-bg: #193a26; --tag-instant: #9be0b2;
+    --tag-claim-bg: #1b2d4a;   --tag-claim: #a9c8f4;
+    --tag-soon-bg: #3f2e10;    --tag-soon: #f3cf86;
+    --control-bg: #12151b;
+    --link: #a9c8f4;
   }
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
@@ -62,125 +67,146 @@ body {
 h1, h2, h3, h4, h5 { margin: 0; font-weight: 400; line-height: 1.25; }
 p, ul, ol, dl, dd { margin: 0; }
 button, input, select { font: inherit; color: inherit; }
-a { color: var(--accent); text-underline-offset: 2px; }
+a { color: var(--link); text-underline-offset: 2px; }
 a:hover { text-decoration-thickness: 2px; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
-/* Header: a near-black band with the store name and contact; the campaign and intro just below it. */
-.head-band { padding: 24px 0; background: var(--head-bg); color: var(--head-ink); border-bottom: 1px solid var(--head-line); }
-.head-band a { color: var(--head-ink); }
-.head-band .addr { color: var(--head-muted); }
-.contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 32px; }
-.store-name { font-size: 28px; font-weight: 700; line-height: 1.25; }
-/* Phone and email side by side, same size and weight; address one size smaller below. */
-.contact-lines { display: grid; justify-items: end; gap: 0; }
-.reach { display: flex; flex-wrap: wrap; gap: 0 24px; }
-.reach a { font-size: 16px; font-weight: 400; white-space: nowrap; }
-.contact-lines .addr { font-size: 14px; }
-.head-intro { padding: 24px 0; border-bottom: 1px solid var(--line); }
+/* White rounded cards on the grey page. */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); padding: 24px; }
+
+/* Solid and bordered buttons, 8px corners. */
+.toggle, .call, .brand-btn[aria-pressed="true"], #brand-clear {
+  background: var(--solid); color: var(--on-solid); border: 1px solid var(--solid);
+}
+
+/* Header: white band, company name in red on the left, the two show rooms in two columns on the right. */
+.head-band { padding: 24px 0; background: var(--surface); border-bottom: 1px solid var(--line); }
+.contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
+.head-band .store-name { font-size: 32px; font-weight: 700; line-height: 1.2; color: var(--red); }
+.head-band .stores { display: grid; grid-template-columns: repeat(2, auto); gap: 0 40px; font-size: 14px; }
+.head-band .store-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.store a { color: var(--ink); }
+.call-buttons { display: none; }
+
+/* Hero: a dark rounded card with the campaign, the intro and the Important notice. */
+.hero {
+  margin-top: 24px; padding: 32px; border-radius: var(--r-card);
+  background: var(--hero-bg, var(--solid)); color: var(--hero-ink); border: 1px solid var(--hero-line, var(--solid));
+}
 .head-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
-h1 { font-size: 20px; }
-.updated { font-size: 14px; color: var(--muted); }
-.intro { margin-top: 8px; max-width: 720px; color: var(--muted); }
+h1 { font-size: 32px; font-weight: 700; }
+.updated { font-size: 14px; color: var(--hero-muted); }
+.intro { margin-top: 8px; max-width: 720px; color: var(--hero-muted); }
 /* Header notice: always shown in full, never collapsed. Only "Important:" is bold. */
-.notice { margin-top: 16px; padding: 16px; background: var(--notice-bg); border: 1px solid var(--notice-line); color: var(--ink); }
+.notice { margin-top: 24px; padding: 16px; border-radius: var(--r-btn); background: var(--notice-bg); border: 1px solid var(--notice-line); color: var(--hero-ink); }
 .notice strong { font-weight: 700; }
+
 @media (max-width: 719px) {
   .head-band { padding: 16px 0; }
   .contact { display: block; }
-  .contact-lines { justify-items: start; margin-top: 8px; }
-  /* Phone and email each on their own line: 48px tap targets, 8px apart, same size, never wrapped. */
-  .reach { display: grid; justify-items: start; gap: 8px; }
-  .reach a { display: inline-block; font-size: 20px; line-height: 48px; }
-  .contact-lines .addr { margin-top: 8px; }
-  .head-intro { padding: 16px 0; }
+  .head-band .store-name { font-size: 24px; }
+  /* Phones: only the company name and one Call button per show room (48px high). Full details are in the footer. */
+  .head-band .stores { display: none; }
+  .call-buttons { display: grid; gap: 8px; margin-top: 16px; }
+  .call { display: flex; align-items: center; justify-content: center; min-height: 48px; padding: 8px 16px; border-radius: var(--r-btn); font-weight: 700; text-decoration: none; }
+  .hero { margin-top: 16px; padding: 24px 16px; }
+  h1 { font-size: 24px; }
 }
 
-/* Brand buttons: a wrapping row on desktop, a 3-column grid on phones. */
-.brands { padding-top: 24px; }
+/* Brand buttons in their own card: a wrapping row on desktop, a 3-column grid on phones. */
+main.wrap { display: grid; gap: 24px; padding-top: 24px; }
 .brand-grid { display: flex; flex-wrap: wrap; gap: 8px; }
 .brand-btn, #brand-clear {
-  font-size: 14px; line-height: 32px; padding: 0 8px; text-align: left;
-  background: var(--surface); border: 1px solid var(--line); border-radius: 2px; cursor: pointer;
+  font-size: 14px; line-height: 20px; padding: 10px 16px; text-align: left;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-btn); cursor: pointer;
 }
-.brand-btn[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.brand-btn[aria-pressed="true"], #brand-clear { font-weight: 700; }
 .brand-chosen { display: none; }
-#brand-clear { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 @media (max-width: 719px) {
-  .brands { padding-top: 16px; }
+  main.wrap { gap: 16px; padding-top: 16px; }
+  .card { padding: 16px; }
   .brand-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .brand-btn { line-height: 1.5; padding: 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brand-btn { padding: 10px 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .brands.has-choice .brand-grid { display: none; }
   .brands.has-choice .brand-chosen { display: block; }
 }
 
-/* Search and the collapsed extra filters */
-.filters { padding: 16px 0 8px; display: grid; gap: 8px; }
+/* Search and the extra filters: one card. */
+.filters { display: grid; gap: 8px; }
 .filters input[type="search"], .filters select {
   width: 100%; background: var(--control-bg);
-  border: 1px solid var(--line); border-radius: 2px; padding: 8px;
+  border: 1px solid var(--line); border-radius: var(--r-btn); padding: 10px 12px;
 }
 .more-filters summary { cursor: pointer; font-size: 14px; color: var(--muted); padding: 8px 0 0; }
 .more-body { display: grid; gap: 8px; padding-top: 8px; }
-.f-select { display: grid; gap: 0; font-size: 14px; color: var(--muted); }
+.f-select { display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
 .f-select select { font-size: 16px; color: var(--ink); }
 .f-check { display: flex; align-items: center; gap: 8px; }
-.f-check input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); }
+.f-check input { width: 16px; height: 16px; margin: 0; accent-color: var(--solid); }
 @media (min-width: 720px) {
   .more-body { grid-template-columns: repeat(2, minmax(0, 240px)) auto; align-items: end; }
 }
-.count { font-size: 14px; color: var(--muted); padding-bottom: 8px; }
-.hint { font-size: 14px; color: var(--muted); padding-bottom: 8px; }
+.count, .hint { font-size: 14px; color: var(--muted); margin-bottom: -8px; }
+.count:empty { display: none; }
 
-/* Brand groups: a full-width bar, then one white block per promotion.
-   16px between blocks in a group, 48px between groups. */
-.list { display: grid; gap: 48px; padding-top: 16px; }
-.group { display: grid; gap: 16px; }
+/* One card per brand; inside it one light block per promotion, 16px apart. Brand cards 32px apart. */
+.list { display: grid; gap: 32px; }
+.group { display: grid; gap: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); padding: 24px; }
 .group[hidden] { display: none; }
-.brand { font-size: 20px; font-weight: 700; background: var(--bar); padding: 8px 16px; }
-.xref, .item { background: var(--surface); border: 1px solid var(--line); }
-.xref { font-size: 14px; color: var(--muted); padding: 16px 24px; }
-.item { padding: 24px; }
+.brand { font-size: 24px; font-weight: 700; }
+.xref { font-size: 14px; color: var(--muted); }
+.item { background: var(--block); border-radius: var(--r-btn); padding: 24px; }
 .item[hidden], .xref[hidden] { display: none; }
 @media (max-width: 719px) {
-  .list { gap: 32px; }
-  .xref { padding: 16px; }
+  .list { gap: 24px; }
+  .group { padding: 16px; gap: 12px; }
+  .brand { font-size: 20px; }
   .item { padding: 16px; }
 }
 
-/* One promotion: summary rows, details on request */
+/* One promotion: summary rows, details on request (they open inside the same block). */
 .item-grid { display: grid; grid-template-columns: 1fr; gap: 8px; }
-.col-amount { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; }
-.amount { font-size: 28px; font-weight: 700; line-height: 1.25; color: var(--amount); }
-.tag { font-size: 14px; line-height: 1.5; color: var(--ink); border: 1px solid var(--ink); border-radius: 2px; padding: 0 8px; }
+.col-amount { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.amount { font-size: 28px; font-weight: 700; line-height: 1.25; color: var(--red); }
+/* Tinted tags: how you get it, and Ending soon. 6px corners, not pills. */
+.tag, .how-get { display: inline-block; font-size: 14px; line-height: 20px; font-weight: 600; padding: 2px 8px; border-radius: 6px; }
+.tag { background: var(--tag-soon-bg); color: var(--tag-soon); }
+.how-get.instant { background: var(--tag-instant-bg); color: var(--tag-instant); }
+.how-get.claim { background: var(--tag-claim-bg); color: var(--tag-claim); }
 .col-main { min-width: 0; display: grid; gap: 8px; }
 .col-main > * { min-width: 0; }
-.title { font-size: 20px; }
+.title { font-size: 20px; font-weight: 600; }
 .summary { color: var(--muted); max-width: 720px; }
-.meta { display: flex; flex-wrap: wrap; column-gap: 8px; }
-.meta > span + span::before { content: "·"; margin-right: 8px; color: var(--muted); }
-.how-get.instant { color: var(--instant); }
-.how-get.claim { color: var(--claim); }
-.actions { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; }
-.toggle { background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; color: var(--accent); }
-.toggle::after { content: " \25B8"; font-size: 14px; }
-.toggle[aria-expanded="true"]::after { content: " \25BE"; }
-.downloads { display: inline-flex; flex-wrap: wrap; gap: 8px 24px; }
-.downloads a::before { content: "\2193\00a0"; font-size: 14px; }
-/* "See the official terms for full details." right under the download links; hidden if an item has none. */
-.official-note { font-size: 14px; color: var(--muted); margin-top: -4px; }
+.meta { display: flex; flex-wrap: wrap; align-items: center; column-gap: 8px; row-gap: 4px; font-size: 14px; }
+.meta > span + span:not(:nth-child(2))::before { content: "·"; margin-right: 8px; color: var(--muted); }
+.meta > .how-get { margin-right: 4px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+.toggle, .downloads a {
+  display: inline-flex; align-items: center; min-height: 40px; padding: 8px 16px; border-radius: var(--r-btn);
+  font-size: 14px; font-weight: 600; line-height: 20px; text-decoration: none; cursor: pointer;
+}
+.toggle::after { content: "\25B8"; margin-left: 8px; }
+.toggle[aria-expanded="true"]::after { content: "\25BE"; }
+.downloads { display: inline-flex; flex-wrap: wrap; gap: 8px; }
+.downloads a { background: var(--surface); color: var(--ink); border: 1px solid var(--line); }
+.downloads a:hover { border-color: var(--muted); }
+.downloads a::before { content: "\2193"; margin-right: 8px; }
+/* "See the official terms for full details." right under the buttons; hidden if an item has no downloads. */
+.official-note { font-size: 14px; color: var(--muted); }
 .actions:not(:has(.downloads a)) + .official-note { display: none; }
-.details { display: grid; gap: 16px; padding-top: 8px; }
-.details[hidden] { display: none; }
+.details { display: grid; gap: 16px; margin-top: 8px; padding-top: 16px; border-top: 1px solid var(--line); }
 
 @media (min-width: 720px) {
   .item-grid { grid-template-columns: var(--amount-col) minmax(0, 1fr); gap: 0 24px; }
   .col-amount { display: block; }
-  .col-amount .tag { display: inline-block; margin-top: 8px; }
+  .col-amount .tag { margin-top: 8px; }
   /* Inside Details, tiers, dates and claim facts share one value edge. */
   .details .rows, .details .tiers { grid-template-columns: 288px minmax(0, 1fr); max-width: none; }
+}
+@media (max-width: 719px) {
+  .toggle, .downloads a { min-height: 48px; }
 }
 
 /* Label/value rows: tiers, other dates, claim facts. Labels in a fixed column so values line up. */
@@ -191,7 +217,7 @@ h1 { font-size: 20px; }
 .tiers { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); max-width: 560px; gap: 8px 16px; }
 .tiers dt { color: var(--ink); }
 
-.block h4 { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+.block h4 { font-size: 14px; font-weight: 700; color: var(--muted); margin-bottom: 8px; }
 .steps, .conditions, .translation-lines { padding-left: 24px; }
 .steps li + li, .conditions li + li, .translation-lines li + li { margin-top: 8px; }
 .how .note { margin-bottom: 8px; }
@@ -203,6 +229,7 @@ h1 { font-size: 20px; }
 
 details summary { cursor: pointer; }
 .translation-lines { margin-top: 8px; font-size: 14px; color: var(--muted); }
+.models summary { font-weight: 600; }
 .models .note { margin-top: 8px; font-size: 14px; color: var(--muted); }
 .model-group { margin-top: 16px; }
 .model-group h5 { margin: 0 0 8px; font-size: 14px; color: var(--muted); }
@@ -213,18 +240,22 @@ details summary { cursor: pointer; }
 
 .empty { color: var(--muted); padding: 32px 0; }
 
-/* Footer: contact again (with the website), then the disclaimer. */
-.page-foot { margin-top: 48px; padding-bottom: 48px; }
-.foot-contact { display: grid; gap: 0; padding: 24px 0; margin-bottom: 24px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.foot-contact .store-name { font-size: 20px; margin-bottom: 8px; }
+/* Footer: one card with both show rooms and the website, one card with the Disclaimer. */
+.page-foot { display: grid; gap: 24px; margin-top: 32px; padding-bottom: 48px; }
+.foot-contact .store-name { font-size: 20px; font-weight: 700; color: var(--red); margin-bottom: 16px; }
+.foot-contact .stores { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 32px; }
+.foot-contact .store-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
 .foot-contact .tel { display: inline-block; line-height: 32px; }
-.foot-contact .links { display: flex; flex-wrap: wrap; gap: 0 24px; }
-.page-foot .note-head { font-size: 20px; margin-bottom: 8px; }
+.foot-contact .website { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+.foot-contact .website a { color: var(--link); }
+.page-foot .note-head { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
 /* Disclaimer: full ink color (not muted) so it reads as part of the page, not fine print. */
 .disclaimer { max-width: 720px; display: grid; gap: 8px; }
 .disclaimer ul { padding-left: 24px; margin: 0; display: grid; gap: 8px; }
 .listing-note { max-width: 720px; color: var(--muted); font-size: 14px; margin-top: 16px; }
 @media (max-width: 719px) {
+  .page-foot { gap: 16px; margin-top: 24px; }
+  .foot-contact .stores { grid-template-columns: 1fr; gap: 24px; }
   .foot-contact .tel { font-size: 20px; line-height: 48px; }
+  .foot-contact .mail { display: inline-block; line-height: 48px; }
 }
-

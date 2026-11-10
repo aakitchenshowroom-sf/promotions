@@ -4,17 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Promotions &amp; Rebates | AA Kitchen</title>
-  <meta name="description" content="Current manufacturer promotions and rebates on appliances at AA Kitchen, San Francisco.">
+  <meta name="description" content="Current manufacturer promotions and rebates on appliances at AA Kitchen, San Francisco and San Mateo.">
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-head">
     <div class="head-band">
-      <div class="wrap"><!--contact--><div class="contact"><p class="store-name">AA Kitchen Appliance Inc.</p><div class="contact-lines"><p class="reach"><a class="tel" href="tel:415-731-3386">415-731-3386</a><a class="mail" href="mailto:aakitchensf@gmail.com">aakitchensf@gmail.com</a></p><p class="addr">1605 Noriega St., San Francisco, CA 94122</p></div></div><!--/contact--></div>
+      <div class="wrap"><!--contact--><div class="contact"><p class="store-name">AA Kitchen Appliance, Inc.</p><div class="stores"><section class="store" aria-label="SF Show Room"><p class="store-title">SF Show Room</p><p class="addr">1605 Noriega Street<br>San Francisco, CA 94122</p><p class="phone">T: <a class="tel" href="tel:415-731-3386">415-731-3386</a></p><p class="email"><a class="mail" href="mailto:aakitchensf@gmail.com">aakitchensf@gmail.com</a></p></section><section class="store" aria-label="San Mateo Show Room"><p class="store-title">San Mateo Show Room</p><p class="addr">159 South Blvd<br>San Mateo, CA 94402</p><p class="phone">T: <a class="tel" href="tel:650-315-2238">650-315-2238</a></p><p class="phone">T: <a class="tel" href="tel:650-877-0938">650-877-0938</a></p></section></div><p class="call-buttons"><a class="call" href="tel:415-731-3386">Call SF Show Room</a><a class="call" href="tel:650-315-2238">Call San Mateo Show Room</a></p></div><!--/contact--></div>
     </div>
-    <div class="head-intro">
-      <div class="wrap">
+    <div class="wrap">
+      <div class="hero">
         <div class="head-row">
           <h1 id="campaign">Promotions &amp; Rebates</h1>
           <p class="updated" id="updated"></p>
@@ -26,12 +26,12 @@
   </header>
 
   <main class="wrap">
-    <nav class="brands" id="brands" aria-label="Brands">
+    <nav class="brands card" id="brands" aria-label="Brands">
       <div class="brand-grid" id="brand-grid"></div>
       <p class="brand-chosen"><button type="button" id="brand-clear" aria-label="Show all brands"></button></p>
     </nav>
 
-    <form class="filters" role="search" aria-label="Find a promotion" onsubmit="return false">
+    <form class="filters card" role="search" aria-label="Find a promotion" onsubmit="return false">
       <label class="f-search">
         <span class="visually-hidden">Search by model number</span>
         <input id="q" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Search model number">
@@ -63,9 +63,11 @@
   </main>
 
   <footer class="page-foot wrap">
-    <!--contact--><section class="foot-contact" aria-label="Contact"><h2 class="store-name">AA Kitchen Appliance Inc.</h2><p class="phone"><a class="tel" href="tel:415-731-3386">415-731-3386</a></p><p class="addr">1605 Noriega St., San Francisco, CA 94122</p><p class="links"><a href="https://aakitchenappliance.com/">https://aakitchenappliance.com/</a><a href="mailto:aakitchensf@gmail.com">aakitchensf@gmail.com</a></p></section><!--/contact-->
-    <section class="disclaimer" aria-labelledby="disclaimer-title"><h2 class="note-head" id="disclaimer-title">Disclaimer</h2><p>This page is a summary for your convenience. It is not the official terms of any offer.</p><ul><li>The manufacturers offer and pay these promotions and rebates. AA Kitchen does not.</li><li>The manufacturer's official terms decide each offer. If this page and the official terms are different, the official terms apply.</li><li>A manufacturer can change or end an offer at any time without notice.</li><li>The manufacturer or its rebate processor approves or rejects each rebate claim. AA Kitchen does not make this decision.</li><li>You are responsible for sending your claim correctly and before the deadline.</li><li>AA Kitchen is not responsible for errors or missing information on this page, or for a rebate that is rejected, late, or not paid.</li></ul><p>Please confirm each offer on the manufacturer's website, or ask our team, before you buy.</p></section>
-    <p class="listing-note">Offers are listed until their last purchase day (Pacific Time). Dates are from the manufacturers' materials.</p>
+    <!--contact--><section class="foot-contact card" aria-labelledby="foot-store"><h2 class="store-name" id="foot-store">AA Kitchen Appliance, Inc.</h2><div class="stores"><section class="store" aria-label="SF Show Room"><h3 class="store-title">SF Show Room</h3><p class="addr">1605 Noriega Street<br>San Francisco, CA 94122</p><p class="phone">T: <a class="tel" href="tel:415-731-3386">415-731-3386</a></p><p class="email"><a class="mail" href="mailto:aakitchensf@gmail.com">aakitchensf@gmail.com</a></p></section><section class="store" aria-label="San Mateo Show Room"><h3 class="store-title">San Mateo Show Room</h3><p class="addr">159 South Blvd<br>San Mateo, CA 94402</p><p class="phone">T: <a class="tel" href="tel:650-315-2238">650-315-2238</a></p><p class="phone">T: <a class="tel" href="tel:650-877-0938">650-877-0938</a></p></section></div><p class="website"><a href="https://aakitchenappliance.com/">https://aakitchenappliance.com/</a></p></section><!--/contact-->
+    <div class="card foot-notes">
+      <section class="disclaimer" aria-labelledby="disclaimer-title"><h2 class="note-head" id="disclaimer-title">Disclaimer</h2><p>This page is a summary for your convenience. It is not the official terms of any offer.</p><ul><li>The manufacturers offer and pay these promotions and rebates. AA Kitchen does not.</li><li>The manufacturer's official terms decide each offer. If this page and the official terms are different, the official terms apply.</li><li>A manufacturer can change or end an offer at any time without notice.</li><li>The manufacturer or its rebate processor approves or rejects each rebate claim. AA Kitchen does not make this decision.</li><li>You are responsible for sending your claim correctly and before the deadline.</li><li>AA Kitchen is not responsible for errors or missing information on this page, or for a rebate that is rejected, late, or not paid.</li></ul><p>Please confirm each offer on the manufacturer's website, or ask our team, before you buy.</p></section>
+      <p class="listing-note">Offers are listed until their last purchase day (Pacific Time). Dates are from the manufacturers' materials.</p>
+    </div>
   </footer>
 
   <template id="item-tpl">

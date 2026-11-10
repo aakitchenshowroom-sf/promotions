@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Promotions &amp; Rebates | AA Kitchen</title>
-  <meta name="description" content="Current manufacturer promotions and rebates on appliances at AA Kitchen, San Francisco.">
+  <meta name="description" content="Current manufacturer promotions and rebates on appliances at AA Kitchen, San Francisco and San Mateo.">
   <meta name="color-scheme" content="light dark">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,8 +13,8 @@
     <div class="head-band">
       <div class="wrap"><!--CONTACT:head--></div>
     </div>
-    <div class="head-intro">
-      <div class="wrap">
+    <div class="wrap">
+      <div class="hero">
         <div class="head-row">
           <h1 id="campaign">Promotions &amp; Rebates</h1>
           <p class="updated" id="updated"></p>
@@ -26,12 +26,12 @@
   </header>
 
   <main class="wrap">
-    <nav class="brands" id="brands" aria-label="Brands">
+    <nav class="brands card" id="brands" aria-label="Brands">
       <div class="brand-grid" id="brand-grid"></div>
       <p class="brand-chosen"><button type="button" id="brand-clear" aria-label="Show all brands"></button></p>
     </nav>
 
-    <form class="filters" role="search" aria-label="Find a promotion" onsubmit="return false">
+    <form class="filters card" role="search" aria-label="Find a promotion" onsubmit="return false">
       <label class="f-search">
         <span class="visually-hidden">Search by model number</span>
         <input id="q" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Search model number">
@@ -64,8 +64,10 @@
 
   <footer class="page-foot wrap">
     <!--CONTACT:foot-->
-    <!--NOTICE:foot-->
-    <p class="listing-note">Offers are listed until their last purchase day (Pacific Time). Dates are from the manufacturers' materials.</p>
+    <div class="card foot-notes">
+      <!--NOTICE:foot-->
+      <p class="listing-note">Offers are listed until their last purchase day (Pacific Time). Dates are from the manufacturers' materials.</p>
+    </div>
   </footer>
 
   <template id="item-tpl">
