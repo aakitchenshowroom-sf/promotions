@@ -8,6 +8,7 @@ import { pathToFileURL } from "node:url";
 import { locations, readJson, repoDir, sourcePath } from "./lib/paths.mjs";
 import { PUBLIC_FIELDS, publishable, downloadsOf, DOWNLOAD_EXT } from "./lib/publish.mjs";
 import { readNotices, headerNoticeHtml } from "./lib/notices.mjs";
+import { contactVisibilityProblems } from "./lib/contact-visibility.mjs";
 
 // Card text (index.html, app.js, styles.css, promos.json) must never contain these. Personal and store
 // identifiers are not listed here (this repo is public); they come from the workspace's
@@ -66,6 +67,9 @@ export function checkPublic(siteDir, master, root, workspace) {
   if (at < 0) problems.push("index.html: the header notice from web/notices.json is missing");
   else if (!(index.indexOf("<header") < at && at < index.indexOf("</header>"))) problems.push("index.html: the header notice is not inside the page header");
   if (/<!--(CONTACT|NOTICE):/.test(index)) problems.push("index.html: a contact or notice marker was left unfilled");
+  // D-27: at every width, each show room's details are visible in the header or the footer.
+  try { problems.push(...contactVisibilityProblems(readFileSync(join(siteDir, "styles.css"), "utf8"))); }
+  catch (e) { problems.push(e.message); }
 
   const pub = JSON.parse(readFileSync(join(siteDir, "promos.json"), "utf8"));
   const byId = new Map(master.promos.map((p) => [p.id, p]));

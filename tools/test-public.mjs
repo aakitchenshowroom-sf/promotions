@@ -112,6 +112,15 @@ for (const street of streets) {
   r = run(["public"]); expect(`street name ${streets.indexOf(street) + 1} in page text outside the contact blocks is caught`, !r.ok && /index\.html: matches a private term .* outside the contact info/.test(r.out), r.out);
   writeFileSync(join(repo, "web", "index.html"), pageNext);
 }
+// At every width each show room's details are visible in the header or the footer (CSS breakpoints).
+const cssPath = join(repo, "web", "styles.css");
+const cssNow = readFileSync(cssPath, "utf8");
+r = run(["public"]); expect("show-room details are visible in the header or the footer at every width", r.ok, r.out);
+writeFileSync(cssPath, cssNow + "\n.foot-contact .stores { display: none; }\n");
+r = run(["public"]); expect("footer details hidden at phone widths too is caught", !r.ok && /hidden in both the header and the footer at widths 0px to 719px/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow + "\n@media (min-width: 600px) { .head-band .stores { display: none; } }\n");
+r = run(["public"]); expect("header details hidden at wide widths is caught", !r.ok && /hidden in both the header and the footer at widths 720px/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow);
 const contactPath = join(repo, "web", "contact.json");
 const contact = JSON.parse(readFileSync(contactPath, "utf8"));
 writeFileSync(contactPath, JSON.stringify({ ...contact, storeName: `${contact.storeName} ${terms.wholeWords[0]}` }));

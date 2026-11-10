@@ -84,7 +84,8 @@ a:hover { text-decoration-thickness: 2px; }
 /* Header: white band, company name in red on the left, the two show rooms in two columns on the right. */
 .head-band { padding: 24px 0; background: var(--surface); border-bottom: 1px solid var(--line); }
 .contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
-.head-band .store-name { font-size: 32px; font-weight: 700; line-height: 1.2; color: var(--red); }
+/* Company name sized to balance the two show-room columns; centered on them vertically (align-items above). */
+.head-band .store-name { font-size: 38px; font-weight: 700; line-height: 1.15; color: var(--red); white-space: nowrap; }
 .head-band .stores { display: grid; grid-template-columns: repeat(2, auto); gap: 0 40px; font-size: 14px; }
 .head-band .store-title { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
 .store a { color: var(--ink); }
@@ -106,7 +107,8 @@ h1 { font-size: 32px; font-weight: 700; }
 @media (max-width: 719px) {
   .head-band { padding: 16px 0; }
   .contact { display: block; }
-  .head-band .store-name { font-size: 24px; }
+  /* One line on every phone: scales with the screen width, 26px at 390px and above. */
+  .head-band .store-name { font-size: clamp(18px, 6.6vw, 26px); }
   /* Phones: only the company name and one Call button per show room (48px high). Full details are in the footer. */
   .head-band .stores { display: none; }
   .call-buttons { display: grid; gap: 8px; margin-top: 16px; }
@@ -248,6 +250,15 @@ details summary { cursor: pointer; }
 .foot-contact .tel { display: inline-block; line-height: 32px; }
 .foot-contact .website { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
 .foot-contact .website a { color: var(--link); }
+/* Wide screens: the header already shows both show rooms in full, so the footer card is one line, the company
+   name and the website. The breakpoint is the header's (719/720px): at every width each show room's address,
+   phones and email are visible in the header or the footer (tools/lib/contact-visibility.mjs checks this). */
+@media (min-width: 720px) {
+  .foot-contact { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
+  .foot-contact .stores { display: none; }
+  .foot-contact .store-name { margin-bottom: 0; }
+  .foot-contact .website { margin-top: 0; padding-top: 0; border-top: 0; }
+}
 .page-foot .note-head { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
 /* Disclaimer: full ink color (not muted) so it reads as part of the page, not fine print. */
 .disclaimer { max-width: 720px; display: grid; gap: 8px; }
