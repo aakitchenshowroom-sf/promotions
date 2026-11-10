@@ -127,3 +127,10 @@ General decisions only. Brand-specific notes live in the private workspace.
   - The public check allows the store's street name only inside these contact blocks (listed as
     `contactAllowed` in the workspace's private-terms file); in promotion text and anywhere else on the page
     it is still blocked, and all other private terms stay blocked everywhere.
+- **D-28 Store imprint inside original files: a known, accepted exception.** Some brand claim forms carry
+  the store's imprint (store name, dealer number, address), for example the Bosch and the Whirlpool + Maytag
+  forms in batch 1. Under D-12 these originals are published byte-for-byte, imprint included; the maintainer
+  confirmed this on 2026-11-09. The public check covers the page text only (index.html, app.js, styles.css,
+  promos.json) and does not look inside the files in `site/forms/`; it only checks that each one is an
+  exact copy of its original. Before each push, the maintainer is told which store information appears in
+  each new file. The private terms list still applies to all page text.
