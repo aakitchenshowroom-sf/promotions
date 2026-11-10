@@ -3,6 +3,56 @@
  "publishedAt": null,
  "promos": [
   {
+   "id": "bluestar-bundle-save",
+   "brands": [
+    "BlueStar"
+   ],
+   "title": "Bundle & Save",
+   "offerCode": null,
+   "summary": "Pair any Platinum Series range with a BlueStar hood and get $1,000 back.",
+   "benefit": "cash-rebate",
+   "redemption": "online",
+   "amountHeadline": "$1,000",
+   "tiers": [
+    {
+     "label": "Platinum Series range + BlueStar hood",
+     "value": "$1,000"
+    }
+   ],
+   "categories": [
+    "Ranges",
+    "Ventilation"
+   ],
+   "purchaseStart": "2026-10-05",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": "2027-06-30",
+   "serialBy": null,
+   "claimNote": null,
+   "claimSteps": [
+    "Buy one qualifying range and one qualifying hood.",
+    "Submit your claim online at bluestarcooking.com/rebate by June 30, 2027. Online only; there is no mail-in option.",
+    "Serial numbers are required. Allow 6 to 8 weeks for processing."
+   ],
+   "claimUrl": "https://bluestarcooking.com/rebate",
+   "claimUrlLabel": "bluestarcooking.com/rebate",
+   "infoUrl": null,
+   "payout": "Company check",
+   "conditions": [
+    "You must buy one range and one hood together.",
+    "New retail purchases of serialized appliances only."
+   ],
+   "eligibleNote": "Ranges: BSDF, BSPIR and BSPGR models. Hoods: MH, HA, BZ, SC, WR, RL, AT, ME and NR models. Not included: RCS, RNB, BSIR, PL, PY, LP and PM models, wall ovens, rangetops, cooktops, refrigeration and dishwashers.",
+   "eligible": [],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/bluestar-bundle-save.pdf"
+    }
+   ]
+  },
+  {
    "id": "bosch-bf-delivery-install",
    "brands": [
     "Bosch"
@@ -779,6 +829,5529 @@
     {
      "label": "Claim form & full terms (PDF)",
      "href": "forms/bosch-bf-delivery-install.pdf"
+    }
+   ]
+  },
+  {
+   "id": "cafe-fit-guarantee",
+   "brands": [
+    "Café"
+   ],
+   "title": "Café Fit Guarantee",
+   "offerCode": "AMER262285",
+   "summary": "Replacing a similar model? If your new Café cooktop, wall oven, Advantium oven or slide-in range doesn't fit the existing space, Café covers professional modification costs up to $100 or $300.",
+   "benefit": "fit-guarantee",
+   "redemption": "mail-only",
+   "amountHeadline": "Up to $300",
+   "tiers": [
+    {
+     "label": "Cooktops",
+     "value": "Up to $100"
+    },
+    {
+     "label": "Wall ovens, Advantium ovens, slide-in ranges",
+     "value": "Up to $300"
+    }
+   ],
+   "categories": [
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Ranges"
+   ],
+   "purchaseStart": "2026-07-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": "2027-01-31",
+   "serialBy": "2027-02-28",
+   "claimNote": "Mail-in only; claims must be postmarked by the claim date.",
+   "claimSteps": [
+    "Download the claim form below. Fill it in and mail it as the form says, by Jan 31, 2027. Keep a copy of your invoice."
+   ],
+   "claimUrl": null,
+   "claimUrlLabel": null,
+   "infoUrl": null,
+   "payout": "GE Appliances Prepaid Mastercard",
+   "conditions": [
+    "Applies when the new appliance replaces a compatible model of the same width and configuration (cooktops: same width and fuel type).",
+    "Not valid for new construction or remodeling.",
+    "Limit one claim per household."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Cooktops (up to $100)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CEP90301TBB"
+      },
+      {
+       "model": "CEP90302TSS"
+      },
+      {
+       "model": "CEP90361TBB"
+      },
+      {
+       "model": "CEP90362TSS"
+      },
+      {
+       "model": "CHP90301TBB"
+      },
+      {
+       "model": "CHP90302TSS"
+      },
+      {
+       "model": "CHP90361TBB"
+      },
+      {
+       "model": "CHP90362TSS"
+      },
+      {
+       "model": "CGP70302NS1"
+      },
+      {
+       "model": "CGP70362NS1"
+      },
+      {
+       "model": "CGP95302MS1"
+      },
+      {
+       "model": "CGP95303MS2"
+      },
+      {
+       "model": "CGP95362MS1"
+      },
+      {
+       "model": "CGP95363MS2"
+      }
+     ]
+    },
+    {
+     "label": "Wall ovens, Advantium ovens and slide-in ranges (up to $300)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CKD70DP2NS1"
+      },
+      {
+       "model": "CKD70DM2NS5"
+      },
+      {
+       "model": "CKD70DP2ZS1"
+      },
+      {
+       "model": "CKS70DM2NS5"
+      },
+      {
+       "model": "CKS70DP2NS1"
+      },
+      {
+       "model": "CKS70DP2ZS1"
+      },
+      {
+       "model": "CTC912P2NS1"
+      },
+      {
+       "model": "CTD70DM2NS5"
+      },
+      {
+       "model": "CTD70DP2NS1"
+      },
+      {
+       "model": "CTD70DP2ZS1"
+      },
+      {
+       "model": "CTD90DM2ZS5"
+      },
+      {
+       "model": "CTD90DM2NS5"
+      },
+      {
+       "model": "CTD90DP2NS1"
+      },
+      {
+       "model": "CTD90DP4NW2"
+      },
+      {
+       "model": "CTD90DP3ND1"
+      },
+      {
+       "model": "CTD90DP2ZS1"
+      },
+      {
+       "model": "CTD90DP3ZD1"
+      },
+      {
+       "model": "CTD90DP4ZW2"
+      },
+      {
+       "model": "CTD90FP2NS1"
+      },
+      {
+       "model": "CTD90FP3ND1"
+      },
+      {
+       "model": "CTD90FP4NW2"
+      },
+      {
+       "model": "CTD90FP2ZS1"
+      },
+      {
+       "model": "CTD90FP3ZD1"
+      },
+      {
+       "model": "CTD90FP4ZW2"
+      },
+      {
+       "model": "CTS70DM2NS5"
+      },
+      {
+       "model": "CTS70DM2ZS5"
+      },
+      {
+       "model": "CTS70DP2NS1"
+      },
+      {
+       "model": "CTS70DP2ZS1"
+      },
+      {
+       "model": "CTS90DM2NS5"
+      },
+      {
+       "model": "CTS90DM2ZS5"
+      },
+      {
+       "model": "CTS90DP2NS1"
+      },
+      {
+       "model": "CTS90DP2ZS1"
+      },
+      {
+       "model": "CTS90DP3MD1"
+      },
+      {
+       "model": "CTS90DP3ND1"
+      },
+      {
+       "model": "CTS90DP3ZD1"
+      },
+      {
+       "model": "CTS90DP4MW2"
+      },
+      {
+       "model": "CTS90DP4NW2"
+      },
+      {
+       "model": "CTS90DP4ZW2"
+      },
+      {
+       "model": "CTS90FP2NS1"
+      },
+      {
+       "model": "CTS90FP2ZS1"
+      },
+      {
+       "model": "CTS90FP3ND1"
+      },
+      {
+       "model": "CTS90FP3ZD1"
+      },
+      {
+       "model": "CTS90FP4NW2"
+      },
+      {
+       "model": "CTS90FP4ZW2"
+      },
+      {
+       "model": "CTS92DM2NS5"
+      },
+      {
+       "model": "CTS92DM2ZS5"
+      },
+      {
+       "model": "CSB912P2VS1"
+      },
+      {
+       "model": "CSB913M2VS5"
+      },
+      {
+       "model": "CSB913P2VS1"
+      },
+      {
+       "model": "CSB913P3VD1"
+      },
+      {
+       "model": "CSB913P4VW2"
+      },
+      {
+       "model": "CSB923P2VS1"
+      },
+      {
+       "model": "CWB713P2VS1"
+      },
+      {
+       "model": "CHS90XM2NS5"
+      },
+      {
+       "model": "CHS90XP2MS1"
+      },
+      {
+       "model": "CHS900P2MS1"
+      },
+      {
+       "model": "CHS900P4MW2"
+      },
+      {
+       "model": "CHS950P2MS1"
+      },
+      {
+       "model": "CHS950P3MD1"
+      },
+      {
+       "model": "CHS950P4MW2"
+      },
+      {
+       "model": "CES700P2MS1"
+      },
+      {
+       "model": "CES700P3MD1"
+      },
+      {
+       "model": "CES700P4MW2"
+      },
+      {
+       "model": "CES750P2MS1"
+      },
+      {
+       "model": "CES750P4MW2"
+      },
+      {
+       "model": "C2S900P2MS1"
+      },
+      {
+       "model": "C2S950P2MS1"
+      },
+      {
+       "model": "C2S950P4MW2"
+      },
+      {
+       "model": "CGS700M2NS5"
+      },
+      {
+       "model": "CGS700P2MS1"
+      },
+      {
+       "model": "CGS700P3MD1"
+      },
+      {
+       "model": "CGS700P4MW2"
+      },
+      {
+       "model": "CGS750P2MS1"
+      },
+      {
+       "model": "CGS750P4MW2"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/cafe-fit-guarantee.pdf"
+    }
+   ]
+  },
+  {
+   "id": "cafe-shop-local",
+   "brands": [
+    "Café"
+   ],
+   "title": "Café Shop Local Rebate",
+   "offerCode": "CAFE2H26NMG",
+   "summary": "Up to $500 back on each qualifying Café appliance, plus a bonus when you buy 2 to 8 Café appliances: up to $4,000 in total.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $4,000",
+   "tiers": [
+    {
+     "label": "Each qualifying appliance",
+     "value": "Up to $500 (see models)"
+    },
+    {
+     "label": "Buy 2",
+     "value": "+$100"
+    },
+    {
+     "label": "Buy 3",
+     "value": "+$200"
+    },
+    {
+     "label": "Buy 4",
+     "value": "+$400"
+    },
+    {
+     "label": "Buy 5",
+     "value": "+$900"
+    },
+    {
+     "label": "Buy 6",
+     "value": "+$1,400"
+    },
+    {
+     "label": "Buy 7",
+     "value": "+$2,000"
+    },
+    {
+     "label": "Buy 8",
+     "value": "+$2,500"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Cooktops & Rangetops",
+    "Ranges",
+    "Wall Ovens",
+    "Dishwashers",
+    "Ventilation",
+    "Microwaves",
+    "Wine & Beverage",
+    "Other"
+   ],
+   "purchaseStart": "2026-07-09",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": "2027-01-30",
+   "serialBy": "2027-04-30",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 30, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "http://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard (physical or virtual)",
+   "conditions": [
+    "Limit one model per product category, up to 8 models per claim.",
+    "Dishwashers do not count toward a 2-piece package.",
+    "Prior sales, back orders and special orders do not qualify.",
+    "Cannot be combined with other discounts — ask our team for details."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CFE28TP3MD1",
+       "amount": 100
+      },
+      {
+       "model": "CFE28TP4MW2",
+       "amount": 100
+      },
+      {
+       "model": "CFE28TP2MS1",
+       "amount": 100
+      },
+      {
+       "model": "CGE29DM5TS5",
+       "amount": 100
+      },
+      {
+       "model": "CGE29DP2TS1",
+       "amount": 100
+      },
+      {
+       "model": "CGE29DP3TD1",
+       "amount": 100
+      },
+      {
+       "model": "CGE29DP4TW2",
+       "amount": 100
+      },
+      {
+       "model": "CVE28DM5NS5",
+       "amount": 100
+      },
+      {
+       "model": "CVE28DP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CVE28DP3ND1",
+       "amount": 100
+      },
+      {
+       "model": "CVE28DP4NW2",
+       "amount": 100
+      },
+      {
+       "model": "CAE28DM5TS5",
+       "amount": 100
+      },
+      {
+       "model": "CWE19SP2NS1",
+       "amount": 75
+      },
+      {
+       "model": "CWE19SP3ND1",
+       "amount": 100
+      },
+      {
+       "model": "CWE19SP4NW2",
+       "amount": 100
+      },
+      {
+       "model": "CWE23SP2MS1",
+       "amount": 100
+      },
+      {
+       "model": "CWE23SP3MD1",
+       "amount": 100
+      },
+      {
+       "model": "CWE23SP4MW2",
+       "amount": 100
+      },
+      {
+       "model": "CYE22TP2MS1",
+       "amount": 100
+      },
+      {
+       "model": "CYE22TP3MD1",
+       "amount": 100
+      },
+      {
+       "model": "CYE22TP4MW2",
+       "amount": 100
+      },
+      {
+       "model": "CJE23DP2WS1",
+       "amount": 100
+      },
+      {
+       "model": "CJE23DP3WD1",
+       "amount": 100
+      },
+      {
+       "model": "CJE23DP4WW2",
+       "amount": 100
+      },
+      {
+       "model": "CJE23DM5WS5",
+       "amount": 100
+      },
+      {
+       "model": "CXE22DP2PS1",
+       "amount": 100
+      },
+      {
+       "model": "CXE22DP3PD1",
+       "amount": 100
+      },
+      {
+       "model": "CXE22DP4PW2",
+       "amount": 100
+      },
+      {
+       "model": "CXE22DM5PS5",
+       "amount": 100
+      },
+      {
+       "model": "CHE23DM5WS5",
+       "amount": 100
+      },
+      {
+       "model": "CZS22MP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CIC36LP2VS1",
+       "amount": 400
+      },
+      {
+       "model": "CIC36RP2VS1",
+       "amount": 400
+      },
+      {
+       "model": "CIC36LK6ZI",
+       "amount": 400
+      },
+      {
+       "model": "CIC36RK6ZII",
+       "amount": 400
+      },
+      {
+       "model": "CIP36NK6ZII",
+       "amount": 400
+      },
+      {
+       "model": "CIP36NP2VS1",
+       "amount": 500
+      },
+      {
+       "model": "CSB42WP2NS1",
+       "amount": 400
+      },
+      {
+       "model": "CSB42YP2NS1",
+       "amount": 400
+      },
+      {
+       "model": "CSB48WP2NS1",
+       "amount": 500
+      },
+      {
+       "model": "CSB48YP2NS1",
+       "amount": 500
+      },
+      {
+       "model": "CDE06RP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CDE06RP3ND1",
+       "amount": 100
+      },
+      {
+       "model": "CDE06RP4NW2",
+       "amount": 100
+      },
+      {
+       "model": "CZE24RP2YS1",
+       "amount": 100
+      },
+      {
+       "model": "CZE24RP4YW2",
+       "amount": 100
+      },
+      {
+       "model": "CZE24RP3YD1",
+       "amount": 100
+      },
+      {
+       "model": "CKE24RP2YS1",
+       "amount": 100
+      },
+      {
+       "model": "CKE24RP4YW2",
+       "amount": 100
+      },
+      {
+       "model": "CKE24RP3YD1",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Ice Makers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "UCC15NPRII",
+       "amount": 50
+      },
+      {
+       "model": "UNC15NPWII",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CEP90301TBB",
+       "amount": 75
+      },
+      {
+       "model": "CEP90302TSS",
+       "amount": 75
+      },
+      {
+       "model": "CEP90361TBB",
+       "amount": 75
+      },
+      {
+       "model": "CEP90362TSS",
+       "amount": 75
+      },
+      {
+       "model": "CHP90301TBB",
+       "amount": 100
+      },
+      {
+       "model": "CHP90302TSS",
+       "amount": 100
+      },
+      {
+       "model": "CHP90362TSS",
+       "amount": 100
+      },
+      {
+       "model": "CHP90361TBB",
+       "amount": 100
+      },
+      {
+       "model": "CGP70302NS1",
+       "amount": 75
+      },
+      {
+       "model": "CGP70362NS1",
+       "amount": 75
+      },
+      {
+       "model": "CGP95302MS1",
+       "amount": 75
+      },
+      {
+       "model": "CGP95362MS1",
+       "amount": 75
+      },
+      {
+       "model": "CGU366P2TS1",
+       "amount": 100
+      },
+      {
+       "model": "CGU366P3TD1",
+       "amount": 100
+      },
+      {
+       "model": "CGU366P4TW2",
+       "amount": 100
+      },
+      {
+       "model": "CGU486P2TS1",
+       "amount": 100
+      },
+      {
+       "model": "CGU486P3TD1",
+       "amount": 100
+      },
+      {
+       "model": "CGU486P4TW2",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Commercial-Style Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "C2Y366P2TS1",
+       "amount": 400
+      },
+      {
+       "model": "C2Y366P3TD1",
+       "amount": 400
+      },
+      {
+       "model": "C2Y366P4TW2",
+       "amount": 400
+      },
+      {
+       "model": "C2Y366P5TG1",
+       "amount": 400
+      },
+      {
+       "model": "C2Y486P2TS1",
+       "amount": 500
+      },
+      {
+       "model": "C2Y486P3TD1",
+       "amount": 500
+      },
+      {
+       "model": "C2Y486P4TW2",
+       "amount": 500
+      },
+      {
+       "model": "CGY366P2TS1",
+       "amount": 350
+      },
+      {
+       "model": "CGY366P3TD1",
+       "amount": 350
+      },
+      {
+       "model": "CGY366P4TW2",
+       "amount": 350
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CDD220P2WS1",
+       "amount": 25
+      },
+      {
+       "model": "CDD220P3WD1",
+       "amount": 50
+      },
+      {
+       "model": "CDD220P4WW2",
+       "amount": 50
+      },
+      {
+       "model": "CDD420P2TS1",
+       "amount": 50
+      },
+      {
+       "model": "CDD420P3TD1",
+       "amount": 50
+      },
+      {
+       "model": "CDD420P4TW2",
+       "amount": 50
+      },
+      {
+       "model": "CDT828P2VS1",
+       "amount": 25
+      },
+      {
+       "model": "CDT858P2VS1",
+       "amount": 50
+      },
+      {
+       "model": "CDT858P4VW2",
+       "amount": 50
+      },
+      {
+       "model": "CDT858P3VD1",
+       "amount": 50
+      },
+      {
+       "model": "CDT858I6ZII",
+       "amount": 50
+      },
+      {
+       "model": "CDT888P2VS1",
+       "amount": 50
+      },
+      {
+       "model": "CDT888P3VD1",
+       "amount": 50
+      },
+      {
+       "model": "CDT888P4VW2",
+       "amount": 50
+      },
+      {
+       "model": "CDP888M5VS5",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CKS70DP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CKS70DP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTS70DP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CTS70DP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTS70DM2NS5",
+       "amount": 100
+      },
+      {
+       "model": "CTS70DM2ZS5",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DM2NS5",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DM2ZS5",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DP3ND1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DP4NW2",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DP3ZD1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90DP4ZW2",
+       "amount": 100
+      },
+      {
+       "model": "CTS90FP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90FP3ND1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90FP4NW2",
+       "amount": 100
+      },
+      {
+       "model": "CTS90FP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90FP3ZD1",
+       "amount": 100
+      },
+      {
+       "model": "CTS90FP4ZW2",
+       "amount": 100
+      },
+      {
+       "model": "CTS92DM2NS5",
+       "amount": 100
+      },
+      {
+       "model": "CTS92DM2ZS5",
+       "amount": 100
+      },
+      {
+       "model": "CKD70DP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CKD70DP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTD70DP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CTD70DP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DM2NS5",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DM2ZS5",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DP3ND1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DP4NW2",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DP3ZD1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90DP4ZW2",
+       "amount": 100
+      },
+      {
+       "model": "CTD90FP2NS1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90FP3ND1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90FP4NW2",
+       "amount": 100
+      },
+      {
+       "model": "CTD90FP2ZS1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90FP3ZD1",
+       "amount": 100
+      },
+      {
+       "model": "CTD90FP4ZW2",
+       "amount": 100
+      },
+      {
+       "model": "CTC912P2NS1",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CES700P2MS1",
+       "amount": 75
+      },
+      {
+       "model": "CES700P3MD1",
+       "amount": 75
+      },
+      {
+       "model": "CES700P4MW2",
+       "amount": 75
+      },
+      {
+       "model": "CHS900P2MS1",
+       "amount": 100
+      },
+      {
+       "model": "CHS900P4MW2",
+       "amount": 100
+      },
+      {
+       "model": "CHS90XM2NS5",
+       "amount": 100
+      },
+      {
+       "model": "CHS90XP2MS1",
+       "amount": 100
+      },
+      {
+       "model": "CES750P2MS1",
+       "amount": 75
+      },
+      {
+       "model": "CES750P4MW2",
+       "amount": 75
+      },
+      {
+       "model": "CHS950P2MS1",
+       "amount": 100
+      },
+      {
+       "model": "CHS950P4MW2",
+       "amount": 100
+      },
+      {
+       "model": "CHS950P3MD1",
+       "amount": 100
+      },
+      {
+       "model": "CGS700M2NS5",
+       "amount": 75
+      },
+      {
+       "model": "CGS700P2MS1",
+       "amount": 75
+      },
+      {
+       "model": "CGS700P3MD1",
+       "amount": 75
+      },
+      {
+       "model": "CGS700P4MW2",
+       "amount": 75
+      },
+      {
+       "model": "CGS750P2MS1",
+       "amount": 75
+      },
+      {
+       "model": "CGS750P4MW2",
+       "amount": 75
+      },
+      {
+       "model": "C2S900P2MS1",
+       "amount": 75
+      },
+      {
+       "model": "C2S950P2MS1",
+       "amount": 75
+      },
+      {
+       "model": "C2S950P4MW2",
+       "amount": 75
+      }
+     ]
+    },
+    {
+     "label": "Ventilation",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CVW73012MSS",
+       "amount": 25
+      },
+      {
+       "model": "CVW73014MWM",
+       "amount": 25
+      },
+      {
+       "model": "CVW73612MSS",
+       "amount": 25
+      },
+      {
+       "model": "CVW73614MWM",
+       "amount": 25
+      },
+      {
+       "model": "CVW93043PDS",
+       "amount": 25
+      },
+      {
+       "model": "CVW93044PWM",
+       "amount": 25
+      },
+      {
+       "model": "CVW93643PDS",
+       "amount": 25
+      },
+      {
+       "model": "CVW93644PWM",
+       "amount": 25
+      },
+      {
+       "model": "CBW36YIEWW6",
+       "amount": 25
+      },
+      {
+       "model": "UVC7300SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVC9300SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVC9360SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVC9420SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVC9480SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW8301SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW8304SPSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW8361SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW8364SPSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW9301SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW93042PSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW9361SLSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW93642PSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW9484SPSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW7301SWSS",
+       "amount": 25
+      },
+      {
+       "model": "UVW7361SWSS",
+       "amount": 25
+      },
+      {
+       "model": "UVI7361SWSS",
+       "amount": 25
+      },
+      {
+       "model": "UVI1036SRSS",
+       "amount": 25
+      },
+      {
+       "model": "UBW30YIEWSS",
+       "amount": 25
+      },
+      {
+       "model": "UBW36YIEWSS",
+       "amount": 25
+      },
+      {
+       "model": "UVD6301DPBB",
+       "amount": 25
+      },
+      {
+       "model": "UVD6301SPSS",
+       "amount": 25
+      },
+      {
+       "model": "UVD6361DPBB",
+       "amount": 25
+      },
+      {
+       "model": "UVD6361SPSS",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Warming Drawers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CTW900P2PS1",
+       "amount": 25
+      },
+      {
+       "model": "CTW900P3PD1",
+       "amount": 25
+      },
+      {
+       "model": "CTW900P4PW2",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Microwaves",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CVM517P2RS1",
+       "amount": 25
+      },
+      {
+       "model": "CVM517P3RD1",
+       "amount": 25
+      },
+      {
+       "model": "CVM517P4RW2",
+       "amount": 25
+      },
+      {
+       "model": "CVM519P2PS1",
+       "amount": 25
+      },
+      {
+       "model": "CVM521P2MS1",
+       "amount": 25
+      },
+      {
+       "model": "CVM721M2NS5",
+       "amount": 25
+      },
+      {
+       "model": "UVM9125STSS",
+       "amount": 25
+      },
+      {
+       "model": "CSB912P2VS1",
+       "amount": 25
+      },
+      {
+       "model": "CSB913P2VS1",
+       "amount": 25
+      },
+      {
+       "model": "CSB913P3VD1",
+       "amount": 25
+      },
+      {
+       "model": "CSB913P4VW2",
+       "amount": 25
+      },
+      {
+       "model": "CSB913M2VS5",
+       "amount": 25
+      },
+      {
+       "model": "CSB923P2VS1",
+       "amount": 25
+      },
+      {
+       "model": "CSB923P4VW2",
+       "amount": 25
+      },
+      {
+       "model": "CWB713P2VS1",
+       "amount": 25
+      },
+      {
+       "model": "CWL112P2RS1",
+       "amount": 25
+      },
+      {
+       "model": "CWL112P3RD5",
+       "amount": 25
+      },
+      {
+       "model": "CWL112P4RW5",
+       "amount": 25
+      },
+      {
+       "model": "CCWK15C1WSS",
+       "amount": 25
+      },
+      {
+       "model": "CCWK15C1WWM",
+       "amount": 25
+      },
+      {
+       "model": "CCWK15C1WDS",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Compactors",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "UCG1520NSS",
+       "amount": 25
+      },
+      {
+       "model": "UCG1510NII",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Wine & Beverage",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CCP06BP2PS1",
+       "amount": 50
+      },
+      {
+       "model": "CCP06BP3PD1",
+       "amount": 50
+      },
+      {
+       "model": "CCP06BP4PW2",
+       "amount": 50
+      },
+      {
+       "model": "CCR06BM2PS5",
+       "amount": 50
+      },
+      {
+       "model": "CCP06DP2PS1",
+       "amount": 50
+      },
+      {
+       "model": "CCP06DP4PW2",
+       "amount": 50
+      },
+      {
+       "model": "CCR06DM2PS5",
+       "amount": 50
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/cafe-shop-local.pdf"
+    }
+   ]
+  },
+  {
+   "id": "electrolux-savings-every-appliance",
+   "brands": [
+    "Electrolux"
+   ],
+   "title": "Savings on Every Appliance",
+   "offerCode": "EMAEL0726KIT",
+   "summary": "Up to $300 back on individual Electrolux models, plus an extra bonus when you buy 4 to 8: up to $3,000 in total.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $3,000",
+   "tiers": [
+    {
+     "label": "Each qualifying appliance",
+     "value": "$50 to $300 (see models)"
+    },
+    {
+     "label": "Buy 4",
+     "value": "+$400"
+    },
+    {
+     "label": "Buy 5",
+     "value": "+$500"
+    },
+    {
+     "label": "Buy 6",
+     "value": "+$700"
+    },
+    {
+     "label": "Buy 7",
+     "value": "+$1,050"
+    },
+    {
+     "label": "Buy 8",
+     "value": "+$1,525"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Wall Ovens",
+    "Cooktops & Rangetops",
+    "Ventilation",
+    "Dishwashers",
+    "Microwaves",
+    "Wine & Beverage"
+   ],
+   "purchaseStart": "2026-07-09",
+   "purchaseEnd": "2026-12-30",
+   "deliverBy": null,
+   "claimBy": "2027-01-30",
+   "serialBy": null,
+   "claimNote": null,
+   "claimSteps": [
+    "Buy qualifying appliances on the same invoice.",
+    "Submit your claim online at electroluxpromotions.com by January 30, 2027.",
+    "Part of a new construction or remodeling project? Submit by the deadline and add serial numbers once your appliances are delivered.",
+    "Allow up to 8 weeks for your virtual prepaid Mastercard."
+   ],
+   "claimUrl": "https://www.electroluxpromotions.com",
+   "claimUrlLabel": "electroluxpromotions.com",
+   "infoUrl": null,
+   "payout": "Virtual prepaid Mastercard",
+   "conditions": [
+    "Limit one item per category.",
+    "All products must be on the same invoice.",
+    "Items discounted because of damage or closeout do not qualify.",
+    "One claim per household."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Refrigerators",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "EI33AR80WS",
+       "amount": 300
+      },
+      {
+       "model": "ERDF2044AS",
+       "amount": 300
+      },
+      {
+       "model": "ERFG2393AS",
+       "amount": 150
+      },
+      {
+       "model": "ERMC2295AS",
+       "amount": 150
+      },
+      {
+       "model": "ERFC2393AS",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Freezers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "EI33AF80WS",
+       "amount": 300
+      },
+      {
+       "model": "ERDA2044AS",
+       "amount": 300
+      }
+     ]
+    },
+    {
+     "label": "Beverage Centers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "EI24BC15VS",
+       "amount": 75
+      },
+      {
+       "model": "EI24WC15VS",
+       "amount": 75
+      }
+     ]
+    },
+    {
+     "label": "Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "ECFG3068AS",
+       "amount": 150
+      },
+      {
+       "model": "ECFG3668AS",
+       "amount": 150
+      },
+      {
+       "model": "ECFD3068AS",
+       "amount": 150
+      },
+      {
+       "model": "ECFD3668AS",
+       "amount": 150
+      },
+      {
+       "model": "ECFI3068AS",
+       "amount": 150
+      },
+      {
+       "model": "ECFI3668AS",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Microwaves",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "EMBD3010AS",
+       "amount": 100
+      },
+      {
+       "model": "EMBS2411AB",
+       "amount": 50
+      },
+      {
+       "model": "EMBS2411BB",
+       "amount": 50
+      },
+      {
+       "model": "EMOW1911AS",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "ECWM3012AS",
+       "amount": 250
+      },
+      {
+       "model": "ECWD3012AS",
+       "amount": 250
+      },
+      {
+       "model": "ECWS3012AS",
+       "amount": 225
+      },
+      {
+       "model": "ECWD3015AS",
+       "amount": 250
+      },
+      {
+       "model": "ECWM3015AS",
+       "amount": 250
+      },
+      {
+       "model": "ECWS3015AS",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "ECCG3068AS",
+       "amount": 100
+      },
+      {
+       "model": "ECCG3668AS",
+       "amount": 100
+      },
+      {
+       "model": "ECCG3672AS",
+       "amount": 100
+      },
+      {
+       "model": "ECCI3068AS",
+       "amount": 150
+      },
+      {
+       "model": "ECCI3668AS",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Hoods",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "ECVI4262AS",
+       "amount": 75
+      },
+      {
+       "model": "ECVW3062AS",
+       "amount": 75
+      },
+      {
+       "model": "ECVW3662AS",
+       "amount": 75
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "EDSH4944BS",
+       "amount": 75
+      },
+      {
+       "model": "EDSH4944CS",
+       "amount": 75
+      },
+      {
+       "model": "EDSP4944CS",
+       "amount": 75
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/electrolux-savings-every-appliance.pdf"
+    }
+   ]
+  },
+  {
+   "id": "frigidaire-pro-shop-local",
+   "brands": [
+    "Frigidaire"
+   ],
+   "title": "Frigidaire Professional Shop Local Rebate",
+   "offerCode": "FRIG2H26NMG",
+   "summary": "Up to $300 back on each qualifying Frigidaire Professional appliance, a suite bonus for 2 to 7 appliances, and a $400 bonus for a matching refrigerator and freezer: up to $3,000.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $3,000",
+   "tiers": [
+    {
+     "label": "Each qualifying appliance",
+     "value": "Up to $300 (see models)"
+    },
+    {
+     "label": "Buy 2",
+     "value": "+$150"
+    },
+    {
+     "label": "Buy 3",
+     "value": "+$300"
+    },
+    {
+     "label": "Buy 4",
+     "value": "+$500"
+    },
+    {
+     "label": "Buy 5",
+     "value": "+$750"
+    },
+    {
+     "label": "Buy 6",
+     "value": "+$1,000"
+    },
+    {
+     "label": "Buy 7",
+     "value": "+$1,500"
+    },
+    {
+     "label": "Matching refrigerator + freezer",
+     "value": "+$400"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Wall Ovens",
+    "Cooktops & Rangetops",
+    "Ventilation",
+    "Dishwashers",
+    "Microwaves"
+   ],
+   "purchaseStart": "2026-07-09",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": "2027-01-31",
+   "serialBy": "2027-04-30",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 31, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "http://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard (physical or virtual)",
+   "conditions": [
+    "Limit one model per product category, up to 7 models per claim.",
+    "$400 bonus: buy PRDA1922AF with PRDF1922AF, or FPRU19F8WF with FPFU19F8WF.",
+    "Prior sales, back orders and special orders do not qualify.",
+    "Cannot be combined with other discounts — ask our team for details."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PRDA1922AF",
+       "amount": 225
+      },
+      {
+       "model": "FPRU19F8WF",
+       "amount": 200
+      },
+      {
+       "model": "PRMS2790BF",
+       "amount": 200
+      },
+      {
+       "model": "PRMC2285AF",
+       "amount": 200
+      },
+      {
+       "model": "PRMC2290BF",
+       "amount": 200
+      },
+      {
+       "model": "PRFC2383AF",
+       "amount": 175
+      },
+      {
+       "model": "PRFG2383AF",
+       "amount": 175
+      },
+      {
+       "model": "PRFS2883AF",
+       "amount": 175
+      },
+      {
+       "model": "PRSC2222AF",
+       "amount": 175
+      },
+      {
+       "model": "FPHT2097VF",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PCWD3080AF",
+       "amount": 300
+      },
+      {
+       "model": "PCWD3085AF",
+       "amount": 300
+      },
+      {
+       "model": "PCWM3080AF",
+       "amount": 300
+      },
+      {
+       "model": "PCWM3085AF",
+       "amount": 300
+      },
+      {
+       "model": "PCWS3080AF",
+       "amount": 300
+      },
+      {
+       "model": "PCWS3085AF",
+       "amount": 300
+      }
+     ]
+    },
+    {
+     "label": "Microwaves",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PMBD3081BF",
+       "amount": 50
+      },
+      {
+       "model": "PMBS3080BF",
+       "amount": 50
+      },
+      {
+       "model": "PMBD3080AF",
+       "amount": 50
+      },
+      {
+       "model": "PMOS1980AF",
+       "amount": 50
+      },
+      {
+       "model": "UMBW2411AS",
+       "amount": 50
+      },
+      {
+       "model": "UMBW3011AS",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PCCI3680AF",
+       "amount": 175
+      },
+      {
+       "model": "PCCI3080AF",
+       "amount": 175
+      },
+      {
+       "model": "PCCG3680AS",
+       "amount": 125
+      },
+      {
+       "model": "PCCG3080AS",
+       "amount": 125
+      },
+      {
+       "model": "PCCE3680AF",
+       "amount": 125
+      },
+      {
+       "model": "PCCE3080AF",
+       "amount": 125
+      }
+     ]
+    },
+    {
+     "label": "Ventilation",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "FHWC3650RS",
+       "amount": 50
+      },
+      {
+       "model": "FHWC3050RS",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Freezers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PRDF1922AF",
+       "amount": 225
+      },
+      {
+       "model": "FPFU19F8WF",
+       "amount": 200
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PDSH4816AF",
+       "amount": 125
+      },
+      {
+       "model": "PDSH4816BF",
+       "amount": 125
+      }
+     ]
+    },
+    {
+     "label": "Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PCFD3670AF",
+       "amount": 200
+      },
+      {
+       "model": "PCFI3670AF",
+       "amount": 200
+      },
+      {
+       "model": "PCFG3670AF",
+       "amount": 200
+      },
+      {
+       "model": "PCFI3080AF",
+       "amount": 175
+      },
+      {
+       "model": "PCFI3085BF",
+       "amount": 150
+      },
+      {
+       "model": "PCFE3080AF",
+       "amount": 150
+      },
+      {
+       "model": "PCFE3085BF",
+       "amount": 150
+      },
+      {
+       "model": "PCFG3080AF",
+       "amount": 150
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/frigidaire-pro-shop-local.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fulgor-italian-style",
+   "brands": [
+    "Fulgor Milano"
+   ],
+   "title": "Savings, Served Italian Style",
+   "offerCode": null,
+   "summary": "Buy an eligible Fulgor Milano cooking or refrigeration package and choose a free dishwasher, ventilation or finish bezel kit.",
+   "benefit": "free-product",
+   "redemption": "in-store-order",
+   "amountHeadline": "Up to $5,368",
+   "tiers": [
+    {
+     "label": "Package A: 30\", 36\" or 48\" Sofia Pro range, or a cooktop/rangetop with two ovens or one double oven",
+     "value": "1 free item"
+    },
+    {
+     "label": "Package B: 700 Series built-in or column refrigeration pair, or a 600 Series freestanding refrigerator",
+     "value": "1 free item"
+    },
+    {
+     "label": "Buy packages A and B",
+     "value": "1 free item for each"
+    }
+   ],
+   "categories": [
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Refrigeration",
+    "Dishwashers",
+    "Ventilation"
+   ],
+   "purchaseStart": "2026-01-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": "2026-12-31",
+   "claimBy": null,
+   "serialBy": null,
+   "claimNote": "Nothing to mail in. Your free item is included when you order.",
+   "claimSteps": [
+    "Order the package and your free item together, on the same transaction.",
+    "Products must be purchased and delivered by December 31, 2026."
+   ],
+   "claimUrl": null,
+   "claimUrlLabel": null,
+   "infoUrl": null,
+   "payout": null,
+   "conditions": [
+    "Free ventilation must be the same width as the cooking surface you buy.",
+    "Free item choices: any eligible dishwasher, eligible ventilation, or a finish bezel kit. Dishwasher handle kit sold separately.",
+    "Cannot be combined with other discounts — ask our team for details."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Qualifying cooking and refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "F6PDF304S1"
+      },
+      {
+       "model": "F6PGR304S2"
+      },
+      {
+       "model": "F6PIR304S1"
+      },
+      {
+       "model": "F6PDF366S1"
+      },
+      {
+       "model": "F6PDF364GS1"
+      },
+      {
+       "model": "F6PGR366S2"
+      },
+      {
+       "model": "F6PGR364GS2"
+      },
+      {
+       "model": "F6PIR365S1"
+      },
+      {
+       "model": "F6PDF486GS1"
+      },
+      {
+       "model": "F6PGR486GS2"
+      },
+      {
+       "model": "F6PIR487S1"
+      },
+      {
+       "model": "F6PIR485GS1"
+      },
+      {
+       "model": "F7SRC24S1-R"
+      },
+      {
+       "model": "F7SRC24S1-L"
+      },
+      {
+       "model": "F7IRC24O1-R"
+      },
+      {
+       "model": "F7IRC24O1-L"
+      },
+      {
+       "model": "F7SRC30S1-R"
+      },
+      {
+       "model": "F7SRC30S1-L"
+      },
+      {
+       "model": "F7IRC30O1-R"
+      },
+      {
+       "model": "F7IRC30O1-L"
+      },
+      {
+       "model": "F7SRC36S1-R"
+      },
+      {
+       "model": "F7SRC36S1-L"
+      },
+      {
+       "model": "F7IRC36O1-R"
+      },
+      {
+       "model": "F7IRC36O1-L"
+      },
+      {
+       "model": "FI24RFC-RO1"
+      },
+      {
+       "model": "FI30RFC-RO1"
+      },
+      {
+       "model": "FI24RFC-RO2"
+      },
+      {
+       "model": "FI30RFC-RO2"
+      },
+      {
+       "model": "FI36RFC-RO2"
+      },
+      {
+       "model": "FI30RFC-LO2"
+      },
+      {
+       "model": "FK30RFC-RS1"
+      },
+      {
+       "model": "FK24RFC-RS2"
+      },
+      {
+       "model": "FK30RFC-RS2"
+      },
+      {
+       "model": "FK36RFC-RS2"
+      },
+      {
+       "model": "F7SFC18S1-L"
+      },
+      {
+       "model": "F7SFC18S1-R"
+      },
+      {
+       "model": "F7IFC18O1-L"
+      },
+      {
+       "model": "F7IFC18O1-R"
+      },
+      {
+       "model": "F7SFC24S1-L"
+      },
+      {
+       "model": "F7SFC24S1-R"
+      },
+      {
+       "model": "F7IFC24O1-L"
+      },
+      {
+       "model": "F7IFC24O1-R"
+      },
+      {
+       "model": "F7SFC30S1-L"
+      },
+      {
+       "model": "F7SFC30S1-R"
+      },
+      {
+       "model": "F7IFC30O1-L"
+      },
+      {
+       "model": "F7IFC30O1-R"
+      },
+      {
+       "model": "F7SFC36S1-L"
+      },
+      {
+       "model": "F7SFC36S1-R"
+      },
+      {
+       "model": "F7IFC36O1-L"
+      },
+      {
+       "model": "F7IFC36O1-R"
+      },
+      {
+       "model": "FI18FZC-LO1"
+      },
+      {
+       "model": "FI30FZC-LO1"
+      },
+      {
+       "model": "FI18FZC-LO2"
+      },
+      {
+       "model": "FI24FZC-LO2"
+      },
+      {
+       "model": "FI30FZC-LO2"
+      },
+      {
+       "model": "FI36FZC-LO2"
+      },
+      {
+       "model": "FI24FZC-RO2"
+      },
+      {
+       "model": "FK18FZC-LS1"
+      },
+      {
+       "model": "FK30FZC-LS1"
+      },
+      {
+       "model": "FK18FZC-LS2"
+      },
+      {
+       "model": "FK24FZC-LS2"
+      },
+      {
+       "model": "FK30FZC-LS2"
+      },
+      {
+       "model": "FK36FZC-LS2"
+      },
+      {
+       "model": "F7SWC24S1-R"
+      },
+      {
+       "model": "F7SWC24S1-L"
+      },
+      {
+       "model": "F7IWC24O1-R"
+      },
+      {
+       "model": "F7IWC24O1-L"
+      },
+      {
+       "model": "FI30WCC-LO2"
+      },
+      {
+       "model": "FI30WCC-RO2"
+      },
+      {
+       "model": "FK36WCC-LS2"
+      },
+      {
+       "model": "F7PBM36S2-L"
+      },
+      {
+       "model": "F7PBM36S2-R"
+      },
+      {
+       "model": "F7IBM36O2-L"
+      },
+      {
+       "model": "F7IBM36O2-R"
+      },
+      {
+       "model": "F7PBW24S2-L"
+      },
+      {
+       "model": "F7PBW24S2-R"
+      },
+      {
+       "model": "F7IBW24O2-L"
+      },
+      {
+       "model": "F7IBW24O2-R"
+      },
+      {
+       "model": "FM6FBM36SS"
+      },
+      {
+       "model": "FI36BI-RO1"
+      },
+      {
+       "model": "FI36BDI-LO1"
+      },
+      {
+       "model": "FI36BDI-RO1"
+      },
+      {
+       "model": "FK36BI-LS1"
+      },
+      {
+       "model": "F4MGK30S1"
+      },
+      {
+       "model": "F4MGK30MB1"
+      },
+      {
+       "model": "F4PGK305S2"
+      },
+      {
+       "model": "F4PGK365S1"
+      },
+      {
+       "model": "F6PGK305S2"
+      },
+      {
+       "model": "F7IT30S1"
+      },
+      {
+       "model": "F4MTGK36S1"
+      },
+      {
+       "model": "F4MTGK36MB1"
+      },
+      {
+       "model": "F4MEGK36S1"
+      },
+      {
+       "model": "F4MEGK36MB1"
+      },
+      {
+       "model": "F6PGK365S1"
+      },
+      {
+       "model": "F7IT36S1"
+      },
+      {
+       "model": "F7EIK36AS1"
+      },
+      {
+       "model": "F7EIK36BA1"
+      },
+      {
+       "model": "F7ECIK36AS1"
+      },
+      {
+       "model": "F7ECIK36BA1"
+      },
+      {
+       "model": "F7EIK48AS1"
+      },
+      {
+       "model": "F7EIK48BA1"
+      },
+      {
+       "model": "F7ECIK48AS1"
+      },
+      {
+       "model": "F7ECIK48BA1"
+      },
+      {
+       "model": "F6GRT304S1"
+      },
+      {
+       "model": "F6IRT304S1"
+      },
+      {
+       "model": "F6GRT366S1"
+      },
+      {
+       "model": "F6GRT364GS1"
+      },
+      {
+       "model": "F6IRT365S1"
+      },
+      {
+       "model": "F6GRT486GS1"
+      },
+      {
+       "model": "F6IRT487S1"
+      },
+      {
+       "model": "F6IRT485GS1"
+      },
+      {
+       "model": "F6PDP30S1"
+      },
+      {
+       "model": "F7MDP30S1"
+      },
+      {
+       "model": "F7MDP30MB1"
+      },
+      {
+       "model": "F7MSP30S1"
+      },
+      {
+       "model": "F7MSP30MB1"
+      },
+      {
+       "model": "F6PSP30S1"
+      },
+      {
+       "model": "F7MSPD24S1"
+      },
+      {
+       "model": "F7MSPD24MB1"
+      },
+      {
+       "model": "F7MSPD30S1"
+      },
+      {
+       "model": "F7MSPD30MB1"
+      },
+      {
+       "model": "F6PSPD30S1"
+      },
+      {
+       "model": "F7MSCO24S1"
+      },
+      {
+       "model": "F7MSCO24MB1"
+      },
+      {
+       "model": "F7MSCO30S1"
+      },
+      {
+       "model": "F7MSCO30MB1"
+      },
+      {
+       "model": "F6PSCO30S1"
+      },
+      {
+       "model": "F7DMW24S2"
+      }
+     ]
+    },
+    {
+     "label": "Free item choices",
+     "role": "free",
+     "items": [
+      {
+       "model": "F7DWT24SS1"
+      },
+      {
+       "model": "F7DWT24FI1"
+      },
+      {
+       "model": "F4DWT24SS1"
+      },
+      {
+       "model": "F4DWT24FI1"
+      },
+      {
+       "model": "F7DWS24FI1"
+      },
+      {
+       "model": "F4DWS24FI1"
+      },
+      {
+       "model": "F4DWS18FI1"
+      },
+      {
+       "model": "FMSBEZKIT06-BR"
+      },
+      {
+       "model": "FMSBEZKIT06-BZ"
+      },
+      {
+       "model": "FMSBEZKIT06-MB"
+      },
+      {
+       "model": "FMSBEZKIT11-BR"
+      },
+      {
+       "model": "FMSBEZKIT11-BZ"
+      },
+      {
+       "model": "FMSBEZKIT11-MB"
+      },
+      {
+       "model": "F6PH30S1"
+      },
+      {
+       "model": "F6PH30S2"
+      },
+      {
+       "model": "F6PH36S1"
+      },
+      {
+       "model": "F6PH36DS1"
+      },
+      {
+       "model": "F6PH48DS1"
+      },
+      {
+       "model": "F6PC36DS1"
+      },
+      {
+       "model": "F6PC48DS1"
+      },
+      {
+       "model": "F4CW30S1"
+      },
+      {
+       "model": "F4CW36S1"
+      },
+      {
+       "model": "F4BP28S1"
+      },
+      {
+       "model": "F6BP34S1"
+      },
+      {
+       "model": "F6BP34DS1"
+      },
+      {
+       "model": "F6BP46DS1"
+      },
+      {
+       "model": "F4UC30S1"
+      },
+      {
+       "model": "F4UC36S1"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/fulgor-italian-style.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ge-profile-innovation",
+   "brands": [
+    "GE Profile"
+   ],
+   "title": "The Innovation Rebate",
+   "offerCode": "AMER262168",
+   "summary": "Buy 4 or more eligible GE Profile appliances and get up to $2,000 back.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $2,000",
+   "tiers": [
+    {
+     "label": "Buy 4",
+     "value": "$400"
+    },
+    {
+     "label": "Buy 5",
+     "value": "$750"
+    },
+    {
+     "label": "Buy 6",
+     "value": "$1,100"
+    },
+    {
+     "label": "Buy 7",
+     "value": "$1,500"
+    },
+    {
+     "label": "Buy 8",
+     "value": "$2,000"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Ventilation",
+    "Microwaves",
+    "Dishwashers",
+    "Wine & Beverage"
+   ],
+   "purchaseStart": "2026-07-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": "2027-01-31",
+   "serialBy": "2027-02-28",
+   "claimNote": null,
+   "claimSteps": [
+    "Buy 4 or more eligible GE Profile appliances.",
+    "Submit your claim online at GEAppliancesPromotions.com by January 31, 2027.",
+    "Not delivered yet? Submit without serial numbers and add them by February 28, 2027.",
+    "Allow 6 to 8 weeks for online claims."
+   ],
+   "claimUrl": "https://www.GEAppliancesPromotions.com",
+   "claimUrlLabel": "GEAppliancesPromotions.com",
+   "infoUrl": null,
+   "payout": "GE Appliances Prepaid Mastercard",
+   "conditions": [
+    "Only one appliance each from countertop microwaves, over-the-range microwaves and ventilation counts.",
+    "A built-in microwave and its trim kit count together as one appliance.",
+    "Cannot be combined with another GE Appliances package rebate on the same models.",
+    "Limit one claim per household."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Eligible GE Profile models",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PAD28BYTFS"
+      },
+      {
+       "model": "PAE28BYTFS"
+      },
+      {
+       "model": "PHD23BYWFS"
+      },
+      {
+       "model": "PGE29BYTFS"
+      },
+      {
+       "model": "PGD29BYTFS"
+      },
+      {
+       "model": "PVD28BYNFS"
+      },
+      {
+       "model": "PXD22BYPFS"
+      },
+      {
+       "model": "PJE23BYWFS"
+      },
+      {
+       "model": "PJD23BYWFS"
+      },
+      {
+       "model": "PVD28HYYFS"
+      },
+      {
+       "model": "PXD22HYYFS"
+      },
+      {
+       "model": "PFE28KYNFS"
+      },
+      {
+       "model": "PWE23KYNFS"
+      },
+      {
+       "model": "PYE22KYNFS"
+      },
+      {
+       "model": "PSE25KYHFS"
+      },
+      {
+       "model": "PZS22MYKFS"
+      },
+      {
+       "model": "POE29QYYFS"
+      },
+      {
+       "model": "PKE24QYYFS"
+      },
+      {
+       "model": "PSE28QYYFS"
+      },
+      {
+       "model": "PZE24QYYFS"
+      },
+      {
+       "model": "PSB42YSNSS"
+      },
+      {
+       "model": "PSB48YSNSS"
+      },
+      {
+       "model": "UCC15NPRII"
+      },
+      {
+       "model": "UNC15NPWII"
+      },
+      {
+       "model": "PVS06BSPSS"
+      },
+      {
+       "model": "PWS06DSPSS"
+      },
+      {
+       "model": "PHS700AYFS"
+      },
+      {
+       "model": "PHS93EYPFS"
+      },
+      {
+       "model": "PHS930YPFS"
+      },
+      {
+       "model": "PHS93XYPFS"
+      },
+      {
+       "model": "PS960YPFS"
+      },
+      {
+       "model": "PSS93BPTS"
+      },
+      {
+       "model": "PSS93YPFS"
+      },
+      {
+       "model": "PGS930YPFS"
+      },
+      {
+       "model": "PGS960YPFS"
+      },
+      {
+       "model": "P2S930YPFS"
+      },
+      {
+       "model": "PB900YVFS"
+      },
+      {
+       "model": "PB965BPTS"
+      },
+      {
+       "model": "PB965YPFS"
+      },
+      {
+       "model": "PRF700AYFS"
+      },
+      {
+       "model": "PGS930BPTS"
+      },
+      {
+       "model": "PGB935YPFS"
+      },
+      {
+       "model": "PGB965BPTS"
+      },
+      {
+       "model": "PGB965YPFS"
+      },
+      {
+       "model": "PGF700AYFS"
+      },
+      {
+       "model": "PHP6030DWBB"
+      },
+      {
+       "model": "PHP6036DWBB"
+      },
+      {
+       "model": "PHP7030DTBB"
+      },
+      {
+       "model": "PHP7036DTBB"
+      },
+      {
+       "model": "PHP9030DTBB"
+      },
+      {
+       "model": "PHP9030STSS"
+      },
+      {
+       "model": "PHP9036DTBB"
+      },
+      {
+       "model": "PHP9036STSS"
+      },
+      {
+       "model": "PEP7030DTBB"
+      },
+      {
+       "model": "PEP7036DTBB"
+      },
+      {
+       "model": "PEP9030DTBB"
+      },
+      {
+       "model": "PEP9030STSS"
+      },
+      {
+       "model": "PEP9036DTBB"
+      },
+      {
+       "model": "PEP9036STSS"
+      },
+      {
+       "model": "PP9830DRBB"
+      },
+      {
+       "model": "PP9830SRSS"
+      },
+      {
+       "model": "PGP7030DLBB"
+      },
+      {
+       "model": "PGP7030SLSS"
+      },
+      {
+       "model": "PGP7036DLBB"
+      },
+      {
+       "model": "PGP7036SLSS"
+      },
+      {
+       "model": "PGP9030SLSS"
+      },
+      {
+       "model": "PGP9036SLSS"
+      },
+      {
+       "model": "PGP9830DRBB"
+      },
+      {
+       "model": "PGP9830SRSS"
+      },
+      {
+       "model": "PKS7000SNSS"
+      },
+      {
+       "model": "PTS7000BNTS"
+      },
+      {
+       "model": "PTS7000SNSS"
+      },
+      {
+       "model": "PTS700LSNSS"
+      },
+      {
+       "model": "PTS700RSNSS"
+      },
+      {
+       "model": "PTS9000BNTS"
+      },
+      {
+       "model": "PTS9000SNSS"
+      },
+      {
+       "model": "PTS9200SNSS"
+      },
+      {
+       "model": "PTS6000SNSS"
+      },
+      {
+       "model": "PKD7000SNSS"
+      },
+      {
+       "model": "PTD7000BNTS"
+      },
+      {
+       "model": "PTD7000SNSS"
+      },
+      {
+       "model": "PTD700LSNSS"
+      },
+      {
+       "model": "PTD700RSNSS"
+      },
+      {
+       "model": "PTD9000BNTS"
+      },
+      {
+       "model": "PTD9000SNSS"
+      },
+      {
+       "model": "PKS7000SZSS"
+      },
+      {
+       "model": "PKD7000SZSS"
+      },
+      {
+       "model": "PTS7000SZSS"
+      },
+      {
+       "model": "PTS7000BZTS"
+      },
+      {
+       "model": "PTS700LSZSS"
+      },
+      {
+       "model": "PTS700RSZSS"
+      },
+      {
+       "model": "PTS9000SZSS"
+      },
+      {
+       "model": "PTS9200SZSS"
+      },
+      {
+       "model": "PTD7000SZSS"
+      },
+      {
+       "model": "PTD7000BZTS"
+      },
+      {
+       "model": "PTD700LSZSS"
+      },
+      {
+       "model": "PTD700RSZSS"
+      },
+      {
+       "model": "PTD9000SZSS"
+      },
+      {
+       "model": "PK7800SKSS"
+      },
+      {
+       "model": "PT7800SHSS"
+      },
+      {
+       "model": "PT9800SHSS"
+      },
+      {
+       "model": "PT9900SWSS"
+      },
+      {
+       "model": "PSB9100SVSS"
+      },
+      {
+       "model": "PSB9120SVSS"
+      },
+      {
+       "model": "PSB9240SVSS"
+      },
+      {
+       "model": "PKW7000SPSS"
+      },
+      {
+       "model": "PTW9000SPSS"
+      },
+      {
+       "model": "UVC9300SLSS"
+      },
+      {
+       "model": "UVC9360SLSS"
+      },
+      {
+       "model": "UVC9420SLSS"
+      },
+      {
+       "model": "UVC9480SLSS"
+      },
+      {
+       "model": "UVI1036SRSS"
+      },
+      {
+       "model": "UVI7361SWSS"
+      },
+      {
+       "model": "PVW1030SWSS"
+      },
+      {
+       "model": "PVW1036SWSS"
+      },
+      {
+       "model": "UVW7241SNSS"
+      },
+      {
+       "model": "UVW7301SWSS"
+      },
+      {
+       "model": "UVW7361SWSS"
+      },
+      {
+       "model": "UVW8301SLSS"
+      },
+      {
+       "model": "UVW8304SPSS"
+      },
+      {
+       "model": "UVW8361SLSS"
+      },
+      {
+       "model": "UVW8364SPSS"
+      },
+      {
+       "model": "UVW9301SLSS"
+      },
+      {
+       "model": "UVW93042PSS"
+      },
+      {
+       "model": "UVW9361SLSS"
+      },
+      {
+       "model": "UVW93642PSS"
+      },
+      {
+       "model": "UVW9484SPSS"
+      },
+      {
+       "model": "UBW30YIEWSS"
+      },
+      {
+       "model": "UBW36YIEWSS"
+      },
+      {
+       "model": "UVC7300SLSS"
+      },
+      {
+       "model": "UVD6301DPBB"
+      },
+      {
+       "model": "UVD6301SPSS"
+      },
+      {
+       "model": "UVD6361DPBB"
+      },
+      {
+       "model": "UVD6361SPSS"
+      },
+      {
+       "model": "PCWK22U1WDD"
+      },
+      {
+       "model": "PCWK22U1WBB"
+      },
+      {
+       "model": "PCWK22U1WWW"
+      },
+      {
+       "model": "PCWK15C1WSS"
+      },
+      {
+       "model": "PCHK11S1WBB"
+      },
+      {
+       "model": "PCHK11S1WWW"
+      },
+      {
+       "model": "PCST22U1WSS"
+      },
+      {
+       "model": "PCHK11S1WSS"
+      },
+      {
+       "model": "JX15BUMPBB"
+      },
+      {
+       "model": "JX15BUMPW"
+      },
+      {
+       "model": "JX7227BLTS"
+      },
+      {
+       "model": "JX7227DLBB"
+      },
+      {
+       "model": "JX7227DLWW"
+      },
+      {
+       "model": "JX7227ELES"
+      },
+      {
+       "model": "JX7227FMDS"
+      },
+      {
+       "model": "JX7227SLSS"
+      },
+      {
+       "model": "JX7230BLTS"
+      },
+      {
+       "model": "JX7230DLBB"
+      },
+      {
+       "model": "JX7230DLWW"
+      },
+      {
+       "model": "JX7230ELES"
+      },
+      {
+       "model": "JX7230FMDS"
+      },
+      {
+       "model": "JX7230SLSS"
+      },
+      {
+       "model": "JX827BMTS"
+      },
+      {
+       "model": "JX827DFBB"
+      },
+      {
+       "model": "JX827DFWW"
+      },
+      {
+       "model": "JX827EFES"
+      },
+      {
+       "model": "JX827FMDS"
+      },
+      {
+       "model": "JX827SFS"
+      },
+      {
+       "model": "JX830BMTS"
+      },
+      {
+       "model": "JX830DFBB"
+      },
+      {
+       "model": "JX830DFWW"
+      },
+      {
+       "model": "JX830EFES"
+      },
+      {
+       "model": "JX830FMDS"
+      },
+      {
+       "model": "JX830SFSS"
+      },
+      {
+       "model": "JX9152EJES"
+      },
+      {
+       "model": "JX9152SJSS"
+      },
+      {
+       "model": "JX9153DJBB"
+      },
+      {
+       "model": "JX9153DJWW"
+      },
+      {
+       "model": "JX9153EJES"
+      },
+      {
+       "model": "JX9153SJSS"
+      },
+      {
+       "model": "JX9152DJBB"
+      },
+      {
+       "model": "JX9152DJWW"
+      },
+      {
+       "model": "PSA9120SPSS"
+      },
+      {
+       "model": "PVM9005BLTS"
+      },
+      {
+       "model": "PVM9005SJSS"
+      },
+      {
+       "model": "PVM9179BRTS"
+      },
+      {
+       "model": "PVM9179DRBB"
+      },
+      {
+       "model": "PVM9179DRWW"
+      },
+      {
+       "model": "PVM9179SRSS"
+      },
+      {
+       "model": "PVM9215SKSS"
+      },
+      {
+       "model": "PVM9225SRSS"
+      },
+      {
+       "model": "UVM9125STSS"
+      },
+      {
+       "model": "UVM9125DYWW"
+      },
+      {
+       "model": "UVM9125DYBB"
+      },
+      {
+       "model": "PVM9005RYSS"
+      },
+      {
+       "model": "PVM9179RYSS"
+      },
+      {
+       "model": "PVM9215RYSS"
+      },
+      {
+       "model": "PVM9225RYSS"
+      },
+      {
+       "model": "PWL1126SWSS"
+      },
+      {
+       "model": "PWB7030SVSS"
+      },
+      {
+       "model": "PDP715SYVFS"
+      },
+      {
+       "model": "PDT715SYVFS"
+      },
+      {
+       "model": "PDP755SBVTS"
+      },
+      {
+       "model": "PDP755SYVFS"
+      },
+      {
+       "model": "PDT755SYVFS"
+      },
+      {
+       "model": "PDT755SBVTS"
+      },
+      {
+       "model": "PDP795SYVFS"
+      },
+      {
+       "model": "PDT795SBVTS"
+      },
+      {
+       "model": "PDT795SYVFS"
+      },
+      {
+       "model": "PDT145SGLBB"
+      },
+      {
+       "model": "PDT145SGLWW"
+      },
+      {
+       "model": "PDT145SSLSS"
+      },
+      {
+       "model": "PDT715SIYII"
+      },
+      {
+       "model": "PDD415PYYFS"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/ge-profile-innovation.pdf"
+    }
+   ]
+  },
+  {
+   "id": "jennair-curate-instant",
+   "brands": [
+    "JennAir"
+   ],
+   "title": "Build Your Suite & Get Instant Savings",
+   "offerCode": null,
+   "summary": "Save 5% on one JennAir appliance, 10% on two, or 15% on three or more, taken off at checkout.",
+   "benefit": "percent-off",
+   "redemption": "instant-in-store",
+   "amountHeadline": "Up to 15% off",
+   "tiers": [
+    {
+     "label": "Any one",
+     "value": "5% off"
+    },
+    {
+     "label": "Any two",
+     "value": "10% off"
+    },
+    {
+     "label": "Any three or more",
+     "value": "15% off"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Ventilation",
+    "Microwaves",
+    "Dishwashers",
+    "Wine & Beverage"
+   ],
+   "purchaseStart": "2026-07-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": null,
+   "serialBy": null,
+   "claimNote": "Nothing to claim. The discount is taken off at checkout.",
+   "claimSteps": [
+    "Nothing to claim. The discount is taken off at checkout."
+   ],
+   "claimUrl": null,
+   "claimUrlLabel": null,
+   "infoUrl": null,
+   "payout": null,
+   "conditions": [
+    "Applies to all JennAir appliances and refrigeration panel kits, including discontinued products.",
+    "Discount excludes taxes, delivery, installation, uninstallation and haul-away."
+   ],
+   "eligibleNote": "All JennAir appliances and refrigeration panel kits.",
+   "eligible": [],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/jennair-curate-instant.pdf"
+    }
+   ]
+  },
+  {
+   "id": "lg-buy-more-save-more",
+   "brands": [
+    "LG"
+   ],
+   "title": "Buy More, Save More",
+   "offerCode": "LGBMSM1126",
+   "summary": "Get up to $500 back when you buy 2 or more eligible LG appliances together, or up to $800 for an all-LG STUDIO purchase.",
+   "benefit": "cash-rebate",
+   "redemption": "online",
+   "amountHeadline": "Up to $800",
+   "tiers": [
+    {
+     "label": "Buy 2 LG and/or LG STUDIO",
+     "value": "$100"
+    },
+    {
+     "label": "Buy 3",
+     "value": "$300"
+    },
+    {
+     "label": "Buy 4 or more",
+     "value": "$500"
+    },
+    {
+     "label": "Buy 4 LG STUDIO only",
+     "value": "$600"
+    },
+    {
+     "label": "Buy 5 or more LG STUDIO only",
+     "value": "$800"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Wall Ovens",
+    "Cooktops & Rangetops",
+    "Microwaves",
+    "Dishwashers",
+    "Ventilation",
+    "Laundry"
+   ],
+   "purchaseStart": "2026-11-04",
+   "purchaseEnd": "2026-12-02",
+   "deliverBy": null,
+   "claimBy": "2027-02-02",
+   "serialBy": null,
+   "claimNote": "Online by 11:59 PM Pacific Time on the claim date.",
+   "claimSteps": [
+    "Buy 2 or more eligible LG and/or LG STUDIO kitchen or laundry appliances on one receipt.",
+    "Submit your claim online at LGoffers.com by February 2, 2027 (11:59 PM Pacific). You can start on the day of purchase.",
+    "Upload your receipt and serial numbers. If a serial number isn't available yet, add it within 30 days of receiving all your appliances.",
+    "Allow 8 to 10 weeks for your physical Visa Prepaid card."
+   ],
+   "claimUrl": "https://www.LGoffers.com",
+   "claimUrlLabel": "LGoffers.com",
+   "infoUrl": null,
+   "payout": "Physical Visa Prepaid card",
+   "conditions": [
+    "Up to 2 appliances per category count (1 over-the-range microwave).",
+    "WashTower and WashCombo count as one appliance.",
+    "Not included: LG SIGNATURE, countertop microwaves, air care, floor care, open-box items and display units.",
+    "Cannot be combined with other discounts — ask our team for details."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Eligible LG and LG STUDIO models",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "LFCS22520D"
+      },
+      {
+       "model": "LF25H6330D"
+      },
+      {
+       "model": "LRYXC2606D"
+      },
+      {
+       "model": "LRFCS29D6S"
+      },
+      {
+       "model": "LF29H8330D"
+      },
+      {
+       "model": "LF30S8210S"
+      },
+      {
+       "model": "LRDCS2603D"
+      },
+      {
+       "model": "LFCS22520S"
+      },
+      {
+       "model": "LF25H6330S"
+      },
+      {
+       "model": "LRYXC2606S"
+      },
+      {
+       "model": "LRFXS3106S"
+      },
+      {
+       "model": "LF29H8330S"
+      },
+      {
+       "model": "LF30N8210S"
+      },
+      {
+       "model": "LRDCS2603S"
+      },
+      {
+       "model": "LF31T6230S"
+      },
+      {
+       "model": "LF24Z6330S"
+      },
+      {
+       "model": "LRFLC2706D"
+      },
+      {
+       "model": "LRFLS3206S"
+      },
+      {
+       "model": "LF29N8330S"
+      },
+      {
+       "model": "LRMDC2306S"
+      },
+      {
+       "model": "LB26H2200S"
+      },
+      {
+       "model": "LFDS22520S"
+      },
+      {
+       "model": "LF24Z6530S"
+      },
+      {
+       "model": "LRFLC2706S"
+      },
+      {
+       "model": "LRFLS3216S"
+      },
+      {
+       "model": "LF29S8230V"
+      },
+      {
+       "model": "LRMDS3006D"
+      },
+      {
+       "model": "LB26H2200D"
+      },
+      {
+       "model": "LF20G6331S"
+      },
+      {
+       "model": "LF25Z6211S"
+      },
+      {
+       "model": "LRFLC2716D"
+      },
+      {
+       "model": "LMXS28626S"
+      },
+      {
+       "model": "LF29S8330S"
+      },
+      {
+       "model": "LRMDS3006S"
+      },
+      {
+       "model": "LRSOS2706D"
+      },
+      {
+       "model": "LF21G6200S"
+      },
+      {
+       "model": "LRFXC2606S"
+      },
+      {
+       "model": "LRFLC2716S"
+      },
+      {
+       "model": "LM22WZH64S"
+      },
+      {
+       "model": "LF29S8365S"
+      },
+      {
+       "model": "LRMVC2306D"
+      },
+      {
+       "model": "LRSOS2706S"
+      },
+      {
+       "model": "LF21G6201S"
+      },
+      {
+       "model": "LRRXC2606S"
+      },
+      {
+       "model": "LRFLC2726S"
+      },
+      {
+       "model": "LF25G8330S"
+      },
+      {
+       "model": "LF29S9730S"
+      },
+      {
+       "model": "LRMVC2306S"
+      },
+      {
+       "model": "LRSXC2306S"
+      },
+      {
+       "model": "LF25S6560S"
+      },
+      {
+       "model": "LRYKC2606D"
+      },
+      {
+       "model": "LRFS28XBD"
+      },
+      {
+       "model": "LF26C6230V"
+      },
+      {
+       "model": "LF29H9730S"
+      },
+      {
+       "model": "LRMVS3006S"
+      },
+      {
+       "model": "LRSXS2706S"
+      },
+      {
+       "model": "LF25H6200S"
+      },
+      {
+       "model": "LRYKC2606S"
+      },
+      {
+       "model": "LRFS28XBS"
+      },
+      {
+       "model": "LF26C8210S"
+      },
+      {
+       "model": "LF29S9775S"
+      },
+      {
+       "model": "LRMXS3006S"
+      },
+      {
+       "model": "LS27T3230S"
+      },
+      {
+       "model": "SRFB27W3"
+      },
+      {
+       "model": "SRFB27S3"
+      },
+      {
+       "model": "SRSXB2622S"
+      },
+      {
+       "model": "ADFD5448AT"
+      },
+      {
+       "model": "LDNPQ445B"
+      },
+      {
+       "model": "LDFN4542W"
+      },
+      {
+       "model": "LDNTM545S"
+      },
+      {
+       "model": "LDTH7972S"
+      },
+      {
+       "model": "LDNPH753S"
+      },
+      {
+       "model": "LDNPQ445S"
+      },
+      {
+       "model": "LDFN4542B"
+      },
+      {
+       "model": "LDNPM545D"
+      },
+      {
+       "model": "LDNPM654S"
+      },
+      {
+       "model": "LDPH7972S"
+      },
+      {
+       "model": "LDNPH753D"
+      },
+      {
+       "model": "LDNPQ445D"
+      },
+      {
+       "model": "LDFN4542D"
+      },
+      {
+       "model": "LDNPM545S"
+      },
+      {
+       "model": "LDNPH654S"
+      },
+      {
+       "model": "LDNTH753D"
+      },
+      {
+       "model": "LDNTH862S"
+      },
+      {
+       "model": "LDNPQ445W"
+      },
+      {
+       "model": "LDFN4542S"
+      },
+      {
+       "model": "LDNTM545D"
+      },
+      {
+       "model": "LDTH7972D"
+      },
+      {
+       "model": "LDNTH753S"
+      },
+      {
+       "model": "SDWB24S3"
+      },
+      {
+       "model": "SDWD24P3"
+      },
+      {
+       "model": "SDWB24W3"
+      },
+      {
+       "model": "SDNTHS72S"
+      },
+      {
+       "model": "LSDL6336F"
+      },
+      {
+       "model": "LSGL6335F"
+      },
+      {
+       "model": "LDEL7324SE"
+      },
+      {
+       "model": "LREN6325ZE"
+      },
+      {
+       "model": "LSEL6333XE"
+      },
+      {
+       "model": "LSGL5833Z"
+      },
+      {
+       "model": "LSEL6335FE"
+      },
+      {
+       "model": "LTEL7337D"
+      },
+      {
+       "model": "LDEL7324YE"
+      },
+      {
+       "model": "LRGN6323Y"
+      },
+      {
+       "model": "LSEL6333ZE"
+      },
+      {
+       "model": "LSGL6335X"
+      },
+      {
+       "model": "LSIL6332FE"
+      },
+      {
+       "model": "LTEL7337F"
+      },
+      {
+       "model": "LDGL6924Y"
+      },
+      {
+       "model": "LRGN6323Z"
+      },
+      {
+       "model": "LSEL6335XE"
+      },
+      {
+       "model": "LSGL6335Z"
+      },
+      {
+       "model": "LSIL6334FE"
+      },
+      {
+       "model": "LDGL6924S"
+      },
+      {
+       "model": "LREN6323YE"
+      },
+      {
+       "model": "LRGN6325X"
+      },
+      {
+       "model": "LSEL6335ZE"
+      },
+      {
+       "model": "LSGL6337X"
+      },
+      {
+       "model": "LSIL6334XE"
+      },
+      {
+       "model": "LTGL6937D"
+      },
+      {
+       "model": "LREN6323ZE"
+      },
+      {
+       "model": "LRGN6325Z"
+      },
+      {
+       "model": "LSEL6337XE"
+      },
+      {
+       "model": "LSGL5831F"
+      },
+      {
+       "model": "LSIL6336XE"
+      },
+      {
+       "model": "LTGL6937F"
+      },
+      {
+       "model": "LREN6325XE"
+      },
+      {
+       "model": "LRIN6323YE"
+      },
+      {
+       "model": "LSGL5833X"
+      },
+      {
+       "model": "LSEL6331F"
+      },
+      {
+       "model": "LSGS6338F"
+      },
+      {
+       "model": "LSGS6338N"
+      },
+      {
+       "model": "LTIS7338XE"
+      },
+      {
+       "model": "LSDS6338F"
+      },
+      {
+       "model": "LSIS6338FE"
+      },
+      {
+       "model": "LSIS6338NE"
+      },
+      {
+       "model": "LSES6338F"
+      },
+      {
+       "model": "LSES6338N"
+      },
+      {
+       "model": "WCEP6423F"
+      },
+      {
+       "model": "WCEP6427F"
+      },
+      {
+       "model": "WDEP9423D"
+      },
+      {
+       "model": "WSEP4723F"
+      },
+      {
+       "model": "WSEP4727F"
+      },
+      {
+       "model": "WSED3067M"
+      },
+      {
+       "model": "WCEP6423D"
+      },
+      {
+       "model": "WDEP9423F"
+      },
+      {
+       "model": "WDEP9427F"
+      },
+      {
+       "model": "WSEP4723D"
+      },
+      {
+       "model": "WSED3023B"
+      },
+      {
+       "model": "MZBZ1727X"
+      },
+      {
+       "model": "WCES6428F"
+      },
+      {
+       "model": "WCES6428N"
+      },
+      {
+       "model": "WDES9428F"
+      },
+      {
+       "model": "WSES4728F"
+      },
+      {
+       "model": "HCED3015D"
+      },
+      {
+       "model": "HCED3615D"
+      },
+      {
+       "model": "HCED3015S"
+      },
+      {
+       "model": "HCED3615S"
+      },
+      {
+       "model": "LSHD3080ST"
+      },
+      {
+       "model": "LSHD3680N"
+      },
+      {
+       "model": "LSHD3680ST"
+      },
+      {
+       "model": "LSHD3080N"
+      },
+      {
+       "model": "MVEF1323F"
+      },
+      {
+       "model": "MHEC1737F"
+      },
+      {
+       "model": "MVEL2033D"
+      },
+      {
+       "model": "MVEL2035Z"
+      },
+      {
+       "model": "MVEL2137D"
+      },
+      {
+       "model": "MVEL2125X"
+      },
+      {
+       "model": "MVEM1825Z"
+      },
+      {
+       "model": "MHEC1737D"
+      },
+      {
+       "model": "MVEF1337F"
+      },
+      {
+       "model": "MVEL2033F"
+      },
+      {
+       "model": "MVEL2035X"
+      },
+      {
+       "model": "MVEL2137F"
+      },
+      {
+       "model": "MVEM1825F"
+      },
+      {
+       "model": "MVEM1825X"
+      },
+      {
+       "model": "MHES1738N"
+      },
+      {
+       "model": "MHES1738F"
+      },
+      {
+       "model": "WM4000HBA"
+      },
+      {
+       "model": "WM6998HBA"
+      },
+      {
+       "model": "WT8205CW"
+      },
+      {
+       "model": "WD300CW"
+      },
+      {
+       "model": "WM4000HWA"
+      },
+      {
+       "model": "WM6998HVA"
+      },
+      {
+       "model": "WT8400CB"
+      },
+      {
+       "model": "WD300CB"
+      },
+      {
+       "model": "WM4200HBA"
+      },
+      {
+       "model": "WM3555HWA"
+      },
+      {
+       "model": "WT8400CW"
+      },
+      {
+       "model": "WD300CV"
+      },
+      {
+       "model": "WM4200HWA"
+      },
+      {
+       "model": "WM3555HVA"
+      },
+      {
+       "model": "WT8405CB"
+      },
+      {
+       "model": "S3WFBN"
+      },
+      {
+       "model": "WM5800HAA"
+      },
+      {
+       "model": "WM8900HBA"
+      },
+      {
+       "model": "WT8405CW"
+      },
+      {
+       "model": "S3MFBN"
+      },
+      {
+       "model": "WM5800HVA"
+      },
+      {
+       "model": "WM1455HWA"
+      },
+      {
+       "model": "WT8600CB"
+      },
+      {
+       "model": "S5WBC"
+      },
+      {
+       "model": "WM6500HBA"
+      },
+      {
+       "model": "WT8200CL"
+      },
+      {
+       "model": "WT8600CW"
+      },
+      {
+       "model": "SC5GMR80H"
+      },
+      {
+       "model": "WM6500HWA"
+      },
+      {
+       "model": "WT8200CW"
+      },
+      {
+       "model": "WD200CB"
+      },
+      {
+       "model": "SC5MAR4G"
+      },
+      {
+       "model": "WM6700HBA"
+      },
+      {
+       "model": "WT8205CL"
+      },
+      {
+       "model": "WD300CA"
+      },
+      {
+       "model": "S5MSB"
+      },
+      {
+       "model": "DLE8200L"
+      },
+      {
+       "model": "DLEX5800V"
+      },
+      {
+       "model": "DLHC1455W"
+      },
+      {
+       "model": "DLGX5801V"
+      },
+      {
+       "model": "DLE8200W"
+      },
+      {
+       "model": "DLEX6500B"
+      },
+      {
+       "model": "DLHC4002W"
+      },
+      {
+       "model": "DLGX6501B"
+      },
+      {
+       "model": "DLG8201W"
+      },
+      {
+       "model": "DLEX6500W"
+      },
+      {
+       "model": "DLHC4002B"
+      },
+      {
+       "model": "DLGX6501W"
+      },
+      {
+       "model": "DLE8400BE"
+      },
+      {
+       "model": "DLEX6700B"
+      },
+      {
+       "model": "DLG8401BE"
+      },
+      {
+       "model": "DLGX6701B"
+      },
+      {
+       "model": "DLE8400WE"
+      },
+      {
+       "model": "DLHC8402B"
+      },
+      {
+       "model": "DLG8401WE"
+      },
+      {
+       "model": "DLGX8601BE"
+      },
+      {
+       "model": "DLEX4000B"
+      },
+      {
+       "model": "DLHC8402W"
+      },
+      {
+       "model": "DLGX4001B"
+      },
+      {
+       "model": "DLGX8901B"
+      },
+      {
+       "model": "DLEX4000W"
+      },
+      {
+       "model": "DLEX8600BE"
+      },
+      {
+       "model": "DLGX4001W"
+      },
+      {
+       "model": "DLHC5502B"
+      },
+      {
+       "model": "DLEX4200B"
+      },
+      {
+       "model": "DLEX8900B"
+      },
+      {
+       "model": "DLGX4201B"
+      },
+      {
+       "model": "DLHC5502W"
+      },
+      {
+       "model": "DLEX4200W"
+      },
+      {
+       "model": "DLEX8600WE"
+      },
+      {
+       "model": "DLGX4201W"
+      },
+      {
+       "model": "DLG8201L"
+      },
+      {
+       "model": "DLEX5800A"
+      },
+      {
+       "model": "DLGX8601WE"
+      },
+      {
+       "model": "DLGX5801A"
+      },
+      {
+       "model": "WKE100HVA"
+      },
+      {
+       "model": "WKEX200HGA"
+      },
+      {
+       "model": "WKG101HVA"
+      },
+      {
+       "model": "WKGX201HGA"
+      },
+      {
+       "model": "WKHC152HWA"
+      },
+      {
+       "model": "WKE100HWA"
+      },
+      {
+       "model": "WKEX200HWA"
+      },
+      {
+       "model": "WKG101HWA"
+      },
+      {
+       "model": "WKGX201HWA"
+      },
+      {
+       "model": "WKHC252HBA"
+      },
+      {
+       "model": "WKEX200HBA"
+      },
+      {
+       "model": "WKEX300HBA"
+      },
+      {
+       "model": "WKGX201HBA"
+      },
+      {
+       "model": "WKGX301HBA"
+      },
+      {
+       "model": "WKHC252HWA"
+      },
+      {
+       "model": "SWWE50N3"
+      },
+      {
+       "model": "SWWE50W4"
+      },
+      {
+       "model": "SWWG50N3"
+      },
+      {
+       "model": "SWWG50W4"
+      },
+      {
+       "model": "CBIH3013BE"
+      },
+      {
+       "model": "CBIH3617BE"
+      },
+      {
+       "model": "CBEW3017BE"
+      },
+      {
+       "model": "CBGD2414S"
+      },
+      {
+       "model": "CBGJ3623S"
+      },
+      {
+       "model": "CBGJ3023D"
+      },
+      {
+       "model": "CBIH3613BE"
+      },
+      {
+       "model": "CBED2415B"
+      },
+      {
+       "model": "CBEW3613BE"
+      },
+      {
+       "model": "CBGJ3627S"
+      },
+      {
+       "model": "CBGJ3623D"
+      },
+      {
+       "model": "CBIH3017BE"
+      },
+      {
+       "model": "CBEW3013BE"
+      },
+      {
+       "model": "CBEW3617BE"
+      },
+      {
+       "model": "CBGJ3027S"
+      },
+      {
+       "model": "CBGJ3023S"
+      },
+      {
+       "model": "LSCE365ST"
+      },
+      {
+       "model": "CBGS3028S"
+      },
+      {
+       "model": "CBGS3628S"
+      },
+      {
+       "model": "CBIS3018BE"
+      },
+      {
+       "model": "LSCE305ST"
+      },
+      {
+       "model": "CBGS3028N"
+      },
+      {
+       "model": "CBGS3628N"
+      },
+      {
+       "model": "CBIS3618BE"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/lg-buy-more-save-more.pdf"
+    }
+   ]
+  },
+  {
+   "id": "lg-thinq-2yr-warranty",
+   "brands": [
+    "LG"
+   ],
+   "title": "2-Year Limited Warranty with LG ThinQ",
+   "offerCode": "LGTHINQ0426",
+   "summary": "Register eligible LG appliances in the LG ThinQ app within 60 days of purchase and get a 2-year limited warranty at no cost (valued up to $185).",
+   "benefit": "warranty",
+   "redemption": "app",
+   "amountHeadline": "2-year warranty",
+   "tiers": [],
+   "categories": [
+    "Refrigeration",
+    "Dishwashers",
+    "Ranges",
+    "Wall Ovens",
+    "Cooktops & Rangetops",
+    "Ventilation",
+    "Microwaves",
+    "Laundry"
+   ],
+   "purchaseStart": "2026-04-09",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": null,
+   "serialBy": null,
+   "claimNote": "Within 60 days of your purchase date.",
+   "claimSteps": [
+    "Download the LG ThinQ app and create an account.",
+    "Connect your appliance to Wi-Fi, then tap “Redeem Now” in the app.",
+    "Enter your purchase details and upload your proof of purchase, all within 60 days of purchase.",
+    "Allow up to 14 days for the 2-year warranty to show in the app."
+   ],
+   "claimUrl": "https://www.LGoffers.com",
+   "claimUrlLabel": "LGoffers.com",
+   "infoUrl": null,
+   "payout": null,
+   "conditions": [
+    "Not included: LG SIGNATURE and LG STUDIO products, open-box items and display units.",
+    "Cannot be combined with other warranty offers."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Eligible LG models",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "LFXS26596D"
+      },
+      {
+       "model": "LRFDS3016D"
+      },
+      {
+       "model": "LRMDC2306D"
+      },
+      {
+       "model": "LRYXS3106D"
+      },
+      {
+       "model": "LRFXS3106S"
+      },
+      {
+       "model": "LF29S8230S"
+      },
+      {
+       "model": "LRFLS3216S"
+      },
+      {
+       "model": "LFXS26596S"
+      },
+      {
+       "model": "LRFDS3016S"
+      },
+      {
+       "model": "LRMDC2306S"
+      },
+      {
+       "model": "LRYKC2606D"
+      },
+      {
+       "model": "LRFLS3206S"
+      },
+      {
+       "model": "LRMVC1803S"
+      },
+      {
+       "model": "LF25S6560S"
+      },
+      {
+       "model": "LFXS26973D"
+      },
+      {
+       "model": "LRFGC2706S"
+      },
+      {
+       "model": "LRMDS3006D"
+      },
+      {
+       "model": "LRYKC2606S"
+      },
+      {
+       "model": "LF21G6200S"
+      },
+      {
+       "model": "LRFLC2716S"
+      },
+      {
+       "model": "LF20G6331S"
+      },
+      {
+       "model": "LFXS26973S"
+      },
+      {
+       "model": "LRFLC2706S"
+      },
+      {
+       "model": "LRMDS3006S"
+      },
+      {
+       "model": "LRYXC2606D"
+      },
+      {
+       "model": "LRSOS2706D"
+      },
+      {
+       "model": "LRFLC2716D"
+      },
+      {
+       "model": "LF21G6201S"
+      },
+      {
+       "model": "LFXS28968D"
+      },
+      {
+       "model": "LRFLC2706D"
+      },
+      {
+       "model": "LRMVC2306D"
+      },
+      {
+       "model": "LRYXC2606S"
+      },
+      {
+       "model": "LRSOS2706S"
+      },
+      {
+       "model": "LF26C6230V"
+      },
+      {
+       "model": "LS27T3230S"
+      },
+      {
+       "model": "LFXS28968S"
+      },
+      {
+       "model": "LRFOC2606S"
+      },
+      {
+       "model": "LRMVC2306S"
+      },
+      {
+       "model": "LRFS28XBD"
+      },
+      {
+       "model": "LRSDS2706S"
+      },
+      {
+       "model": "LRFWS2906S"
+      },
+      {
+       "model": "LRSOC2306S"
+      },
+      {
+       "model": "LF29S8230V"
+      },
+      {
+       "model": "LRFVC2406D"
+      },
+      {
+       "model": "LRMVS2806D"
+      },
+      {
+       "model": "LRFS28XBS"
+      },
+      {
+       "model": "LF29S8365S"
+      },
+      {
+       "model": "LFCS22520D"
+      },
+      {
+       "model": "LF25Z6211S"
+      },
+      {
+       "model": "LMXC22626D"
+      },
+      {
+       "model": "LRFVC2406S"
+      },
+      {
+       "model": "LRMVS2806S"
+      },
+      {
+       "model": "LRFXC2606S"
+      },
+      {
+       "model": "LF25G8330S"
+      },
+      {
+       "model": "LFCS22520S"
+      },
+      {
+       "model": "LF29S9775S"
+      },
+      {
+       "model": "LMXC22626S"
+      },
+      {
+       "model": "LRFVS3006D"
+      },
+      {
+       "model": "LRMVS3006D"
+      },
+      {
+       "model": "LRFXC2606D"
+      },
+      {
+       "model": "LF26C8210S"
+      },
+      {
+       "model": "LF29H9730S"
+      },
+      {
+       "model": "LF29S9730S"
+      },
+      {
+       "model": "LMXS28596D"
+      },
+      {
+       "model": "LRFVS3006S"
+      },
+      {
+       "model": "LRMVS3006S"
+      },
+      {
+       "model": "LF29S8330D"
+      },
+      {
+       "model": "LF31S6360S"
+      },
+      {
+       "model": "LF29N8330S"
+      },
+      {
+       "model": "LF24Z6330S"
+      },
+      {
+       "model": "LMXS28596S"
+      },
+      {
+       "model": "LRFXC2416D"
+      },
+      {
+       "model": "LRMXC2206D"
+      },
+      {
+       "model": "LF29S8330S"
+      },
+      {
+       "model": "LF26C6360S"
+      },
+      {
+       "model": "LF30N8210S"
+      },
+      {
+       "model": "LRRXC2606S"
+      },
+      {
+       "model": "LMXS28626D"
+      },
+      {
+       "model": "LRFXC2416S"
+      },
+      {
+       "model": "LRMXC2206S"
+      },
+      {
+       "model": "LF29H8330D"
+      },
+      {
+       "model": "LF24Z6530S"
+      },
+      {
+       "model": "LF24Z6530D"
+      },
+      {
+       "model": "LMXS28626S"
+      },
+      {
+       "model": "LRFXS2503D"
+      },
+      {
+       "model": "LRMXS2806D"
+      },
+      {
+       "model": "LF29H8330S"
+      },
+      {
+       "model": "LF25H6330S"
+      },
+      {
+       "model": "LRFLC2726S"
+      },
+      {
+       "model": "LRFDC2406D"
+      },
+      {
+       "model": "LRFXS2503S"
+      },
+      {
+       "model": "LRMXS3006S"
+      },
+      {
+       "model": "LF30S8210S"
+      },
+      {
+       "model": "LF25H6330D"
+      },
+      {
+       "model": "LB26H2200S"
+      },
+      {
+       "model": "LRFDC2406S"
+      },
+      {
+       "model": "LRFXS2513S"
+      },
+      {
+       "model": "LRYKS3106D"
+      },
+      {
+       "model": "LF30H8210S"
+      },
+      {
+       "model": "LF25H6200S"
+      },
+      {
+       "model": "LB26H2200D"
+      },
+      {
+       "model": "ADFD5448AT"
+      },
+      {
+       "model": "LDP6809SS"
+      },
+      {
+       "model": "LDT5665BB"
+      },
+      {
+       "model": "LDT7808BD"
+      },
+      {
+       "model": "LDVH5554S"
+      },
+      {
+       "model": "LDNFQ445S"
+      },
+      {
+       "model": "LDNPQ445S"
+      },
+      {
+       "model": "LDF5678BD"
+      },
+      {
+       "model": "LDP6810BD"
+      },
+      {
+       "model": "LDT5665BD"
+      },
+      {
+       "model": "LDT7808BM"
+      },
+      {
+       "model": "LDTH6764S"
+      },
+      {
+       "model": "LDNFQ445D"
+      },
+      {
+       "model": "LDNPQ445D"
+      },
+      {
+       "model": "LDF5678SS"
+      },
+      {
+       "model": "LDP6810SS"
+      },
+      {
+       "model": "LDT5665ST"
+      },
+      {
+       "model": "LDT7808SS"
+      },
+      {
+       "model": "LDNTH862S"
+      },
+      {
+       "model": "LDNFQ445W"
+      },
+      {
+       "model": "LDNPQ445W"
+      },
+      {
+       "model": "LDF5678ST"
+      },
+      {
+       "model": "LDP7708BD"
+      },
+      {
+       "model": "LDT5665WW"
+      },
+      {
+       "model": "LDT7808ST"
+      },
+      {
+       "model": "LDNTH753S"
+      },
+      {
+       "model": "LDNFQ445B"
+      },
+      {
+       "model": "LDNPQ445B"
+      },
+      {
+       "model": "LDP6797BB"
+      },
+      {
+       "model": "LDP7708ST"
+      },
+      {
+       "model": "LDT5678BD"
+      },
+      {
+       "model": "LDTH7972D"
+      },
+      {
+       "model": "LDNTH753D"
+      },
+      {
+       "model": "LDNTC336S"
+      },
+      {
+       "model": "LDNPH753D"
+      },
+      {
+       "model": "LDP6797BD"
+      },
+      {
+       "model": "LDP7808BD"
+      },
+      {
+       "model": "LDT5678SS"
+      },
+      {
+       "model": "LDTH7972S"
+      },
+      {
+       "model": "LDNPH753S"
+      },
+      {
+       "model": "LDNFC237V"
+      },
+      {
+       "model": "LDNPH654S"
+      },
+      {
+       "model": "LDP6797BM"
+      },
+      {
+       "model": "LDP7808SS"
+      },
+      {
+       "model": "LDT5678ST"
+      },
+      {
+       "model": "LDTS5552D"
+      },
+      {
+       "model": "LDNPM654D"
+      },
+      {
+       "model": "LDNFC237W"
+      },
+      {
+       "model": "LDP6797SS"
+      },
+      {
+       "model": "LDPH7972D"
+      },
+      {
+       "model": "LDT6809BD"
+      },
+      {
+       "model": "LDTS5552S"
+      },
+      {
+       "model": "LDNPM654S"
+      },
+      {
+       "model": "LDNFC237B"
+      },
+      {
+       "model": "LDP6797ST"
+      },
+      {
+       "model": "LDPH7972S"
+      },
+      {
+       "model": "LDT6809SS"
+      },
+      {
+       "model": "LDTH5554D"
+      },
+      {
+       "model": "LDNTM545S"
+      },
+      {
+       "model": "LDP6797WW"
+      },
+      {
+       "model": "LDPN6761T"
+      },
+      {
+       "model": "LDT7797BD"
+      },
+      {
+       "model": "LDTH5554S"
+      },
+      {
+       "model": "LDNTM545D"
+      },
+      {
+       "model": "LDP6809BD"
+      },
+      {
+       "model": "LDPS6762D"
+      },
+      {
+       "model": "LDT7797BM"
+      },
+      {
+       "model": "LDPH5554D"
+      },
+      {
+       "model": "LDNPM545S"
+      },
+      {
+       "model": "LDP6809BM"
+      },
+      {
+       "model": "LDPS6762S"
+      },
+      {
+       "model": "LDT7797ST"
+      },
+      {
+       "model": "LDPH5554S"
+      },
+      {
+       "model": "LDNPM545D"
+      },
+      {
+       "model": "LREL6321S"
+      },
+      {
+       "model": "LSDL6336F"
+      },
+      {
+       "model": "LSGL5833D"
+      },
+      {
+       "model": "LSIL6336F"
+      },
+      {
+       "model": "LSGL6337Z"
+      },
+      {
+       "model": "LSEL6333ZE"
+      },
+      {
+       "model": "LRGN6323Y"
+      },
+      {
+       "model": "LREL6323D"
+      },
+      {
+       "model": "LSEL6331F"
+      },
+      {
+       "model": "LSGL5833F"
+      },
+      {
+       "model": "LSIL6336FE"
+      },
+      {
+       "model": "LSEL6337XE"
+      },
+      {
+       "model": "LSIL6336XE"
+      },
+      {
+       "model": "LRGN6323Z"
+      },
+      {
+       "model": "LREL6323S"
+      },
+      {
+       "model": "LSEL6333D"
+      },
+      {
+       "model": "LSGL6335D"
+      },
+      {
+       "model": "LSIL6334FE"
+      },
+      {
+       "model": "LSEL6337ZE"
+      },
+      {
+       "model": "LSIL6334XE"
+      },
+      {
+       "model": "LREN6323YE"
+      },
+      {
+       "model": "LREL6325D"
+      },
+      {
+       "model": "LSEL6333F"
+      },
+      {
+       "model": "LSGL6335F"
+      },
+      {
+       "model": "LDEL7324SE"
+      },
+      {
+       "model": "LSGL6335X"
+      },
+      {
+       "model": "LDGL6924Y"
+      },
+      {
+       "model": "LREN6323ZE"
+      },
+      {
+       "model": "LREL6325F"
+      },
+      {
+       "model": "LSEL6335D"
+      },
+      {
+       "model": "LSGL6337F"
+      },
+      {
+       "model": "LDGL6924S"
+      },
+      {
+       "model": "LSGL6335Z"
+      },
+      {
+       "model": "LDEL7324YE"
+      },
+      {
+       "model": "LRGN6321Y"
+      },
+      {
+       "model": "LRGL5821S"
+      },
+      {
+       "model": "LSEL6335DE"
+      },
+      {
+       "model": "LTEL7337D"
+      },
+      {
+       "model": "LTGL6937X"
+      },
+      {
+       "model": "LSEL6335XE"
+      },
+      {
+       "model": "LRGN6325X"
+      },
+      {
+       "model": "LDEL7324XE"
+      },
+      {
+       "model": "LRGL5823D"
+      },
+      {
+       "model": "LSEL6335F"
+      },
+      {
+       "model": "LTEL7337F"
+      },
+      {
+       "model": "LTGL6937Z"
+      },
+      {
+       "model": "LSEL6335ZE"
+      },
+      {
+       "model": "LRGN6325Z"
+      },
+      {
+       "model": "LRIN6323YE"
+      },
+      {
+       "model": "LRGL5823S"
+      },
+      {
+       "model": "LSEL6335FE"
+      },
+      {
+       "model": "LTGL6937D"
+      },
+      {
+       "model": "LTEL7337XE"
+      },
+      {
+       "model": "LSGL5833X"
+      },
+      {
+       "model": "LREN6321YE"
+      },
+      {
+       "model": "LRGL5825D"
+      },
+      {
+       "model": "LSEL6337F"
+      },
+      {
+       "model": "LTGL6937F"
+      },
+      {
+       "model": "LTEL7337ZE"
+      },
+      {
+       "model": "LSGL5833Z"
+      },
+      {
+       "model": "LREN6325XE"
+      },
+      {
+       "model": "LRGL5825F"
+      },
+      {
+       "model": "LSGL5831F"
+      },
+      {
+       "model": "LSIL6332FE"
+      },
+      {
+       "model": "LSGL6337X"
+      },
+      {
+       "model": "LSEL6333XE"
+      },
+      {
+       "model": "LREN6325ZE"
+      },
+      {
+       "model": "WSED3023B"
+      },
+      {
+       "model": "WCEP6423D"
+      },
+      {
+       "model": "WDEP9423D"
+      },
+      {
+       "model": "WSEP4723Z"
+      },
+      {
+       "model": "MZBZ1715S"
+      },
+      {
+       "model": "WCEP6423Z"
+      },
+      {
+       "model": "WDEP9423Z"
+      },
+      {
+       "model": "WSED3067M"
+      },
+      {
+       "model": "WCEP6427F"
+      },
+      {
+       "model": "WDEP9427F"
+      },
+      {
+       "model": "WSEP4723D"
+      },
+      {
+       "model": "WCEP6427X"
+      },
+      {
+       "model": "WDEP9427X"
+      },
+      {
+       "model": "WSEP4727X"
+      },
+      {
+       "model": "WCEP6423F"
+      },
+      {
+       "model": "WDEP9423F"
+      },
+      {
+       "model": "WSEP4723F"
+      },
+      {
+       "model": "WSEP4727F"
+      },
+      {
+       "model": "WCEP6423X"
+      },
+      {
+       "model": "WDEP9423X"
+      },
+      {
+       "model": "WSEP4723X"
+      },
+      {
+       "model": "CBGJ3627S"
+      },
+      {
+       "model": "CBGJ3623D"
+      },
+      {
+       "model": "CBIH3013BE"
+      },
+      {
+       "model": "CBEW3617BE"
+      },
+      {
+       "model": "CBGJ3027S"
+      },
+      {
+       "model": "CBGJ3623S"
+      },
+      {
+       "model": "CBIH3613BE"
+      },
+      {
+       "model": "CBEW3613BE"
+      },
+      {
+       "model": "CBGJ3023D"
+      },
+      {
+       "model": "CBED2415B"
+      },
+      {
+       "model": "CBIH3017BE"
+      },
+      {
+       "model": "CBEW3017BE"
+      },
+      {
+       "model": "CBGJ3023S"
+      },
+      {
+       "model": "CBGD2414S"
+      },
+      {
+       "model": "CBIH3617BE"
+      },
+      {
+       "model": "CBEW3013BE"
+      },
+      {
+       "model": "MVEF1337F"
+      },
+      {
+       "model": "MHEC1737F"
+      },
+      {
+       "model": "MVEL2125F"
+      },
+      {
+       "model": "MVEM1825D"
+      },
+      {
+       "model": "MVEL2035X"
+      },
+      {
+       "model": "MVEM1825X"
+      },
+      {
+       "model": "MVEF1323F"
+      },
+      {
+       "model": "MVEL2033D"
+      },
+      {
+       "model": "MVEL2137D"
+      },
+      {
+       "model": "MVEM1825F"
+      },
+      {
+       "model": "MVEL2035Z"
+      },
+      {
+       "model": "MVEM1825Z"
+      },
+      {
+       "model": "MHEC1737D"
+      },
+      {
+       "model": "MVEL2033F"
+      },
+      {
+       "model": "MVEL2137F"
+      },
+      {
+       "model": "MVEL2125X"
+      },
+      {
+       "model": "MVEL2034X"
+      },
+      {
+       "model": "WC6907HBA"
+      },
+      {
+       "model": "WM4000HBA"
+      },
+      {
+       "model": "WM6500HBA"
+      },
+      {
+       "model": "WM9900HSA"
+      },
+      {
+       "model": "WT8205CL"
+      },
+      {
+       "model": "WT8405CW"
+      },
+      {
+       "model": "WD300CA"
+      },
+      {
+       "model": "WC6908HBA"
+      },
+      {
+       "model": "WM4200HBA"
+      },
+      {
+       "model": "WM6500HWA"
+      },
+      {
+       "model": "WM1455HWA"
+      },
+      {
+       "model": "WT8200CW"
+      },
+      {
+       "model": "WT8600CW"
+      },
+      {
+       "model": "WD300CB"
+      },
+      {
+       "model": "WM3420CW"
+      },
+      {
+       "model": "WM4200HWA"
+      },
+      {
+       "model": "WM6900HBA"
+      },
+      {
+       "model": "WM5500HVA"
+      },
+      {
+       "model": "WT8205CW"
+      },
+      {
+       "model": "WD300CW"
+      },
+      {
+       "model": "WD300CV"
+      },
+      {
+       "model": "WM3555HWA"
+      },
+      {
+       "model": "WM5800HAA"
+      },
+      {
+       "model": "WM6998HBA"
+      },
+      {
+       "model": "WM5500HWA"
+      },
+      {
+       "model": "WT8400CB"
+      },
+      {
+       "model": "WT8600CB"
+      },
+      {
+       "model": "WM3555HVA"
+      },
+      {
+       "model": "WM5800HVA"
+      },
+      {
+       "model": "WM6998HVA"
+      },
+      {
+       "model": "WM5700HVA"
+      },
+      {
+       "model": "WT8400CW"
+      },
+      {
+       "model": "WD200CV"
+      },
+      {
+       "model": "WM4000HWA"
+      },
+      {
+       "model": "WM6700HBA"
+      },
+      {
+       "model": "WM8900HBA"
+      },
+      {
+       "model": "WT8200CL"
+      },
+      {
+       "model": "WT8405CB"
+      },
+      {
+       "model": "WD200CB"
+      },
+      {
+       "model": "HCED3015D"
+      },
+      {
+       "model": "HCED3615D"
+      },
+      {
+       "model": "HCED3015S"
+      },
+      {
+       "model": "HCED3615S"
+      },
+      {
+       "model": "DLE3420W"
+      },
+      {
+       "model": "DLEX4200W"
+      },
+      {
+       "model": "DLGX5801A"
+      },
+      {
+       "model": "DLEX6500W"
+      },
+      {
+       "model": "DLE8400WE"
+      },
+      {
+       "model": "DLGX8901B"
+      },
+      {
+       "model": "DLEX5500V"
+      },
+      {
+       "model": "DLG3421W"
+      },
+      {
+       "model": "DLGX4201B"
+      },
+      {
+       "model": "DLEX5800V"
+      },
+      {
+       "model": "DLGX6501W"
+      },
+      {
+       "model": "DLG8401WE"
+      },
+      {
+       "model": "DLG8401BE"
+      },
+      {
+       "model": "DLGX5501V"
+      },
+      {
+       "model": "DLEX4000W"
+      },
+      {
+       "model": "DLGX4201W"
+      },
+      {
+       "model": "DLGX5801V"
+      },
+      {
+       "model": "DLE8200L"
+      },
+      {
+       "model": "DLEX8600BE"
+      },
+      {
+       "model": "DLHC1455W"
+      },
+      {
+       "model": "DLEX5500W"
+      },
+      {
+       "model": "DLGX4001W"
+      },
+      {
+       "model": "DLHC5502B"
+      },
+      {
+       "model": "DLEX6700B"
+      },
+      {
+       "model": "DLG8201L"
+      },
+      {
+       "model": "DLEX8600WE"
+      },
+      {
+       "model": "DLHC4002W"
+      },
+      {
+       "model": "DLGX5501W"
+      },
+      {
+       "model": "DLEX4000B"
+      },
+      {
+       "model": "DLHC5502V"
+      },
+      {
+       "model": "DLGX6701B"
+      },
+      {
+       "model": "DLE8200W"
+      },
+      {
+       "model": "DLGX8601BE"
+      },
+      {
+       "model": "DLHC4002B"
+      },
+      {
+       "model": "DLGX4001B"
+      },
+      {
+       "model": "DLHC5502W"
+      },
+      {
+       "model": "DLEX6500B"
+      },
+      {
+       "model": "DLG8201W"
+      },
+      {
+       "model": "DLGX8601WE"
+      },
+      {
+       "model": "DLHC8402W"
+      },
+      {
+       "model": "DLEX4200B"
+      },
+      {
+       "model": "DLEX5800A"
+      },
+      {
+       "model": "DLGX6501B"
+      },
+      {
+       "model": "DLE8400BE"
+      },
+      {
+       "model": "DLEX8900B"
+      },
+      {
+       "model": "DLHC8402B"
+      },
+      {
+       "model": "S3RFBN"
+      },
+      {
+       "model": "S3WFBN"
+      },
+      {
+       "model": "S3MFBN"
+      },
+      {
+       "model": "S5WBC"
+      },
+      {
+       "model": "SC5GMR80H"
+      },
+      {
+       "model": "SC5MAR4G"
+      },
+      {
+       "model": "WKEX300HBA"
+      },
+      {
+       "model": "WKHC252HWA"
+      },
+      {
+       "model": "WKEX200HGA"
+      },
+      {
+       "model": "WKGX201HBA"
+      },
+      {
+       "model": "WKHC202HBA"
+      },
+      {
+       "model": "WKE100HVA"
+      },
+      {
+       "model": "WKGX301HBA"
+      },
+      {
+       "model": "WKEX200HWA"
+      },
+      {
+       "model": "WKEX200HRA"
+      },
+      {
+       "model": "WKGX201HGA"
+      },
+      {
+       "model": "WKHC152HWA"
+      },
+      {
+       "model": "WKG101HWA"
+      },
+      {
+       "model": "WKHC252HBA"
+      },
+      {
+       "model": "WKEX200HBA"
+      },
+      {
+       "model": "WKGX201HWA"
+      },
+      {
+       "model": "WKGX201HRA"
+      },
+      {
+       "model": "WKE100HWA"
+      },
+      {
+       "model": "WKG101HVA"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/lg-thinq-2yr-warranty.pdf"
     }
    ]
   },
@@ -1846,6 +7419,761 @@
    ]
   },
   {
+   "id": "miele-dishwasher-100",
+   "brands": [
+    "Miele"
+   ],
+   "title": "$100 off Miele Dishwashers",
+   "offerCode": null,
+   "summary": "Get a $100 rebate on qualifying Miele dishwashers.",
+   "benefit": "cash-rebate",
+   "redemption": "online",
+   "amountHeadline": "$100",
+   "tiers": [],
+   "categories": [
+    "Dishwashers"
+   ],
+   "purchaseStart": "2026-09-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": "2027-02-15",
+   "claimBy": "2027-04-16",
+   "serialBy": null,
+   "claimNote": null,
+   "claimSteps": [
+    "Buy a qualifying dishwasher and take delivery by February 15, 2027.",
+    "Submit your claim online at mieleusrebates.com by April 16, 2027, with your order invoice, proof of payment and proof of delivery.",
+    "Allow 6 to 8 weeks. The rebate arrives by email as a virtual prepaid Mastercard; claim it within 3 months."
+   ],
+   "claimUrl": "https://www.mieleusrebates.com",
+   "claimUrlLabel": "mieleusrebates.com",
+   "infoUrl": null,
+   "payout": "Virtual Miele Prepaid Mastercard (by email)",
+   "conditions": [
+    "Cannot be combined with other discounts — ask our team for details.",
+    "One claim per serial number.",
+    "Residents of the 50 U.S. states and D.C. only."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Generation 5000",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "G 5482 SCVi"
+      },
+      {
+       "model": "G 5892 SCVi"
+      },
+      {
+       "model": "G 5006 SCU"
+      },
+      {
+       "model": "G 5008 SCU"
+      },
+      {
+       "model": "G 5051 SCVi"
+      },
+      {
+       "model": "G 5056 SCVi"
+      },
+      {
+       "model": "G 5056 SCVi SF"
+      },
+      {
+       "model": "G 5056 SCVi SFP"
+      },
+      {
+       "model": "G 5058 SCVi SFP"
+      },
+      {
+       "model": "G 5266 SCVi"
+      },
+      {
+       "model": "G 5266 SCVi SF"
+      },
+      {
+       "model": "G 5266 SCVi SFP"
+      }
+     ]
+    },
+    {
+     "label": "Generation 7000",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "G 7106 SCU"
+      },
+      {
+       "model": "G 7156 SCVi"
+      },
+      {
+       "model": "G 7156 SCVi SF"
+      },
+      {
+       "model": "G 7166 SCVi"
+      },
+      {
+       "model": "G 7166 SCVi SFP"
+      },
+      {
+       "model": "G 7176 SCVi SF"
+      },
+      {
+       "model": "G 7316 SCU"
+      },
+      {
+       "model": "G 7366 SCVi"
+      },
+      {
+       "model": "G 7366 SCVi SF"
+      },
+      {
+       "model": "G 7516 SCi"
+      },
+      {
+       "model": "G 7566 SCVi"
+      },
+      {
+       "model": "G 7591 SCVi"
+      },
+      {
+       "model": "G 7566 SCVi SF"
+      },
+      {
+       "model": "G 7916 SCi"
+      },
+      {
+       "model": "G 7966 SCVi"
+      },
+      {
+       "model": "G 7216 SC XXL"
+      },
+      {
+       "model": "G 7266 SCVi"
+      },
+      {
+       "model": "G 7266 SCVi SF"
+      },
+      {
+       "model": "G 7186 SCVi"
+      },
+      {
+       "model": "G 7186 SCVi SFP"
+      },
+      {
+       "model": "G 7196 SCVi XXL SF"
+      },
+      {
+       "model": "G 7766 SCVi XXL"
+      },
+      {
+       "model": "G 7766 SCVi XXL SF"
+      },
+      {
+       "model": "G 7791 SCVi K2O"
+      },
+      {
+       "model": "G 7936 SCi"
+      },
+      {
+       "model": "G 7986 SCVi"
+      },
+      {
+       "model": "G 7193 SCVi"
+      }
+     ]
+    },
+    {
+     "label": "Professional for the Home",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PFD101U"
+      },
+      {
+       "model": "PFD 102i"
+      },
+      {
+       "model": "PFD 102i (120/208–240V)"
+      },
+      {
+       "model": "PFD 104 SCVi"
+      },
+      {
+       "model": "PFD 104 SCVi (120/208–240V)"
+      },
+      {
+       "model": "PFD 401 (208V)"
+      },
+      {
+       "model": "PFD 401 (240V)"
+      },
+      {
+       "model": "PFD 404 (208V)"
+      },
+      {
+       "model": "PFD 404 (240V)"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/miele-dishwasher-100.pdf"
+    }
+   ]
+  },
+  {
+   "id": "miele-dishwasher-install-200",
+   "brands": [
+    "Miele"
+   ],
+   "title": "$200 off Installation on Dishwashers",
+   "offerCode": null,
+   "summary": "Get a $200 rebate toward installation when you buy a qualifying Miele dishwasher.",
+   "benefit": "install-credit",
+   "redemption": "online",
+   "amountHeadline": "$200",
+   "tiers": [],
+   "categories": [
+    "Dishwashers"
+   ],
+   "purchaseStart": "2026-02-02",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": "2027-02-15",
+   "claimBy": "2027-04-16",
+   "serialBy": null,
+   "claimNote": null,
+   "claimSteps": [
+    "Buy a qualifying dishwasher and take delivery by February 15, 2027.",
+    "Submit your claim online at mieleusrebates.com by April 16, 2027, with your order invoice, proof of payment and proof of delivery and installation.",
+    "Allow 6 to 8 weeks. The rebate arrives by email as a virtual prepaid Mastercard; claim it within 3 months."
+   ],
+   "claimUrl": "https://www.mieleusrebates.com",
+   "claimUrlLabel": "mieleusrebates.com",
+   "infoUrl": null,
+   "payout": "Virtual Miele Prepaid Mastercard (by email)",
+   "conditions": [
+    "Cannot be combined with other discounts — ask our team for details.",
+    "One claim per serial number.",
+    "Residents of the 50 U.S. states and D.C. only."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Generation 5000",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "G 5482 SCVi"
+      },
+      {
+       "model": "G 5892 SCVi"
+      },
+      {
+       "model": "G 5006 SCU"
+      },
+      {
+       "model": "G 5008 SCU"
+      },
+      {
+       "model": "G 5051 SCVi"
+      },
+      {
+       "model": "G 5056 SCVi"
+      },
+      {
+       "model": "G 5056 SCVi SF"
+      },
+      {
+       "model": "G 5056 SCVi SFP"
+      },
+      {
+       "model": "G 5058 SCVi SFP"
+      },
+      {
+       "model": "G 5266 SCVi"
+      },
+      {
+       "model": "G 5266 SCVi SF"
+      },
+      {
+       "model": "G 5266 SCVi SFP"
+      }
+     ]
+    },
+    {
+     "label": "Generation 7000",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "G 7106 SCU"
+      },
+      {
+       "model": "G 7156 SCVi"
+      },
+      {
+       "model": "G 7156 SCVi SF"
+      },
+      {
+       "model": "G 7166 SCVi"
+      },
+      {
+       "model": "G 7166 SCVi SFP"
+      },
+      {
+       "model": "G 7176 SCVi SF"
+      },
+      {
+       "model": "G 7316 SCU"
+      },
+      {
+       "model": "G 7366 SCVi"
+      },
+      {
+       "model": "G 7366 SCVi SF"
+      },
+      {
+       "model": "G 7516 SCi"
+      },
+      {
+       "model": "G 7566 SCVi"
+      },
+      {
+       "model": "G 7591 SCVi"
+      },
+      {
+       "model": "G 7566 SCVi SF"
+      },
+      {
+       "model": "G 7916 SCi"
+      },
+      {
+       "model": "G 7966 SCVi"
+      },
+      {
+       "model": "G 7216 SC XXL"
+      },
+      {
+       "model": "G 7266 SCVi"
+      },
+      {
+       "model": "G 7266 SCVi SF"
+      },
+      {
+       "model": "G 7186 SCVi"
+      },
+      {
+       "model": "G 7186 SCVi SFP"
+      },
+      {
+       "model": "G 7196 SCVi XXL SF"
+      },
+      {
+       "model": "G 7766 SCVi XXL"
+      },
+      {
+       "model": "G 7766 SCVi XXL SF"
+      },
+      {
+       "model": "G 7791 SCVi K2O"
+      },
+      {
+       "model": "G 7936 SCi"
+      },
+      {
+       "model": "G 7986 SCVi"
+      },
+      {
+       "model": "G 7193 SCVi"
+      }
+     ]
+    },
+    {
+     "label": "Professional for the Home",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "PFD101U"
+      },
+      {
+       "model": "PFD 102i"
+      },
+      {
+       "model": "PFD 102i (120/208–240V)"
+      },
+      {
+       "model": "PFD 104 SCVi"
+      },
+      {
+       "model": "PFD 104 SCVi (120/208–240V)"
+      },
+      {
+       "model": "PFD 401 (208V)"
+      },
+      {
+       "model": "PFD 401 (240V)"
+      },
+      {
+       "model": "PFD 404 (208V)"
+      },
+      {
+       "model": "PFD 404 (240V)"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/miele-dishwasher-install-200.pdf"
+    }
+   ]
+  },
+  {
+   "id": "miele-fridge-install-1000",
+   "brands": [
+    "Miele"
+   ],
+   "title": "$1,000 Installation Rebate on Qualifying Miele Refrigerators",
+   "offerCode": null,
+   "summary": "Get a $1,000 installation rebate on qualifying MasterCool bottom-freezer and French-door refrigerators.",
+   "benefit": "install-credit",
+   "redemption": "online",
+   "amountHeadline": "$1,000",
+   "tiers": [],
+   "categories": [
+    "Refrigeration"
+   ],
+   "purchaseStart": "2026-06-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": "2027-04-30",
+   "claimBy": "2027-05-31",
+   "serialBy": null,
+   "claimNote": null,
+   "claimSteps": [
+    "Buy a qualifying refrigerator and take delivery by April 30, 2027.",
+    "Submit your claim online at mieleusrebates.com by May 31, 2027, with your order invoice, proof of payment and proof of delivery and installation.",
+    "Allow 6 to 8 weeks. The rebate arrives by email as a virtual prepaid Mastercard; claim it within 3 months."
+   ],
+   "claimUrl": "https://www.mieleusrebates.com",
+   "claimUrlLabel": "mieleusrebates.com",
+   "infoUrl": null,
+   "payout": "Virtual Miele Prepaid Mastercard (by email)",
+   "conditions": [
+    "Cannot be combined with other discounts — ask our team for details.",
+    "Limit one refrigerator rebate per household.",
+    "Residents of the 50 U.S. states and D.C. only."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "MasterCool bottom-mount and French-door refrigerators",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "KFMC 3632 L",
+       "note": "30\" bottom mount, left hinge"
+      },
+      {
+       "model": "KFMC 3836 L",
+       "note": "30\" bottom mount, left hinge"
+      },
+      {
+       "model": "KFMC 3632 R",
+       "note": "30\" bottom mount, right hinge"
+      },
+      {
+       "model": "KFMC 3836 R",
+       "note": "30\" bottom mount, right hinge"
+      },
+      {
+       "model": "KFMC 3642 L",
+       "note": "36\" bottom mount, left hinge"
+      },
+      {
+       "model": "KFMC 3846 L",
+       "note": "36\" bottom mount, left hinge"
+      },
+      {
+       "model": "KFMC 3642 R",
+       "note": "36\" bottom mount, right hinge"
+      },
+      {
+       "model": "KFMC 3846 R",
+       "note": "36\" bottom mount, right hinge"
+      },
+      {
+       "model": "KFMC 3642 FD",
+       "note": "36\" French door"
+      },
+      {
+       "model": "KFMC 3846 FD",
+       "note": "36\" French door"
+      },
+      {
+       "model": "KFMC 3858 FD",
+       "note": "42\" French door"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/miele-fridge-install-1000.pdf"
+    }
+   ]
+  },
+  {
+   "id": "miele-kitchen-package",
+   "brands": [
+    "Miele"
+   ],
+   "title": "2026 Kitchen Package Program",
+   "offerCode": null,
+   "summary": "Save 5% when you buy 3 Miele kitchen appliances, 7% on 4, or 10% on 5 or more.",
+   "benefit": "percent-off",
+   "redemption": "online",
+   "amountHeadline": "Up to 10% back",
+   "tiers": [
+    {
+     "label": "Buy 3",
+     "value": "5%"
+    },
+    {
+     "label": "Buy 4",
+     "value": "7%"
+    },
+    {
+     "label": "Buy 5 or more",
+     "value": "10%"
+    }
+   ],
+   "categories": [
+    "Ranges",
+    "Dishwashers",
+    "Wall Ovens",
+    "Refrigeration",
+    "Ventilation",
+    "Cooktops & Rangetops",
+    "Microwaves",
+    "Other"
+   ],
+   "purchaseStart": "2026-01-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": "2027-04-30",
+   "claimBy": "2027-05-31",
+   "serialBy": null,
+   "claimNote": null,
+   "claimSteps": [
+    "Take delivery by April 30, 2027.",
+    "Register your rebate at mieleusrebates.com by May 31, 2027, with your invoice, proof of payment and proof of delivery.",
+    "Allow 6 to 8 weeks for approval. The virtual prepaid Mastercard is valid for 90 days."
+   ],
+   "claimUrl": "https://www.mieleusrebates.com",
+   "claimUrlLabel": "mieleusrebates.com",
+   "infoUrl": "https://www.mieleusa.com/c/promotions-158.htm",
+   "payout": "Virtual Miele Prepaid Mastercard",
+   "conditions": [
+    "Miele's detailed terms also mention December 16, 2026. To be safe, buy by December 16, 2026, or ask our team.",
+    "Cannot be combined with other discounts — ask our team for details.",
+    "For individual consumers buying for their own use; not for projects or builder orders."
+   ],
+   "eligibleNote": "Ranges, dishwashers, refrigerators, convection ovens, speed ovens, DGC ovens, microwaves, cooktops, hoods, drawers and built-in coffee systems. Full list: mieleusa.com/c/promotions-158.htm",
+   "eligible": [],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/miele-kitchen-package.pdf"
+    }
+   ]
+  },
+  {
+   "id": "miele-washer-200",
+   "brands": [
+    "Miele"
+   ],
+   "title": "$200 off Select Washing Machines (TwinDos and Little Giants)",
+   "offerCode": null,
+   "summary": "Get a $200 rebate on select Miele TwinDos and Little Giants washing machines.",
+   "benefit": "cash-rebate",
+   "redemption": "online",
+   "amountHeadline": "$200",
+   "tiers": [],
+   "categories": [
+    "Laundry"
+   ],
+   "purchaseStart": "2026-09-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": "2027-02-15",
+   "claimBy": "2027-04-16",
+   "serialBy": null,
+   "claimNote": null,
+   "claimSteps": [
+    "Buy a qualifying washing machine and take delivery by February 15, 2027.",
+    "Submit your claim online at mieleusrebates.com by April 16, 2027, with your order invoice, proof of payment and proof of delivery.",
+    "Allow 6 to 8 weeks. The rebate arrives by email as a virtual prepaid Mastercard; claim it within 3 months."
+   ],
+   "claimUrl": "https://www.mieleusrebates.com",
+   "claimUrlLabel": "mieleusrebates.com",
+   "infoUrl": null,
+   "payout": "Virtual Miele Prepaid Mastercard (by email)",
+   "conditions": [
+    "Cannot be combined with other discounts — ask our team for details.",
+    "One claim per serial number.",
+    "Residents of the 50 U.S. states and D.C. only."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "TwinDos and Little Giants washing machines",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WWD660 WCS"
+      },
+      {
+       "model": "WXF660 WCS"
+      },
+      {
+       "model": "WXI860 WCS"
+      },
+      {
+       "model": "WXR860 WCS"
+      },
+      {
+       "model": "WXF 980 WCS"
+      },
+      {
+       "model": "WXR 960 WCS"
+      },
+      {
+       "model": "PWM 908 Lotus White"
+      },
+      {
+       "model": "PWM 908 Stainless Steel"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/miele-washer-200.pdf"
+    }
+   ]
+  },
+  {
+   "id": "robam-black-friday",
+   "brands": [
+    "Robam"
+   ],
+   "title": "Black Friday Limited-Time Deals",
+   "offerCode": null,
+   "summary": "Buy 2 or more Robam appliances and get an extra $50 to $300 off the flyer's sale prices at checkout. Buy an R-Max 3 and get a free Robam enamel pot (a $199 value, one per order) while supplies last.",
+   "benefit": "amount-off",
+   "redemption": "instant-in-store",
+   "amountHeadline": "Up to $300 extra off",
+   "tiers": [
+    {
+     "label": "Any 2",
+     "value": "Extra $50 off"
+    },
+    {
+     "label": "Any 3",
+     "value": "Extra $100 off"
+    },
+    {
+     "label": "Any 4 or more",
+     "value": "Extra $300 off"
+    },
+    {
+     "label": "R-Max 3",
+     "value": "Free enamel pot ($199 value), one per order, while supplies last"
+    }
+   ],
+   "categories": [
+    "Ventilation",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Ranges",
+    "Dishwashers",
+    "Other"
+   ],
+   "purchaseStart": "2026-10-17",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": null,
+   "serialBy": null,
+   "claimNote": "Nothing to claim. The discount is taken off at checkout.",
+   "claimSteps": [
+    "Nothing to claim. The discount is taken off at checkout."
+   ],
+   "claimUrl": null,
+   "claimUrlLabel": null,
+   "infoUrl": null,
+   "payout": null,
+   "conditions": [
+    "Every Robam product shown on the flyer counts toward 2, 3 or 4 units, including the countertop steam, bake and air-fry oven.",
+    "The extra savings come off on top of the sale prices shown on the flyer.",
+    "One free enamel pot per order, while supplies last."
+   ],
+   "eligibleNote": "R-Max 3 models: 53H1S, 53H1SW, 53H1SY (30\") and 56H2S, 56H2SW, 56H2SY (36\").",
+   "eligible": [
+    {
+     "label": "R-Max 3 (free enamel pot)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "53H1S"
+      },
+      {
+       "model": "53H1SW"
+      },
+      {
+       "model": "53H1SY"
+      },
+      {
+       "model": "56H2S"
+      },
+      {
+       "model": "56H2SW"
+      },
+      {
+       "model": "56H2SY"
+      }
+     ]
+    }
+   ],
+   "translation": {
+    "from": "Chinese",
+    "title": "English translation of the Robam flyer",
+    "lines": [
+     "ROBAM — No. 1 in global sales for 11 years in a row.",
+     "Black Friday Limited-Time Deals",
+     "Special prices across the full product line — upgrade your kitchen this Black Friday.",
+     "Buy more, save more (instant savings): any 2 units, an extra $50 off; any 3 units, an extra $100 off; any 4 or more units, an extra $300 off. [Note: every product on this flyer counts, including the countertop oven; the extra savings come off the flyer's sale prices.]",
+     "Gift with purchase: buy the flagship R-Max 3 and receive a free Robam enamel pot (valued at $199). While supplies last. [Note: one pot per order. R-Max 3 models: 53H1S, 53H1SW, 53H1SY, 56H2S, 56H2SW, 56H2SY.]",
+     "Products on the flyer, each with a sale price and a crossed-out price: 30\" range hoods; 36\" range hoods; 30\"/36\" glass cooktops; 30\"/36\" stainless steel cooktops; built-in combination ovens; countertop steam, bake and air-fry ovens; 30\" electric ceramic cooktop; range; dishwasher.",
+     "Promotion period: October 17, 2026 to December 31, 2026."
+    ]
+   },
+   "downloads": [
+    {
+     "label": "Promotion flyer",
+     "href": "forms/robam-black-friday.jpg"
+    }
+   ]
+  },
+  {
    "id": "speed-queen-dryer",
    "brands": [
     "Speed Queen"
@@ -1914,6 +8242,1747 @@
     {
      "label": "Full terms (PDF)",
      "href": "forms/speed-queen-dryer.pdf"
+    }
+   ]
+  },
+  {
+   "id": "thermador-fridge-delivery-install",
+   "brands": [
+    "Thermador"
+   ],
+   "title": "Up to $300 Toward Delivery or Installation",
+   "offerCode": "NMG1026THERMQ4DI",
+   "summary": "Buy a qualifying Thermador built-in refrigerator and get up to $300 back toward delivery or installation.",
+   "benefit": "install-credit",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $300",
+   "tiers": [],
+   "categories": [
+    "Refrigeration"
+   ],
+   "purchaseStart": "2026-10-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": "2027-01-30",
+   "serialBy": "2027-07-01",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 30, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "http://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard (physical or virtual)",
+   "conditions": [
+    "The rebate is limited to your delivery or installation charge, up to $300.",
+    "Prior sales, back orders and special orders do not qualify.",
+    "Limit one rebate per household."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Built-in refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "T42BT110NS"
+      },
+      {
+       "model": "T42BT120NS"
+      },
+      {
+       "model": "T42IT100NP"
+      },
+      {
+       "model": "T48BT110NS"
+      },
+      {
+       "model": "T48BT120NS"
+      },
+      {
+       "model": "T48IT100NP"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/thermador-fridge-delivery-install.pdf"
+    }
+   ]
+  },
+  {
+   "id": "thermador-gifts-with-purchase",
+   "brands": [
+    "Thermador"
+   ],
+   "title": "Gifts With Purchase",
+   "offerCode": null,
+   "summary": "For each eligible Thermador cooking or refrigeration purchase, get a free product or upgrade, up to three.",
+   "benefit": "free-product",
+   "redemption": "in-store-order",
+   "amountHeadline": "Up to 3 free gifts",
+   "tiers": [
+    {
+     "label": "Eligible refrigeration: any built-in or freestanding bottom-freezer refrigerator, or any two Freedom columns",
+     "value": "1 gift"
+    },
+    {
+     "label": "Eligible cooking: any 30\", 36\", 48\" or 60\" Professional range, or any cooktop or rangetop with any wall oven",
+     "value": "1 gift"
+    },
+    {
+     "label": "Add another refrigeration unit to an eligible refrigeration and cooking purchase",
+     "value": "3rd gift"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Ventilation",
+    "Microwaves",
+    "Dishwashers",
+    "Wine & Beverage",
+    "Other"
+   ],
+   "purchaseStart": "2026-01-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": null,
+   "serialBy": null,
+   "claimNote": "Nothing to mail in. Choose your gifts when you order.",
+   "claimSteps": [
+    "Choose your gifts when you order. Everything must be on one order, placed at the same time."
+   ],
+   "claimUrl": null,
+   "claimUrlLabel": null,
+   "infoUrl": "https://www.thermador.com/giftwithpurchase",
+   "payout": null,
+   "conditions": [
+    "Gift choices: free eligible ventilation (blower sold separately unless included); free built-in microwave (or upgrade to a MicroDrawer for $600 or a Speed Oven for $800); free Emerald dishwasher (or upgrade to Sapphire for $500 or Star Sapphire for $1,000); free warming drawer; 50% off any undercounter refrigeration; 50% off any built-in coffee machine.",
+    "Use your second gift to upgrade the Emerald dishwasher to a Sapphire, or all three gifts for a Star Sapphire.",
+    "Accessories sold separately.",
+    "Cannot be combined with other discounts — ask our team for details."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Qualifying refrigeration and cooking",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "T30IB905SP"
+      },
+      {
+       "model": "T30BB915SS"
+      },
+      {
+       "model": "T30BB925SS"
+      },
+      {
+       "model": "T30IB100SP"
+      },
+      {
+       "model": "T36BB110SS"
+      },
+      {
+       "model": "T36BB120SS"
+      },
+      {
+       "model": "T36BT110NS"
+      },
+      {
+       "model": "T36BT120NS"
+      },
+      {
+       "model": "T36IT100NP"
+      },
+      {
+       "model": "T36IB100SP"
+      },
+      {
+       "model": "T42IT100NP"
+      },
+      {
+       "model": "T42BT110NS"
+      },
+      {
+       "model": "T42BT120NS"
+      },
+      {
+       "model": "T48IT100NP"
+      },
+      {
+       "model": "T48BT110NS"
+      },
+      {
+       "model": "T48BT120NS"
+      },
+      {
+       "model": "T23IR905SP"
+      },
+      {
+       "model": "T24IR905SP"
+      },
+      {
+       "model": "T30IR905SP"
+      },
+      {
+       "model": "T36IR905SP"
+      },
+      {
+       "model": "T18IW905SP"
+      },
+      {
+       "model": "T24IW905SP"
+      },
+      {
+       "model": "T36FT810NS"
+      },
+      {
+       "model": "T36FL810NS"
+      },
+      {
+       "model": "T36FT820NS"
+      },
+      {
+       "model": "T36FL821NS"
+      },
+      {
+       "model": "T18ID905LP"
+      },
+      {
+       "model": "T18ID905RP"
+      },
+      {
+       "model": "T18IF905SP"
+      },
+      {
+       "model": "T24IF905SP"
+      },
+      {
+       "model": "T24ID905LP"
+      },
+      {
+       "model": "T24ID905RP"
+      },
+      {
+       "model": "T30IF905SP"
+      },
+      {
+       "model": "T36IF905SP"
+      },
+      {
+       "model": "ME301WS"
+      },
+      {
+       "model": "MED301WS"
+      },
+      {
+       "model": "MED301LWS"
+      },
+      {
+       "model": "MED301RWS"
+      },
+      {
+       "model": "PO301W"
+      },
+      {
+       "model": "POD301W"
+      },
+      {
+       "model": "POD301LW"
+      },
+      {
+       "model": "POD301RW"
+      },
+      {
+       "model": "ME302WS"
+      },
+      {
+       "model": "MED302WS"
+      },
+      {
+       "model": "MED302LWS"
+      },
+      {
+       "model": "MED302RWS"
+      },
+      {
+       "model": "PO302W"
+      },
+      {
+       "model": "POD302W"
+      },
+      {
+       "model": "POD302LW"
+      },
+      {
+       "model": "POD302RW"
+      },
+      {
+       "model": "PODS301B"
+      },
+      {
+       "model": "PODS302B"
+      },
+      {
+       "model": "MEM301WS"
+      },
+      {
+       "model": "POM301W"
+      },
+      {
+       "model": "MEDMC301WS"
+      },
+      {
+       "model": "PODMC301W"
+      },
+      {
+       "model": "MEDMCW31WS"
+      },
+      {
+       "model": "PODMCW31W"
+      },
+      {
+       "model": "MEDS301BS"
+      },
+      {
+       "model": "MEDS302BS"
+      },
+      {
+       "model": "ME301YP"
+      },
+      {
+       "model": "ME302YP"
+      },
+      {
+       "model": "CIT304YB"
+      },
+      {
+       "model": "CIT304YM"
+      },
+      {
+       "model": "CIT365YB"
+      },
+      {
+       "model": "CIT367YG"
+      },
+      {
+       "model": "CIT367YGS"
+      },
+      {
+       "model": "CIT367YM"
+      },
+      {
+       "model": "CIT367YMS"
+      },
+      {
+       "model": "CIT30YWBB"
+      },
+      {
+       "model": "CIT36YWB"
+      },
+      {
+       "model": "CIT36YWBB"
+      },
+      {
+       "model": "CEM305TB"
+      },
+      {
+       "model": "CEM366TB"
+      },
+      {
+       "model": "CET305YB"
+      },
+      {
+       "model": "CET366YB"
+      },
+      {
+       "model": "SGS305TS"
+      },
+      {
+       "model": "SGS365TS"
+      },
+      {
+       "model": "SGSX305TS"
+      },
+      {
+       "model": "SGSX365TS"
+      },
+      {
+       "model": "SGSP305TS"
+      },
+      {
+       "model": "SGSP365TS"
+      },
+      {
+       "model": "SGSXP305TS"
+      },
+      {
+       "model": "SGSXP365TS"
+      },
+      {
+       "model": "PCG305W"
+      },
+      {
+       "model": "PCG366W"
+      },
+      {
+       "model": "PCG364WD"
+      },
+      {
+       "model": "PCG486WD"
+      },
+      {
+       "model": "PRD304WHU"
+      },
+      {
+       "model": "PRG304WH"
+      },
+      {
+       "model": "PRD305WHU"
+      },
+      {
+       "model": "PRG305WH"
+      },
+      {
+       "model": "PRD364WDHU"
+      },
+      {
+       "model": "PRD366WHU"
+      },
+      {
+       "model": "PRD486WDHU"
+      },
+      {
+       "model": "PRG364WDH"
+      },
+      {
+       "model": "PRG366WH"
+      },
+      {
+       "model": "PRG486WDH"
+      },
+      {
+       "model": "PRD48WDSGU"
+      },
+      {
+       "model": "PRD48WISGU"
+      },
+      {
+       "model": "PRD606WESG"
+      },
+      {
+       "model": "MRI304DL+"
+      },
+      {
+       "model": "PRI30LBHU"
+      },
+      {
+       "model": "PRI36LBHU"
+      },
+      {
+       "model": "PRD364WDGU"
+      },
+      {
+       "model": "PRD364WIGU"
+      },
+      {
+       "model": "PRD366WGU"
+      },
+      {
+       "model": "PRD486WDGU"
+      },
+      {
+       "model": "PRD486WIGU"
+      },
+      {
+       "model": "PRD606WEG"
+      },
+      {
+       "model": "PRG364WDG"
+      },
+      {
+       "model": "PRG366WG"
+      },
+      {
+       "model": "PRG486WDG"
+      }
+     ]
+    },
+    {
+     "label": "Gift choices",
+     "role": "free",
+     "items": [
+      {
+       "model": "HMWB30WS"
+      },
+      {
+       "model": "HMWB36WS"
+      },
+      {
+       "model": "HMWB361WS"
+      },
+      {
+       "model": "HMWB481WS"
+      },
+      {
+       "model": "PH36HWS"
+      },
+      {
+       "model": "PH36GWS"
+      },
+      {
+       "model": "PH48GWS"
+      },
+      {
+       "model": "PH48HWS"
+      },
+      {
+       "model": "PH60GWS"
+      },
+      {
+       "model": "HMDW30WS"
+      },
+      {
+       "model": "HMDW36WS"
+      },
+      {
+       "model": "HMCB30WS"
+      },
+      {
+       "model": "HDDB30WS"
+      },
+      {
+       "model": "HMCB36WS"
+      },
+      {
+       "model": "HDDB36WS"
+      },
+      {
+       "model": "HPCN36WS"
+      },
+      {
+       "model": "HPCN48WS"
+      },
+      {
+       "model": "VCIN36GWS"
+      },
+      {
+       "model": "VCIN42GWS"
+      },
+      {
+       "model": "VCIN48GWS"
+      },
+      {
+       "model": "VCIN54GWS"
+      },
+      {
+       "model": "VCIN60GWS"
+      },
+      {
+       "model": "VCI6B36ZS"
+      },
+      {
+       "model": "VCI6B30ZS"
+      },
+      {
+       "model": "VCI3B36ZS"
+      },
+      {
+       "model": "VCI3B30ZS"
+      },
+      {
+       "model": "HMIB36WS"
+      },
+      {
+       "model": "HMIB42WS"
+      },
+      {
+       "model": "UCVM30XS"
+      },
+      {
+       "model": "UCVM36XS"
+      },
+      {
+       "model": "UCVP36XS"
+      },
+      {
+       "model": "MBT30CS"
+      },
+      {
+       "model": "MB30WP"
+      },
+      {
+       "model": "MB30WS"
+      },
+      {
+       "model": "PRI30LBHU"
+      },
+      {
+       "model": "MU30WSU"
+      },
+      {
+       "model": "MD24BS"
+      },
+      {
+       "model": "MD30BS"
+      },
+      {
+       "model": "MC30WP"
+      },
+      {
+       "model": "MC30WS"
+      },
+      {
+       "model": "T24UW905LP"
+      },
+      {
+       "model": "T24UW905RP"
+      },
+      {
+       "model": "T24UW915LS"
+      },
+      {
+       "model": "T24UW915RS"
+      },
+      {
+       "model": "T24UW925LS"
+      },
+      {
+       "model": "T24UW925RS"
+      },
+      {
+       "model": "T24UR905LP"
+      },
+      {
+       "model": "T24UR905RP"
+      },
+      {
+       "model": "T24UR915LS"
+      },
+      {
+       "model": "T24UR915RS"
+      },
+      {
+       "model": "T24UR925LS"
+      },
+      {
+       "model": "T24UR925RS"
+      },
+      {
+       "model": "T24UR905DP"
+      },
+      {
+       "model": "T24UR915DS"
+      },
+      {
+       "model": "T24UR925DS"
+      },
+      {
+       "model": "T24UC905DP"
+      },
+      {
+       "model": "T24UC915DS"
+      },
+      {
+       "model": "T24UC925DS"
+      },
+      {
+       "model": "DWHD640EPR"
+      },
+      {
+       "model": "DWHD640EFP"
+      },
+      {
+       "model": "DWHD640EFM"
+      },
+      {
+       "model": "DWHD660EPR"
+      },
+      {
+       "model": "DWHD660EFP"
+      },
+      {
+       "model": "DWHD660EFM"
+      },
+      {
+       "model": "DWHD661EPR"
+      },
+      {
+       "model": "DWHD661EFP"
+      },
+      {
+       "model": "DWHD661EFM"
+      },
+      {
+       "model": "TCM24PS"
+      },
+      {
+       "model": "TCM24TS"
+      },
+      {
+       "model": "WD30W"
+      },
+      {
+       "model": "WD30WC"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/thermador-gifts-with-purchase.pdf"
+    }
+   ]
+  },
+  {
+   "id": "viking-dream-kitchen",
+   "brands": [
+    "Viking"
+   ],
+   "title": "Dream Kitchen Savings Event",
+   "offerCode": null,
+   "summary": "Buy a qualifying Viking option and get a free product or a $1,000 allowance. Buy a second option and get a second free product. Free items worth up to $5,318 at MSRP.",
+   "benefit": "free-product",
+   "redemption": "in-store-order",
+   "amountHeadline": "Up to $5,318",
+   "tiers": [
+    {
+     "label": "Option A: 5/7 Series or Tuscany range",
+     "value": "Free product or $1,000 allowance"
+    },
+    {
+     "label": "Option B: 5/6 Series cooktop or 5/7 Series rangetop, plus a 5/6/7 Series built-in oven",
+     "value": "Free product or $1,000 allowance"
+    },
+    {
+     "label": "Option C: bottom-freezer or side-by-side refrigeration",
+     "value": "Free product or $1,000 allowance"
+    },
+    {
+     "label": "Option D: any two columns",
+     "value": "Free product or $1,000 allowance"
+    },
+    {
+     "label": "Buy a second qualifying option",
+     "value": "A second free product"
+    }
+   ],
+   "categories": [
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Refrigeration",
+    "Dishwashers",
+    "Ventilation",
+    "Microwaves"
+   ],
+   "purchaseStart": "2026-01-01",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": "2027-02-28",
+   "claimBy": null,
+   "serialBy": null,
+   "claimNote": "Choose your free product or allowance when you order.",
+   "claimSteps": [
+    "Choose your free product or $1,000 allowance when you order. Everything must be on the same invoice.",
+    "Choosing the free cookware set? Submit the redemption form at vikingrange.com/promotions with a copy of your receipt."
+   ],
+   "claimUrl": "https://www.vikingrange.com/promotions",
+   "claimUrlLabel": "vikingrange.com/promotions",
+   "infoUrl": null,
+   "payout": null,
+   "conditions": [
+    "The $1,000 allowance goes toward any Viking serialized product with a retail value of $1,500 or more.",
+    "Viking 3 Series products are not qualifying models.",
+    "Limit two free products or allowances per household (cookware and the $1,000 allowance each count as one).",
+    "Products must be delivered by February 28, 2027 (special consideration for special orders).",
+    "Cannot be combined with other discounts — ask our team for details."
+   ],
+   "eligibleNote": "Free product choices include dishwashers FDWU524 and VDWU524SS, a 24\" undercounter Drawer Micro, 30\" or 36\" wall hoods, a microwave with trim kit, and a 17-piece cookware set. Paid upgrades on the flyer: Viking Pro or Tuscany door panel color upgrade ($699 per item) and water-softener dishwasher model ($140).",
+   "eligible": [
+    {
+     "label": "Qualifying options A to D",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "VGIC530"
+      },
+      {
+       "model": "VGIC536"
+      },
+      {
+       "model": "VGIC548"
+      },
+      {
+       "model": "VGR530"
+      },
+      {
+       "model": "VGR536"
+      },
+      {
+       "model": "VGR548"
+      },
+      {
+       "model": "VGR560"
+      },
+      {
+       "model": "VDR530"
+      },
+      {
+       "model": "VDR536"
+      },
+      {
+       "model": "VDR548"
+      },
+      {
+       "model": "VDR560"
+      },
+      {
+       "model": "VER530"
+      },
+      {
+       "model": "VIR530"
+      },
+      {
+       "model": "VIR536"
+      },
+      {
+       "model": "VIR548"
+      },
+      {
+       "model": "VGR736"
+      },
+      {
+       "model": "VGR748"
+      },
+      {
+       "model": "VDR736"
+      },
+      {
+       "model": "VDR748"
+      },
+      {
+       "model": "TVDR361"
+      },
+      {
+       "model": "TVDR481"
+      },
+      {
+       "model": "TVDR661"
+      },
+      {
+       "model": "VGSU5301"
+      },
+      {
+       "model": "VGSU5361"
+      },
+      {
+       "model": "VECU5301"
+      },
+      {
+       "model": "VECU5361"
+      },
+      {
+       "model": "VICU5301"
+      },
+      {
+       "model": "VICU5361"
+      },
+      {
+       "model": "MVIC6301"
+      },
+      {
+       "model": "MVIC6361"
+      },
+      {
+       "model": "MVIDC636"
+      },
+      {
+       "model": "MVIDC648"
+      },
+      {
+       "model": "VRT530"
+      },
+      {
+       "model": "VRT536"
+      },
+      {
+       "model": "VRT548"
+      },
+      {
+       "model": "VRT736"
+      },
+      {
+       "model": "VRT748"
+      },
+      {
+       "model": "VERT530"
+      },
+      {
+       "model": "VERT536"
+      },
+      {
+       "model": "VIRT530"
+      },
+      {
+       "model": "VIRT536"
+      },
+      {
+       "model": "VSOE130"
+      },
+      {
+       "model": "VDOE130"
+      },
+      {
+       "model": "VSOE527"
+      },
+      {
+       "model": "VDOE527"
+      },
+      {
+       "model": "VSOE530"
+      },
+      {
+       "model": "VDOE530"
+      },
+      {
+       "model": "VSOF7301"
+      },
+      {
+       "model": "VDOF7301"
+      },
+      {
+       "model": "MVSOE6301"
+      },
+      {
+       "model": "MVDOE6301"
+      },
+      {
+       "model": "FDBMIC7360"
+      },
+      {
+       "model": "VCSB5424"
+      },
+      {
+       "model": "FDSB5424"
+      },
+      {
+       "model": "VCSB5484"
+      },
+      {
+       "model": "FDSB5484"
+      },
+      {
+       "model": "FDFZIC7180"
+      },
+      {
+       "model": "FDFZIC7240"
+      },
+      {
+       "model": "FDFZIC7300"
+      },
+      {
+       "model": "FDFZIC7360"
+      },
+      {
+       "model": "FDREIC7240"
+      },
+      {
+       "model": "FDREIC7300"
+      },
+      {
+       "model": "FDREIC7360"
+      },
+      {
+       "model": "FDWCIC7240"
+      },
+      {
+       "model": "FDWCIC7300"
+      },
+      {
+       "model": "VCRB5304"
+      },
+      {
+       "model": "FDRB5304"
+      },
+      {
+       "model": "VCRB5364"
+      },
+      {
+       "model": "FDRB5364"
+      },
+      {
+       "model": "VCFB5304"
+      },
+      {
+       "model": "FDFB5304"
+      },
+      {
+       "model": "VCFB5364"
+      },
+      {
+       "model": "FDFB5364"
+      },
+      {
+       "model": "FRI7360"
+      },
+      {
+       "model": "FFI7360"
+      },
+      {
+       "model": "FRI7300"
+      },
+      {
+       "model": "FFI7300"
+      },
+      {
+       "model": "FRI7240"
+      },
+      {
+       "model": "FFI7240"
+      },
+      {
+       "model": "FFI7180"
+      },
+      {
+       "model": "VCBB536E4"
+      },
+      {
+       "model": "FDBB536E4"
+      },
+      {
+       "model": "FBI7360W"
+      }
+     ]
+    },
+    {
+     "label": "Free product choices",
+     "role": "free",
+     "items": [
+      {
+       "model": "VMOS501SS/VMTK272SS"
+      },
+      {
+       "model": "VMOS501SS/VMTK302SS"
+      },
+      {
+       "model": "PDDP524"
+      },
+      {
+       "model": "TVDDP524"
+      },
+      {
+       "model": "FDWU524"
+      },
+      {
+       "model": "VDWU524SS"
+      },
+      {
+       "model": "VK40011-9997"
+      },
+      {
+       "model": "VMOD5240SS"
+      },
+      {
+       "model": "VWH530121SS"
+      },
+      {
+       "model": "VWH536121SS"
+      },
+      {
+       "model": "VWH3010SS"
+      },
+      {
+       "model": "VWH3610SS"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/viking-dream-kitchen.pdf"
+    }
+   ]
+  },
+  {
+   "id": "zephyr-bf-delivery-install",
+   "brands": [
+    "Zephyr"
+   ],
+   "title": "Black Friday Delivery & Install Rebate",
+   "offerCode": "NMG1126ZEPDIBF",
+   "summary": "Get $100 toward delivery and installation when you buy a qualifying Zephyr appliance priced $999 or more.",
+   "benefit": "install-credit",
+   "redemption": "online-or-mail",
+   "amountHeadline": "$100",
+   "tiers": [],
+   "categories": [
+    "Ventilation",
+    "Wine & Beverage"
+   ],
+   "purchaseStart": "2026-11-04",
+   "purchaseEnd": "2026-12-28",
+   "deliverBy": null,
+   "claimBy": "2027-01-27",
+   "serialBy": "2027-04-27",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 27, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "http://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard",
+   "conditions": [
+    "The appliance must be priced $999 or more, before taxes, delivery and installation.",
+    "Prior sales, back orders and special orders do not qualify.",
+    "Limit one rebate per household."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Eligible Zephyr models",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "AK2136CS"
+      },
+      {
+       "model": "AK9352CS"
+      },
+      {
+       "model": "DHZ-M90AMBX"
+      },
+      {
+       "model": "PRW15C01CG"
+      },
+      {
+       "model": "ZOM-E36CBS"
+      },
+      {
+       "model": "AK2142CS"
+      },
+      {
+       "model": "AK9358CS"
+      },
+      {
+       "model": "DHZ-M90AMWX"
+      },
+      {
+       "model": "PRW24C01CG"
+      },
+      {
+       "model": "ZPO-E30AS"
+      },
+      {
+       "model": "AK2148CS"
+      },
+      {
+       "model": "AK9428BS"
+      },
+      {
+       "model": "DLA-E42ASSX"
+      },
+      {
+       "model": "PRW24C02CBSG"
+      },
+      {
+       "model": "ZPO-E36AS"
+      },
+      {
+       "model": "AK7000DS"
+      },
+      {
+       "model": "AK9434BS"
+      },
+      {
+       "model": "DLA-M90ASSX"
+      },
+      {
+       "model": "PRW24C02CG"
+      },
+      {
+       "model": "ZRE-E42BBSGG"
+      },
+      {
+       "model": "AK7036DS"
+      },
+      {
+       "model": "AK9440BS"
+      },
+      {
+       "model": "DLG-E36AWX"
+      },
+      {
+       "model": "PRW24C02CPG"
+      },
+      {
+       "model": "ZRE-M90BBSGG"
+      },
+      {
+       "model": "AK7042DS"
+      },
+      {
+       "model": "AK9446BS"
+      },
+      {
+       "model": "DLI-E30ASX"
+      },
+      {
+       "model": "PRW24C02DPG"
+      },
+      {
+       "model": "ZRM-E36FS"
+      },
+      {
+       "model": "AK7048DS"
+      },
+      {
+       "model": "AK9534AS"
+      },
+      {
+       "model": "DLI-E36ASX"
+      },
+      {
+       "model": "PRW24C32CG"
+      },
+      {
+       "model": "ZRM-E42FS"
+      },
+      {
+       "model": "AK7236BS"
+      },
+      {
+       "model": "AK9540AS"
+      },
+      {
+       "model": "DME-E48AMBX"
+      },
+      {
+       "model": "PRW24C32CPG"
+      },
+      {
+       "model": "ZRO-M90FS"
+      },
+      {
+       "model": "AK7300AS"
+      },
+      {
+       "model": "AK9546AS"
+      },
+      {
+       "model": "DME-E48ASGX"
+      },
+      {
+       "model": "PRW24F01CG"
+      },
+      {
+       "model": "ZRP-E36BS"
+      },
+      {
+       "model": "AK7336AS"
+      },
+      {
+       "model": "AK9834BS"
+      },
+      {
+       "model": "DME-E48ASSX"
+      },
+      {
+       "model": "PRW24F02CG"
+      },
+      {
+       "model": "ZRP-E36CS"
+      },
+      {
+       "model": "AK7400AS"
+      },
+      {
+       "model": "AK9840BS"
+      },
+      {
+       "model": "DME-M90AMBX"
+      },
+      {
+       "model": "PRW24F02CPG"
+      },
+      {
+       "model": "ZRP-E48CS"
+      },
+      {
+       "model": "AK7436AS"
+      },
+      {
+       "model": "AK9846BS"
+      },
+      {
+       "model": "DME-M90ASGX"
+      },
+      {
+       "model": "PRWB24C32CG"
+      },
+      {
+       "model": "ZRV-E30CBSGG"
+      },
+      {
+       "model": "AK7448AS"
+      },
+      {
+       "model": "AK9858BS"
+      },
+      {
+       "model": "DME-M90ASSX"
+      },
+      {
+       "model": "PRWB24C32CPG"
+      },
+      {
+       "model": "ZRV-E30CGC"
+      },
+      {
+       "model": "AK7500DS"
+      },
+      {
+       "model": "ALU-E43CSX"
+      },
+      {
+       "model": "DVL-E36ASSX"
+      },
+      {
+       "model": "PRWB24F02BG"
+      },
+      {
+       "model": "ZRV-M90CBSGG"
+      },
+      {
+       "model": "AK7536DS"
+      },
+      {
+       "model": "ALU-E43CWX"
+      },
+      {
+       "model": "DVL-E42ASSX"
+      },
+      {
+       "model": "ZAM-E30AS"
+      },
+      {
+       "model": "ZRV-M90CGC"
+      },
+      {
+       "model": "AK7542DS"
+      },
+      {
+       "model": "ALU-E63CSX"
+      },
+      {
+       "model": "DVS-E30ASSX"
+      },
+      {
+       "model": "ZAM-E36AS"
+      },
+      {
+       "model": "ZSA-E30FS"
+      },
+      {
+       "model": "AK7548DS"
+      },
+      {
+       "model": "ALU-E63CWX"
+      },
+      {
+       "model": "DVS-E36ASSX"
+      },
+      {
+       "model": "ZAN-E24DS"
+      },
+      {
+       "model": "ZSA-E30FW"
+      },
+      {
+       "model": "AK7554DS"
+      },
+      {
+       "model": "BBV24C01AG"
+      },
+      {
+       "model": "MWD2401AS"
+      },
+      {
+       "model": "ZAN-E30DBS"
+      },
+      {
+       "model": "ZSA-M90FB"
+      },
+      {
+       "model": "AK7636CS"
+      },
+      {
+       "model": "BBV24C01AG-ADA"
+      },
+      {
+       "model": "MWD3001AS"
+      },
+      {
+       "model": "ZAN-E30DS"
+      },
+      {
+       "model": "ZSA-M90FS"
+      },
+      {
+       "model": "AK7642BS"
+      },
+      {
+       "model": "BBV24C01AS-ADA"
+      },
+      {
+       "model": "PRB15C01CG"
+      },
+      {
+       "model": "ZAN-M90DBS"
+      },
+      {
+       "model": "ZSA-M90FW"
+      },
+      {
+       "model": "AK7642CS"
+      },
+      {
+       "model": "BML-E30CG"
+      },
+      {
+       "model": "PRB24C01AG-OD"
+      },
+      {
+       "model": "ZAN-M90DS"
+      },
+      {
+       "model": "ZSI-E30BS-ES"
+      },
+      {
+       "model": "AK7648CS"
+      },
+      {
+       "model": "BML-E36CG"
+      },
+      {
+       "model": "PRB24C01AS-OD"
+      },
+      {
+       "model": "ZAZ-E42DS"
+      },
+      {
+       "model": "ZSI-E30DS"
+      },
+      {
+       "model": "AK7654BS"
+      },
+      {
+       "model": "BRF24C01AS-ADA"
+      },
+      {
+       "model": "PRB24C01CBSG"
+      },
+      {
+       "model": "ZAZ-M90DS"
+      },
+      {
+       "model": "ZSI-E36BS-ES"
+      },
+      {
+       "model": "AK7654CS"
+      },
+      {
+       "model": "BWB24C32AG"
+      },
+      {
+       "model": "PRB24C01CG"
+      },
+      {
+       "model": "ZCO-E30AS"
+      },
+      {
+       "model": "ZSI-E36DS"
+      },
+      {
+       "model": "AK7660CS"
+      },
+      {
+       "model": "BWN24C02AG"
+      },
+      {
+       "model": "PRB24C01CPG"
+      },
+      {
+       "model": "ZCO-E36AS"
+      },
+      {
+       "model": "ZSL-E36DS"
+      },
+      {
+       "model": "AK7736CS"
+      },
+      {
+       "model": "BWN24C02AG-ADA"
+      },
+      {
+       "model": "PRB24C01DPG"
+      },
+      {
+       "model": "ZLC-E42CS"
+      },
+      {
+       "model": "ZSL-E42DS"
+      },
+      {
+       "model": "AK7742CS"
+      },
+      {
+       "model": "CHAL36ASX"
+      },
+      {
+       "model": "PRB24F01BG"
+      },
+      {
+       "model": "ZLC-M90CS"
+      },
+      {
+       "model": "ZSL-E48DS"
+      },
+      {
+       "model": "AK7748CS"
+      },
+      {
+       "model": "CHAL48ASX"
+      },
+      {
+       "model": "PRB24F01BPG"
+      },
+      {
+       "model": "ZLU-E30CS"
+      },
+      {
+       "model": "ZSP-E36DS"
+      },
+      {
+       "model": "AK7754CS"
+      },
+      {
+       "model": "CHFT36ASX"
+      },
+      {
+       "model": "PRCG15P0AP"
+      },
+      {
+       "model": "ZLU-M90CS"
+      },
+      {
+       "model": "ZSP-E42DS"
+      },
+      {
+       "model": "AK7836CS"
+      },
+      {
+       "model": "CHFT48ASX"
+      },
+      {
+       "model": "PRCG15P1AS-OD"
+      },
+      {
+       "model": "ZMD-E42BS"
+      },
+      {
+       "model": "ZSP-E48DS"
+      },
+      {
+       "model": "AK7842CS"
+      },
+      {
+       "model": "COK-E36CBGX"
+      },
+      {
+       "model": "PRCG15P2AS-OD"
+      },
+      {
+       "model": "ZMD-M90BS"
+      },
+      {
+       "model": "ZTV-E30AS"
+      },
+      {
+       "model": "AK7848CS"
+      },
+      {
+       "model": "COK-E36CSX"
+      },
+      {
+       "model": "PRKB24C01AG"
+      },
+      {
+       "model": "ZMI-M90CG"
+      },
+      {
+       "model": "ZTV-E36AS"
+      },
+      {
+       "model": "AK7854CS"
+      },
+      {
+       "model": "COK-E42CBGX"
+      },
+      {
+       "model": "PRKB24C01AS-OD"
+      },
+      {
+       "model": "ZMI-M90CS"
+      },
+      {
+       "model": "ZVE-E30DS"
+      },
+      {
+       "model": "AK8234AS"
+      },
+      {
+       "model": "COK-E48CBGX"
+      },
+      {
+       "model": "PRPB24C01CG"
+      },
+      {
+       "model": "ZML-E42CG"
+      },
+      {
+       "model": "ZVE-E36DS"
+      },
+      {
+       "model": "AK8340ASX"
+      },
+      {
+       "model": "COK-E48CSX"
+      },
+      {
+       "model": "PRPW24C02CG"
+      },
+      {
+       "model": "ZML-E42CS"
+      },
+      {
+       "model": "ZVE-E42DS"
+      },
+      {
+       "model": "AK9228CS"
+      },
+      {
+       "model": "CTP-E36CSX"
+      },
+      {
+       "model": "PRR24C01AS-OD"
+      },
+      {
+       "model": "ZML-M90CG"
+      },
+      {
+       "model": "ZVN-E42BG"
+      },
+      {
+       "model": "AK9234CS"
+      },
+      {
+       "model": "CTP-E48CSX"
+      },
+      {
+       "model": "PRRD24C1AS"
+      },
+      {
+       "model": "ZML-M90CS"
+      },
+      {
+       "model": "ZVN-M90BG"
+      },
+      {
+       "model": "AK9240CS"
+      },
+      {
+       "model": "CTP-E54CSX"
+      },
+      {
+       "model": "PRRD24C2AP"
+      },
+      {
+       "model": "ZMO-E30BS"
+      },
+      {
+       "model": "ZVO-E30BG"
+      },
+      {
+       "model": "AK9246CS"
+      },
+      {
+       "model": "DAP-M90AMBX"
+      },
+      {
+       "model": "PRRD24C2AS"
+      },
+      {
+       "model": "ZMO-M90BS"
+      },
+      {
+       "model": "ZVO-M90BG"
+      },
+      {
+       "model": "AK9334CS"
+      },
+      {
+       "model": "DAP-M90AMWX"
+      },
+      {
+       "model": "PRRD24C2AS-OD"
+      },
+      {
+       "model": "ZNA-E42DS"
+      },
+      {
+       "model": "AK9340CS"
+      },
+      {
+       "model": "DD1-E30AS"
+      },
+      {
+       "model": "PRRFD24C2AP"
+      },
+      {
+       "model": "ZNA-M90DS"
+      },
+      {
+       "model": "AK9346CS"
+      },
+      {
+       "model": "DD1-E36AS"
+      },
+      {
+       "model": "PRRFD24C2AS"
+      },
+      {
+       "model": "ZOM-E36BBS"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/zephyr-bf-delivery-install.pdf"
     }
    ]
   }
