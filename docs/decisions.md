@@ -116,17 +116,25 @@ General decisions only. Brand-specific notes live in the private workspace.
     ("You claim it after purchase", "Instant"), so a blue amount would read as one of them. Dark mode uses
     a lighter red `#f4847e` (6.8:1 on the dark block background); the header band turns black with a 1px
     edge against the dark page.
-- **D-27 Store contact info.** No logo. Phone and email matter equally.
-  - Header band: store name, phone, email, address. Desktop: phone and email side by side, same size and
-    weight; address on the next line, one size smaller. Phone (390px): phone and email on their own lines,
-    each a 48px tap target, 8px apart, same size (20px), never wrapped; address below.
-  - Footer, above the disclaimer: store name, phone, address, then the website and the email.
-  - Phone is a `tel:` link, email a `mailto:` link, website a plain link, address plain text.
+- **D-27 Store contact info (updated 2026-11-10 for two show rooms, see D-31).** No logo. Phone and email
+  matter equally.
+  - Company name "AA Kitchen Appliance, Inc." and two show rooms, SF Show Room and San Mateo Show Room, each
+    with its street, city, phone numbers ("T: …") and, for SF, the email; written exactly as the maintainer
+    gave them.
+  - Header, desktop: company name on the left; the two show rooms side by side on the right, each column under
+    its own small heading. Header, phone (390px): only the company name and two buttons, "Call SF Show Room"
+    and "Call San Mateo Show Room", each dialing that show room's first number, at least 48px high.
+  - Footer: one card with both show rooms in full (side by side on desktop, stacked on phones), then the
+    company website; on phones every phone number and the email are 48px tap targets.
+  - Every phone number is a `tel:` link, the email a `mailto:` link, the website a plain link, addresses
+    plain text.
+  - (Before 2026-11-10: one store; phone and email side by side in a dark header band, the address below.)
   - The values live in `web/contact.json` (public information; one place to change them); the build writes
     them into the page at `<!--CONTACT:head-->` / `<!--CONTACT:foot-->`.
-  - The public check allows the store's street name only inside these contact blocks (listed as
-    `contactAllowed` in the workspace's private-terms file); in promotion text and anywhere else on the page
-    it is still blocked, and all other private terms stay blocked everywhere.
+  - The public check allows the show rooms' street names (both of them, since 2026-11-10) only inside these
+    contact blocks (listed as `contactAllowed` in the workspace's private-terms file); in promotion text and
+    anywhere else on the page they are still blocked, and all other private terms stay blocked everywhere.
+    `tools/test-public.mjs` tests each street name, every `tel:` link and the two call buttons.
 - **D-28 Store imprint inside original files: a known, accepted exception.** Some brand claim forms carry
   the store's imprint (store name, dealer number, address), for example the Bosch and the Whirlpool + Maytag
   forms in batch 1. Under D-12 these originals are published byte-for-byte, imprint included; the maintainer
@@ -149,3 +157,36 @@ General decisions only. Brand-specific notes live in the private workspace.
   English change costs more than it is worth. The page stays English only. The draft is kept on the local
   branch `zh-draft` (not pushed); the draft translations are kept in the private workspace notes. Nothing of
   it was published.
+
+## Update round (2026-11-10)
+
+- **D-31 Card layout (relaxes D-23 and D-26; replaces the look of version A).** The maintainer gave a reference
+  for a modular card layout with clear edges between modules; only its layout and hierarchy are used, not its
+  colors, logo or text.
+  - Now allowed: larger rounded corners (cards 12px, buttons 8px, tags 6px), solid buttons, small tinted
+    tags, a dark emphasis card.
+  - Still not allowed: gradients, glow, large shadows, pill-shaped tags, emoji, marketing copy.
+  - Header: white, company name in the store red, bold, 32px (24px on phones); contact as in D-27.
+  - Below the header a dark navy rounded card holds the campaign name, the intro and the Important notice
+    (D-29 text unchanged; the notice sits on a slightly lighter navy panel inside the card).
+  - Page: very light grey; every module is a white rounded card: brand buttons, search and More filters, one
+    card per brand, the footer contact card and the Disclaimer card. 24px between modules, 32px between brand
+    cards (16px and 24px on phones). Content width stays about 960px.
+  - Brand buttons: rounded, bordered; the chosen one solid dark with white text.
+  - Brand card: brand name large and bold at the top; each promotion inside it is a light block, 16px apart.
+    Amount in the store red and the largest text; "how you get it" and "Ending soon" as tinted tags;
+    "Details" a solid dark button; downloads bordered secondary buttons; Details open inside the same block.
+  - Footer: the two show rooms' card first, then the Disclaimer card, which stays last on the page.
+  - Colors (all text reaches 4.5:1 on its own background):
+    - Store red `#c43a2b` for the company name and the amounts: 5.27:1 on white, 4.83:1 on the light promotion
+      block `#f4f5f7`. The maintainer's reference red `#d0402f` reaches 4.71:1 on white but only 4.32:1 on the
+      block, so it was darkened slightly and one red is used for both.
+    - Light mode: page `#f1f2f4`, cards white, dark navy `#16213a` for the emphasis card and solid buttons
+      (white text 16:1), notice panel `#24314f` (12.9:1), secondary text `#555b66` (6.3:1 on the block).
+      Tags: Instant `#17532d` on `#e2f1e7` (7.8:1), claim `#1d4479` on `#e3ebf7` (8.1:1), Ending soon
+      `#6a3f00` on `#fbe9c8` (7.6:1).
+    - Dark mode, same hierarchy: page `#0f1115`, cards `#181b21`, blocks `#22262e`; red `#ff8a7a` (6.6:1 on
+      the block); emphasis card `#1a2744` with a 1px edge; solid buttons light `#e6e9ef` with dark text
+      (15:1), the strongest emphasis on a dark page; tags on dark tints, all above 8:1.
+  - Decided with the maintainer: the red above; width 960px; footer order contact card, then Disclaimer;
+    light solid buttons in dark mode. At most one more visual adjustment after this round.
