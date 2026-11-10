@@ -3,12 +3,11 @@
 # committed site/ folder as it is. Actions are pinned to full commit SHAs (tag in the comment).
 name: Deploy site to Pages
 
+# Every push to main deploys site/ (no path filter: the first push of the repository did not trigger a
+# run with one). A push that changes only docs or tools redeploys the same site/, which is harmless.
 on:
   push:
     branches: [main]
-    paths:
-      - "site/**"
-      - ".github/workflows/pages.yml"
   workflow_dispatch:
 
 # Nothing by default; the deploy job asks for exactly what it needs.
