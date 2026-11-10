@@ -1,0 +1,45 @@
+# Publish the site/ folder, and nothing else from this repository, to GitHub Pages.
+# The page is built and checked locally (node tools/build.mjs public); this workflow only uploads the
+# committed site/ folder as it is. Actions are pinned to full commit SHAs (tag in the comment).
+name: Deploy site to Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "site/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+# Nothing by default; the deploy job asks for exactly what it needs.
+permissions: {}
+
+# One deploy at a time; a newer push waits instead of cancelling a deploy in progress.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read   # read the repository to get site/
+      pages: write     # publish to GitHub Pages
+      id-token: write  # prove to Pages that this deploy comes from this workflow
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Package site/ only
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
