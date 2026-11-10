@@ -108,6 +108,20 @@ const contactPath = join(repo, "web", "contact.json");
 const contact = JSON.parse(readFileSync(contactPath, "utf8"));
 writeFileSync(contactPath, JSON.stringify({ ...contact, storeName: `${contact.storeName} ${terms.wholeWords[0]}` }));
 r = run(["public"]); expect("other private terms inside the contact info are still caught", !r.ok && /private term .* in the contact info/.test(r.out), r.out);
+writeFileSync(contactPath, JSON.stringify(contact));
+
+// 5. Notices (D-29): the header notice must be on the public page, inside the header.
+const notices = JSON.parse(readFileSync(join(repo, "web", "notices.json"), "utf8"));
+r = run(["public"]);
+const page5 = r.ok ? readFileSync(join(repo, "site", "index.html"), "utf8") : "";
+const head5 = page5.slice(page5.indexOf("<header"), page5.indexOf("</header>"));
+expect("header notice is in the page header, with the lead in bold", r.ok && head5.includes(`<strong>${notices.header.lead}</strong>`) && head5.includes(notices.header.text.replace(/'/g, "'")), r.out);
+expect("footer Disclaimer and the download note are on the page", page5.includes(`>${notices.footer.title}</h2>`) && notices.footer.points.every((pt) => page5.includes(`<li>${pt}</li>`)) && page5.includes(notices.downloadNote), "");
+writeFileSync(join(repo, "web", "index.html"), pageNext.replace("<!--NOTICE:head-->", ""));
+r = run(["public"]); expect("a page without the header notice is caught", !r.ok && /header notice from web\/notices\.json is missing/.test(r.out), r.out);
+writeFileSync(join(repo, "web", "index.html"), pageNext.replace("<!--NOTICE:head-->", "").replace("<!--NOTICE:foot-->", "<!--NOTICE:head--><!--NOTICE:foot-->"));
+r = run(["public"]); expect("a header notice outside the header is caught", !r.ok && /not inside the page header/.test(r.out), r.out);
+writeFileSync(join(repo, "web", "index.html"), pageNext);
 
 rmSync(tmp, { recursive: true, force: true });
 console.log(failures ? `\n${failures} FAILED` : "\nAll publish-rule tests passed.");

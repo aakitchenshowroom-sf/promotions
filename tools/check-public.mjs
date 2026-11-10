@@ -7,6 +7,7 @@ import { join, basename, extname } from "node:path";
 import { pathToFileURL } from "node:url";
 import { locations, readJson, repoDir, sourcePath } from "./lib/paths.mjs";
 import { PUBLIC_FIELDS, publishable, downloadsOf, DOWNLOAD_EXT } from "./lib/publish.mjs";
+import { readNotices, headerNoticeHtml } from "./lib/notices.mjs";
 
 // Card text (index.html, app.js, styles.css, promos.json) must never contain these. Personal and store
 // identifiers are not listed here (this repo is public); they come from the workspace's
@@ -56,6 +57,15 @@ export function checkPublic(siteDir, master, root, workspace) {
     }
     for (const name of sourceNames) if (text.includes(name)) problems.push(`${f}: contains source file name "${name}"`);
   }
+
+  // D-29: the header notice must be on the public page, word for word from web/notices.json, inside the header.
+  let index = "";
+  try { index = readFileSync(join(siteDir, "index.html"), "utf8"); } catch { /* reported above */ }
+  const notice = headerNoticeHtml(readNotices());
+  const at = index.indexOf(notice);
+  if (at < 0) problems.push("index.html: the header notice from web/notices.json is missing");
+  else if (!(index.indexOf("<header") < at && at < index.indexOf("</header>"))) problems.push("index.html: the header notice is not inside the page header");
+  if (/<!--(CONTACT|NOTICE):/.test(index)) problems.push("index.html: a contact or notice marker was left unfilled");
 
   const pub = JSON.parse(readFileSync(join(siteDir, "promos.json"), "utf8"));
   const byId = new Map(master.promos.map((p) => [p.id, p]));

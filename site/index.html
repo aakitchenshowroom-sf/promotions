@@ -19,7 +19,8 @@
           <h1 id="campaign">Promotions &amp; Rebates</h1>
           <p class="updated" id="updated"></p>
         </div>
-        <p class="intro">Manufacturer promotions and rebates on the appliances we sell. Each offer says whether the savings come off at checkout or you claim them after you buy.</p>
+        <p class="intro">Promotions and rebates on the appliances we sell. Each offer says whether the savings come off at checkout or you claim them after you buy.</p>
+        <p class="notice" id="notice"><strong>Important:</strong> These offers come from the manufacturers. The manufacturer's official terms decide each offer. AA Kitchen provides this page as a summary only. Always check the manufacturer's website or the official form before you buy.</p>
       </div>
     </div>
   </header>
@@ -63,9 +64,8 @@
 
   <footer class="page-foot wrap">
     <!--contact--><section class="foot-contact" aria-label="Contact"><h2 class="store-name">AA Kitchen Appliance Inc.</h2><p class="phone"><a class="tel" href="tel:415-731-3386">415-731-3386</a></p><p class="addr">1605 Noriega St., San Francisco, CA 94122</p><p class="links"><a href="https://aakitchenappliance.com/">https://aakitchenappliance.com/</a><a href="mailto:aakitchensf@gmail.com">aakitchensf@gmail.com</a></p></section><!--/contact-->
-    <h2 class="note-head">Please note</h2>
-    <p id="disclaimer">Promotions shown are offered by the manufacturers, not by AA Kitchen. Each offer is subject to the manufacturer's full terms, eligible models, dates and availability, and may be changed or ended by the manufacturer at any time. Rebates are paid by the manufacturer or its rebate processor. Please confirm eligibility with our sales team before you buy.</p>
-    <p>Offers are listed until their last purchase day (Pacific Time). Dates are from the manufacturers' materials.</p>
+    <section class="disclaimer" aria-labelledby="disclaimer-title"><h2 class="note-head" id="disclaimer-title">Disclaimer</h2><p>This page is a summary for your convenience. It is not the official terms of any offer.</p><ul><li>The manufacturers offer and pay these promotions and rebates. AA Kitchen does not.</li><li>The manufacturer's official terms decide each offer. If this page and the official terms are different, the official terms apply.</li><li>A manufacturer can change or end an offer at any time without notice.</li><li>The manufacturer or its rebate processor approves or rejects each rebate claim. AA Kitchen does not make this decision.</li><li>You are responsible for sending your claim correctly and before the deadline.</li><li>AA Kitchen is not responsible for errors or missing information on this page, or for a rebate that is rejected, late, or not paid.</li></ul><p>Please confirm each offer on the manufacturer's website, or ask our team, before you buy.</p></section>
+    <p class="listing-note">Offers are listed until their last purchase day (Pacific Time). Dates are from the manufacturers' materials.</p>
   </footer>
 
   <template id="item-tpl">
@@ -83,6 +83,7 @@
             <button type="button" class="toggle" aria-expanded="false">Details</button>
             <span class="downloads"></span>
           </p>
+          <p class="official-note">See the official terms for full details.</p>
           <div class="details" hidden>
             <dl class="rows tiers"></dl>
             <dl class="rows dates"></dl>

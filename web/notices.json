@@ -1,0 +1,20 @@
+{
+  "header": {
+    "lead": "Important:",
+    "text": "These offers come from the manufacturers. The manufacturer's official terms decide each offer. AA Kitchen provides this page as a summary only. Always check the manufacturer's website or the official form before you buy."
+  },
+  "footer": {
+    "title": "Disclaimer",
+    "intro": "This page is a summary for your convenience. It is not the official terms of any offer.",
+    "points": [
+      "The manufacturers offer and pay these promotions and rebates. AA Kitchen does not.",
+      "The manufacturer's official terms decide each offer. If this page and the official terms are different, the official terms apply.",
+      "A manufacturer can change or end an offer at any time without notice.",
+      "The manufacturer or its rebate processor approves or rejects each rebate claim. AA Kitchen does not make this decision.",
+      "You are responsible for sending your claim correctly and before the deadline.",
+      "AA Kitchen is not responsible for errors or missing information on this page, or for a rebate that is rejected, late, or not paid."
+    ],
+    "closing": "Please confirm each offer on the manufacturer's website, or ask our team, before you buy."
+  },
+  "downloadNote": "See the official terms for full details."
+}

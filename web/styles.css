@@ -20,6 +20,8 @@
   --head-ink: #ffffff;
   --head-muted: #c9ccd1;
   --head-line: #1c1f24;
+  --notice-bg: #f7f0e1;       /* header notice: light, warm, solid 1px edge */
+  --notice-line: #dccfb0;
   --control-bg: #ffffff;
   --amount-col: 192px;        /* "Up to $5,368" at 28px bold fits on one line */
   --label-col: 144px;
@@ -42,6 +44,8 @@
     --head-ink: #ffffff;
     --head-muted: #b4b7bc;
     --head-line: #3a3a37;     /* the band needs an edge against the dark page */
+    --notice-bg: #29251d;
+    --notice-line: #4d4535;
     --control-bg: #1d1d1c;
   }
 }
@@ -80,6 +84,9 @@ a:hover { text-decoration-thickness: 2px; }
 h1 { font-size: 20px; }
 .updated { font-size: 14px; color: var(--muted); }
 .intro { margin-top: 8px; max-width: 720px; color: var(--muted); }
+/* Header notice: always shown in full, never collapsed. Only "Important:" is bold. */
+.notice { margin-top: 16px; padding: 16px; background: var(--notice-bg); border: 1px solid var(--notice-line); color: var(--ink); }
+.notice strong { font-weight: 700; }
 @media (max-width: 719px) {
   .head-band { padding: 16px 0; }
   .contact { display: block; }
@@ -162,6 +169,9 @@ h1 { font-size: 20px; }
 .toggle[aria-expanded="true"]::after { content: " \25BE"; }
 .downloads { display: inline-flex; flex-wrap: wrap; gap: 8px 24px; }
 .downloads a::before { content: "\2193\00a0"; font-size: 14px; }
+/* "See the official terms for full details." right under the download links; hidden if an item has none. */
+.official-note { font-size: 14px; color: var(--muted); margin-top: -4px; }
+.actions:has(.downloads:empty) + .official-note { display: none; }
 .details { display: grid; gap: 16px; padding-top: 8px; }
 .details[hidden] { display: none; }
 
@@ -209,9 +219,11 @@ details summary { cursor: pointer; }
 .foot-contact .store-name { font-size: 20px; margin-bottom: 8px; }
 .foot-contact .tel { display: inline-block; line-height: 32px; }
 .foot-contact .links { display: flex; flex-wrap: wrap; gap: 0 24px; }
-.page-foot .note-head { font-size: 16px; margin-bottom: 8px; }
-.page-foot > p { max-width: 720px; color: var(--muted); font-size: 14px; }
-.page-foot > p + p { margin-top: 8px; }
+.page-foot .note-head { font-size: 20px; margin-bottom: 8px; }
+/* Disclaimer: full ink color (not muted) so it reads as part of the page, not fine print. */
+.disclaimer { max-width: 720px; display: grid; gap: 8px; }
+.disclaimer ul { padding-left: 24px; margin: 0; display: grid; gap: 8px; }
+.listing-note { max-width: 720px; color: var(--muted); font-size: 14px; margin-top: 16px; }
 @media (max-width: 719px) {
   .foot-contact .tel { font-size: 20px; line-height: 48px; }
 }
