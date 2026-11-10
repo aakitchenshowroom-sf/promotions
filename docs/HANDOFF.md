@@ -6,11 +6,14 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
 ## Status (2026-11-09, end of round 2)
 
 - Visual design is final (decisions D-23, D-24).
-- 24 promotions are in the workspace data. **0 verified**, so the public build is empty.
+- 24 promotions are in the workspace data. **3 verified** (round 3, first batch: #2 Bosch, #20 Speed Queen,
+  #13 Whirlpool + Maytag); the public build shows those 3.
 - **4 on hold**, waiting for the maintainer's answers.
 - Committed locally; **nothing pushed**. The GitHub repository exists (D-10) but is still empty.
-- **Next:** verify in batches and deploy each batch (round 3). First batch: Speed Queen, Bosch,
-  Whirlpool + Maytag.
+- **Push paused** for a style-only round (D-26) and the store contact info (D-27). Version A is now the real
+  page (with dark mode). **Next:** the maintainer confirms the screenshots of `/public/` → back to "Before
+  every push".
+- Git operations that need the maintainer's OK first: see D-25.
 - Items waiting for the maintainer: see the workspace file `notes/open-items.md`. They are not written in
   this public repo.
 
@@ -35,6 +38,8 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
 - `node tools/build.mjs public` → `site/`: only promotions that are verified, not on hold and have no open
   blocking flag; only consumer fields; plus `site/forms/` with byte-exact copies of those promotions' original
   files for download. The build ends with `tools/check-public.mjs` and fails if anything internal is found.
+- `web/contact.json`: the store's name, phone, address, website and email, written into the page header and
+  footer by the build (D-27). Change contact details only there.
 - `node tools/test-public.mjs`: publish-rule self-test on a throwaway copy (run after any change to tools or web).
 - `node tools/fingerprint.mjs`: new, changed, deleted and cloud-only source files against the saved
   fingerprints; `--save` records them (only after the maintainer confirms a change list).

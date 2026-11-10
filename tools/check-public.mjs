@@ -22,14 +22,22 @@ export function privatePatterns(workspace) {
   const path = join(workspace, "config", "private-terms.json");
   if (!existsSync(path)) throw new Error(`Missing ${path}: the private word list for the public check.`);
   const t = readJson(path);
-  return [...(t.wholeWords ?? []).map((w) => new RegExp(`\\b${escape(w)}\\b`)), ...(t.anywhere ?? []).map((w) => new RegExp(escape(w), "i"))];
+  // contactAllowed (D-27): the store's street name may appear inside the page's contact blocks only.
+  const allowed = new Set(t.contactAllowed ?? []);
+  const mark = (w, re) => Object.assign(re, { contactOk: allowed.has(w) });
+  return [
+    ...(t.wholeWords ?? []).map((w) => mark(w, new RegExp(`\\b${escape(w)}\\b`))),
+    ...(t.anywhere ?? []).map((w) => mark(w, new RegExp(escape(w), "i"))),
+  ];
 }
+// Contact blocks rendered by the build (tools/lib/contact.mjs), only in index.html.
+const CONTACT_BLOCK = /<!--contact-->[\s\S]*?<!--\/contact-->/g;
 const TEXT_FILES = new Set(["index.html", "app.js", "styles.css", "promos.json", ".nojekyll"]);
 const sha = (p) => createHash("sha256").update(readFileSync(p)).digest("hex");
 
 export function checkPublic(siteDir, master, root, workspace) {
   const problems = [];
-  const patterns = [...FORBIDDEN, ...privatePatterns(workspace)];
+  const priv = privatePatterns(workspace);
   for (const f of readdirSync(siteDir)) {
     if (f === "forms" && statSync(join(siteDir, f)).isDirectory()) continue;
     if (!TEXT_FILES.has(f)) problems.push(`unexpected file in site/: ${f}`);
@@ -39,7 +47,13 @@ export function checkPublic(siteDir, master, root, workspace) {
   for (const f of TEXT_FILES) {
     let text;
     try { text = readFileSync(join(siteDir, f), "utf8"); } catch { problems.push(`missing ${f}`); continue; }
-    patterns.forEach((re, i) => { if (re.test(text)) problems.push(`${f}: matches ${i < FORBIDDEN.length ? re : "a private term (config/private-terms.json)"}`); });
+    for (const re of FORBIDDEN) if (re.test(text)) problems.push(`${f}: matches ${re}`);
+    // Outside the contact blocks every private term is blocked; inside them, only contactAllowed terms pass.
+    const outside = f === "index.html" ? text.replace(CONTACT_BLOCK, "") : text;
+    for (const re of priv) {
+      if (re.test(outside)) problems.push(`${f}: matches a private term (config/private-terms.json)${re.contactOk ? " outside the contact info" : ""}`);
+      else if (!re.contactOk && re.test(text)) problems.push(`${f}: matches a private term (config/private-terms.json) in the contact info`);
+    }
     for (const name of sourceNames) if (text.includes(name)) problems.push(`${f}: contains source file name "${name}"`);
   }
 

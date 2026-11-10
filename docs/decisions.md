@@ -94,3 +94,36 @@ General decisions only. Brand-specific notes live in the private workspace.
     button. On a 390px phone every button is one line and all have the same height.
 - **D-21 Private terms.** Personal and store identifiers that the public check blocks are listed in the
   workspace (`config/private-terms.json`), so the public repo does not contain them.
+
+## Round 3 (2026-11-09)
+
+- **D-25 Git operations that need the maintainer's OK.** Before running any of these, ask the maintainer
+  first and say why and what it changes: push, stash, reset, rebase, clean, checkout or restore of files,
+  deleting a branch, rewriting history, and anything with `--force`. Commit needs no OK, but before every
+  commit list the files it contains.
+- **D-26 Style round (relaxes two D-23 rules).** The first batch is verified, but the push waits for one
+  style-only round.
+  - Now allowed: a very light page background and 1px borders to separate blocks; the accent color on amounts.
+  - Still not allowed: gradients, large shadows, pill-shaped tags, emoji, marketing copy.
+  - Goals: a real header with a prominent store name, clearly separated from the content; brand names as
+    full-width group bars that cannot be mistaken for amounts; each promotion (and each "see under" pointer)
+    in its own white, bordered block, 16px apart inside a group and 48px between groups; the amount one size
+    above the title and in the accent color. Content width about 960px.
+  - Two versions were compared in the preview; the maintainer chose **version A**: a near-black header band
+    with the store name (28px bold), phone and address; the campaign name and intro just below it. Version B
+    (light header) and the preview's style switch were removed.
+  - Amount accent: deep red `#8c1c22` (9.1:1 on white). Blue and green are already the two functional colors
+    ("You claim it after purchase", "Instant"), so a blue amount would read as one of them. Dark mode uses
+    a lighter red `#f4847e` (6.8:1 on the dark block background); the header band turns black with a 1px
+    edge against the dark page.
+- **D-27 Store contact info.** No logo. Phone and email matter equally.
+  - Header band: store name, phone, email, address. Desktop: phone and email side by side, same size and
+    weight; address on the next line, one size smaller. Phone (390px): phone and email on their own lines,
+    each a 48px tap target, 8px apart, same size (20px), never wrapped; address below.
+  - Footer, above the disclaimer: store name, phone, address, then the website and the email.
+  - Phone is a `tel:` link, email a `mailto:` link, website a plain link, address plain text.
+  - The values live in `web/contact.json` (public information; one place to change them); the build writes
+    them into the page at `<!--CONTACT:head-->` / `<!--CONTACT:foot-->`.
+  - The public check allows the store's street name only inside these contact blocks (listed as
+    `contactAllowed` in the workspace's private-terms file); in promotion text and anywhere else on the page
+    it is still blocked, and all other private terms stay blocked everywhere.

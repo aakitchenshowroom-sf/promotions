@@ -8,6 +8,7 @@ import { join } from "node:path";
 import { locations, readJson, repoDir, sourcePath } from "./lib/paths.mjs";
 import { publishable, downloadsOf, pick } from "./lib/publish.mjs";
 import { checkPublic } from "./check-public.mjs";
+import { withContact } from "./lib/contact.mjs";
 
 const mode = process.argv[2];
 if (!["public", "preview"].includes(mode)) {
@@ -31,7 +32,7 @@ if (mode === "public") {
   const out = join(repoDir, "site");
   const promos = pub.map((p) => ({ ...pick(p), downloads: downloadsOf(p).map((d) => ({ label: d.label, href: `forms/${d.publicName}` })) }));
   write(out, {
-    "index.html": web("index.html").replace("  <!--PREVIEW-->\n", "").replace("<!--PREVIEW-->", ""),
+    "index.html": withContact(web("index.html").replace("  <!--PREVIEW-->\n", "").replace("<!--PREVIEW-->", "")),
     "app.js": web("app.js"),
     "styles.css": web("styles.css"),
     "promos.json": JSON.stringify({ campaignName: active.campaignName, publishedAt: master.publishedAt ?? null, promos }, null, 1) + "\n",
@@ -66,7 +67,7 @@ if (mode === "public") {
   }));
   const builtAt = new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles", dateStyle: "medium", timeStyle: "short" });
   write(out, {
-    "index.html": web("index.html").replace("<!--PREVIEW-->", '<script src="preview.js"></script>'),
+    "index.html": withContact(web("index.html").replace("<!--PREVIEW-->", '<script src="preview.js"></script>')),
     "app.js": web("app.js"),
     "styles.css": web("styles.css"),
     "preview.js": web("preview.js"),

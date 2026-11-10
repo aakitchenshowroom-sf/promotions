@@ -10,7 +10,7 @@
   css.textContent = [
     ":root{--pv-bg:#fff7e0;--pv-ink:#3d2e00;--pv-line:#b07d00;--pv-bar:#1c1c1c;--pv-bar-ink:#f2f2ef}",
     "@media (prefers-color-scheme:dark){:root{--pv-bg:#2a2212;--pv-ink:#f0dca8;--pv-line:#b8902e;--pv-bar:#000;--pv-bar-ink:#f2f2ef}}",
-    ".pv-banner{background:var(--pv-bar);color:var(--pv-bar-ink);font-size:14px;padding:8px 0}",
+    ".pv-banner{background:var(--pv-bg);color:var(--pv-ink);border-bottom:1px dashed var(--pv-line);font-size:14px;padding:8px 0}",
     ".pv-banner .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center}",
     ".pv-banner label{display:inline-flex;gap:8px;align-items:center}",
     ".pv-banner input{font:inherit}",
@@ -31,8 +31,17 @@
   window.__promoHooks.push({
     after: function () {
       if (!only.length && !onlyReview) return;
+      // A group stays if it shows an item, or a pointer (e.g. Maytag -> Whirlpool) to a shown item.
       Array.prototype.forEach.call(document.querySelectorAll(".group"), function (g) {
-        g.hidden = !g.querySelector("article.item:not([hidden])");
+        var pointsToShown = Array.prototype.some.call(g.querySelectorAll(".xref a"), function (a) {
+          var target = document.getElementById(a.getAttribute("href").slice(1));
+          return target && !target.hidden;
+        });
+        Array.prototype.forEach.call(g.querySelectorAll(".xref"), function (x) {
+          var t = document.getElementById(x.querySelector("a").getAttribute("href").slice(1));
+          x.hidden = !t || t.hidden;
+        });
+        g.hidden = !g.querySelector("article.item:not([hidden])") && !pointsToShown;
       });
     },
     init: function (data) {
