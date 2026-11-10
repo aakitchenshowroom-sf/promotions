@@ -143,3 +143,9 @@ General decisions only. Brand-specific notes live in the private workspace.
   - Footer: "Disclaimer" with an intro sentence, six points and a closing sentence, above the listing note.
   - Under each promotion's download links: "See the official terms for full details."
   - The page intro no longer starts with "Manufacturer", so it does not repeat the notice.
+- **D-30 Chinese version: cancelled.** A Simplified Chinese version was planned and drafted on 2026-11-09
+  (language switch, translated text with its own checking status, number-consistency check). The
+  maintainer cancelled it the same day: keeping translations accurate and checking them again after every
+  English change costs more than it is worth. The page stays English only. The draft is kept on the local
+  branch `zh-draft` (not pushed); the draft translations are kept in the private workspace notes. Nothing of
+  it was published.

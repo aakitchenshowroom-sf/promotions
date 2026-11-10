@@ -10,6 +10,8 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
 - 24 promotions in the workspace data; **23 verified and published** (batch 1: 3 on 2026-11-09; batch 2:
   20 on 2026-11-09). **1 on hold:** #10 KitchenAid (purchase dates to be checked by the maintainer).
 - Page design: version A (D-26), store contact info (D-27), header notice and final disclaimer (D-29).
+- English only. A Chinese version was drafted and cancelled (D-30); do not restart it without the
+  maintainer. Its draft is on the local branch `zh-draft`, which is never pushed.
 - **Next:** #10 KitchenAid once the maintainer answers; then round 4.
 - Git operations that need the maintainer's OK first: see D-25. Commits need no OK, but list their files first.
 - Items waiting for the maintainer: see the workspace file `notes/open-items.md`. They are not written in
