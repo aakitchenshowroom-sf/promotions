@@ -3,17 +3,15 @@
 A one-page site listing manufacturer promotions and rebates for AA Kitchen's customers, built from the
 brand material the maintainer keeps in OneDrive. Start a new session with: "Read docs/HANDOFF.md".
 
-## Status (2026-11-09, end of round 2)
+## Status (2026-11-09, round 3)
 
-- Visual design is final (decisions D-23, D-24).
-- 24 promotions are in the workspace data. **3 verified** (round 3, first batch: #2 Bosch, #20 Speed Queen,
-  #13 Whirlpool + Maytag); the public build shows those 3.
-- **4 on hold**, waiting for the maintainer's answers.
-- Committed locally; **nothing pushed**. The GitHub repository exists (D-10) but is still empty.
-- **Push paused** for a style-only round (D-26) and the store contact info (D-27). Version A is now the real
-  page (with dark mode). **Next:** the maintainer confirms the screenshots of `/public/` → back to "Before
-  every push".
-- Git operations that need the maintainer's OK first: see D-25.
+- **Live:** https://aakitchenshowroom-sf.github.io/promotions/ (GitHub Pages, deployed by
+  `.github/workflows/pages.yml` on every push to `main`).
+- 24 promotions in the workspace data; **23 verified and published** (batch 1: 3 on 2026-11-09; batch 2:
+  20 on 2026-11-09). **1 on hold:** #10 KitchenAid (purchase dates to be checked by the maintainer).
+- Page design: version A (D-26), store contact info (D-27), header notice and final disclaimer (D-29).
+- **Next:** #10 KitchenAid once the maintainer answers; then round 4.
+- Git operations that need the maintainer's OK first: see D-25. Commits need no OK, but list their files first.
 - Items waiting for the maintainer: see the workspace file `notes/open-items.md`. They are not written in
   this public repo.
 
@@ -40,6 +38,10 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
   files for download. The build ends with `tools/check-public.mjs` and fails if anything internal is found.
 - `web/contact.json`: the store's name, phone, address, website and email, written into the page header and
   footer by the build (D-27). Change contact details only there.
+- `web/notices.json`: the header notice, the footer Disclaimer and the line under the downloads (D-29).
+  Change that wording only there. The public check fails if the header notice is missing.
+- `.github/workflows/pages.yml`: on every push to `main` (or by hand), uploads the committed `site/` folder,
+  and nothing else, to GitHub Pages. It does not build anything.
 - `node tools/test-public.mjs`: publish-rule self-test on a throwaway copy (run after any change to tools or web).
 - `node tools/fingerprint.mjs`: new, changed, deleted and cloud-only source files against the saved
   fingerprints; `--save` records them (only after the maintainer confirms a change list).
@@ -71,17 +73,21 @@ edited to work around it (D-17).
 ## Before every push (round 3 and each later batch)
 
 1. **Settings:** confirm the GitHub setup still holds (D-10): repository `aakitchenshowroom-sf/promotions`,
-   `geesonchan` as collaborator, Pages source "GitHub Actions". Add the Pages workflow on the first deploy.
+   `geesonchan` as collaborator, Pages source "GitHub Actions". Remote `origin` is set in this repo.
 2. **Author email:** every commit to be pushed has author and committer email
    `20552271+geesonchan@users.noreply.github.com`; no private address anywhere
    (`git log --format='%an <%ae> | %cn <%ce>' origin/main..HEAD`, or all commits before the first push).
 3. **Public file list:** list every tracked file (`git ls-files`) and every file in `site/` and `site/forms/`
    for the maintainer to review. No source document outside `site/forms/`, no `local.config.json`, nothing
    from the workspace.
-4. **Tests:** `node tools/build.mjs public` and `node tools/test-public.mjs` pass.
-5. Push only after the maintainer confirms.
-6. **Live check:** after the Pages deploy, download each published file from the live site and compare its
-   sha256 with the local `site/` file. Report any mismatch.
+4. **Store information in new files:** for each new file in `site/forms/`, tell the maintainer which store
+   information it carries (D-28). Text-extract PDFs; look at image-only files page by page.
+5. **Tests:** `node tools/build.mjs public` and `node tools/test-public.mjs` pass.
+6. Push only after the maintainer confirms.
+7. **After the push:** confirm the Actions run started by itself and succeeded (if not, it can be started
+   with `gh workflow run pages.yml`). Download each published file from the live site and compare its sha256
+   with the local `site/` file; check the new download and claim links. Report any mismatch.
+   Missing paths on Pages sometimes answer 503 ("Unicorn!") instead of 404; that page is GitHub's, not a file.
 
 ## Round plan
 

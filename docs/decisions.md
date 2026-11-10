@@ -134,3 +134,12 @@ General decisions only. Brand-specific notes live in the private workspace.
   promos.json) and does not look inside the files in `site/forms/`; it only checks that each one is an
   exact copy of its original. Before each push, the maintainer is told which store information appears in
   each new file. The private terms list still applies to all page text.
+- **D-29 Disclaimer and header notice (replaces the D-14 draft).** Final wording from the maintainer,
+  2026-11-09, kept word for word in `web/notices.json` (one place to change it); the build writes it into
+  the page.
+  - Header notice: under the campaign name and intro, above the brand buttons; a light, bordered box;
+    "Important:" in bold, the rest regular; always shown in full on desktop and phone. The public check
+    fails the build if the notice is missing or not inside the page header.
+  - Footer: "Disclaimer" with an intro sentence, six points and a closing sentence, above the listing note.
+  - Under each promotion's download links: "See the official terms for full details."
+  - The page intro no longer starts with "Manufacturer", so it does not repeat the notice.
