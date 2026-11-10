@@ -171,7 +171,7 @@ h1 { font-size: 20px; }
 .downloads a::before { content: "\2193\00a0"; font-size: 14px; }
 /* "See the official terms for full details." right under the download links; hidden if an item has none. */
 .official-note { font-size: 14px; color: var(--muted); margin-top: -4px; }
-.actions:has(.downloads:empty) + .official-note { display: none; }
+.actions:not(:has(.downloads a)) + .official-note { display: none; }
 .details { display: grid; gap: 16px; padding-top: 8px; }
 .details[hidden] { display: none; }
 
