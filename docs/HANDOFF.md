@@ -10,8 +10,8 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
 - 26 promotions in the workspace data; **25 verified and published** (batch 1: 3 on 2026-11-09; batch 2:
   20 on 2026-11-09; first update: #25 Bosch Kitchen Sales Event and #26 Fulgor Sofia Instant Rebate on
   2026-11-10). **1 on hold:** #10 KitchenAid (purchase dates to be checked by the maintainer).
-- Page design: card layout (D-31, 2026-11-10), two show rooms' contact info (D-27), header notice and final
-  disclaimer (D-29).
+- Page design: card layout (D-31, final since 2026-11-10), two show rooms' contact info (D-27), header notice
+  and final disclaimer (D-29).
 - **Updates:** when brand files are added or changed, follow `docs/UPDATE.md` ("Read docs/UPDATE.md and run
   the update").
 - English only. A Chinese version was drafted and cancelled (D-30); do not restart it without the
@@ -45,7 +45,9 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
 - `web/contact.json`: the company name, the website and each show room's name, street, city, phone numbers
   and email, written into the page header and footer by the build (D-27). Change contact details only there.
   The show rooms' street names are allowed only inside the contact blocks (`contactAllowed` in the
-  workspace's `config/private-terms.json`); a new show room's street name goes on that list too.
+  workspace's `config/private-terms.json`); a new show room's street name goes on that list too. Wide
+  screens show the show rooms in the header, phones in the footer; the public check
+  (`tools/lib/contact-visibility.mjs`) fails the build if any width would hide them in both places.
 - `web/notices.json`: the header notice, the footer Disclaimer and the line under the downloads (D-29).
   Change that wording only there. The public check fails if the header notice is missing.
 - `.github/workflows/pages.yml`: on every push to `main` (or by hand), uploads the committed `site/` folder,

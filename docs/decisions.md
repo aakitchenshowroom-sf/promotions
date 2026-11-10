@@ -124,8 +124,12 @@ General decisions only. Brand-specific notes live in the private workspace.
   - Header, desktop: company name on the left; the two show rooms side by side on the right, each column under
     its own small heading. Header, phone (390px): only the company name and two buttons, "Call SF Show Room"
     and "Call San Mateo Show Room", each dialing that show room's first number, at least 48px high.
-  - Footer: one card with both show rooms in full (side by side on desktop, stacked on phones), then the
-    company website; on phones every phone number and the email are 48px tap targets.
+  - Footer, by width (final adjustment, 2026-11-10): from 720px up, where the header shows both show rooms in
+    full, the footer card is one line, the company name and the website. Below 720px, where the header has
+    only the call buttons, the footer card shows both show rooms in full (stacked), then the website; every
+    phone number and the email are 48px tap targets. The footer uses the header's breakpoint (719/720px), so at
+    every width each show room's address, phones and email are visible in the header or the footer. This is
+    CSS only; the HTML and the way the contact blocks are generated are unchanged.
   - Every phone number is a `tel:` link, the email a `mailto:` link, the website a plain link, addresses
     plain text.
   - (Before 2026-11-10: one store; phone and email side by side in a dark header band, the address below.)
@@ -135,6 +139,10 @@ General decisions only. Brand-specific notes live in the private workspace.
     contact blocks (listed as `contactAllowed` in the workspace's private-terms file); in promotion text and
     anywhere else on the page they are still blocked, and all other private terms stay blocked everywhere.
     `tools/test-public.mjs` tests each street name, every `tel:` link and the two call buttons.
+  - Visibility check (`tools/lib/contact-visibility.mjs`, run by the public check): it reads the stylesheet's
+    media queries, works out at which widths the show-room details are hidden in the header and in the
+    footer, and fails the build if the two ranges overlap. A media query it does not understand also fails
+    the build, so a new kind of rule gets looked at. The tests cover the passing case and two broken ones.
 - **D-28 Store imprint inside original files: a known, accepted exception.** Some brand claim forms carry
   the store's imprint (store name, dealer number, address), for example the Bosch and the Whirlpool + Maytag
   forms in batch 1. Under D-12 these originals are published byte-for-byte, imprint included; the maintainer
@@ -166,7 +174,12 @@ General decisions only. Brand-specific notes live in the private workspace.
   - Now allowed: larger rounded corners (cards 12px, buttons 8px, tags 6px), solid buttons, small tinted
     tags, a dark emphasis card.
   - Still not allowed: gradients, glow, large shadows, pill-shaped tags, emoji, marketing copy.
-  - Header: white, company name in the store red, bold, 32px (24px on phones); contact as in D-27.
+  - Header: white, company name in the store red, bold; contact as in D-27. Final adjustment (2026-11-10): the
+    name is 38px on desktop, vertically centered on the two show-room columns (from 900px up; between 720
+    and 899px the name takes its own line above the columns). On phones it scales with the screen width,
+    `clamp(18px, 6.6vw, 26px)` (about 25.7px at 390px), and never wraps: at 390px it is 320px wide in a 358px
+    space, which leaves room for the slightly wider iPhone system font. Checked at 31 widths from 320 to
+    1600px: one line, no overflow.
   - Below the header a dark navy rounded card holds the campaign name, the intro and the Important notice
     (D-29 text unchanged; the notice sits on a slightly lighter navy panel inside the card).
   - Page: very light grey; every module is a white rounded card: brand buttons, search and More filters, one
@@ -176,7 +189,8 @@ General decisions only. Brand-specific notes live in the private workspace.
   - Brand card: brand name large and bold at the top; each promotion inside it is a light block, 16px apart.
     Amount in the store red and the largest text; "how you get it" and "Ending soon" as tinted tags;
     "Details" a solid dark button; downloads bordered secondary buttons; Details open inside the same block.
-  - Footer: the two show rooms' card first, then the Disclaimer card, which stays last on the page.
+  - Footer: the contact card first (one line on wide screens, see D-27), then the Disclaimer card, which stays
+    last on the page.
   - Colors (all text reaches 4.5:1 on its own background):
     - Store red `#c43a2b` for the company name and the amounts: 5.27:1 on white, 4.83:1 on the light promotion
       block `#f4f5f7`. The maintainer's reference red `#d0402f` reaches 4.71:1 on white but only 4.32:1 on the
@@ -189,4 +203,5 @@ General decisions only. Brand-specific notes live in the private workspace.
       the block); emphasis card `#1a2744` with a 1px edge; solid buttons light `#e6e9ef` with dark text
       (15:1), the strongest emphasis on a dark page; tags on dark tints, all above 8:1.
   - Decided with the maintainer: the red above; width 960px; footer order contact card, then Disclaimer;
-    light solid buttons in dark mode. At most one more visual adjustment after this round.
+    light solid buttons in dark mode. The one further adjustment (company name size, footer contact by width)
+    was made and confirmed on 2026-11-10; the visual design is final.
