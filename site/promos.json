@@ -9985,6 +9985,1159 @@
      "href": "forms/zephyr-bf-delivery-install.pdf"
     }
    ]
+  },
+  {
+   "id": "bosch-kitchen-sales-event",
+   "brands": [
+    "Bosch"
+   ],
+   "title": "The Bosch Kitchen Sales Event",
+   "offerCode": "BKPIN26H2.1",
+   "summary": "Buy a qualifying Bosch kitchen package of 2 to 8 appliances and get $100 to $2,000 back. Packages of 4 or more also earn the bonus shown next to each bonus model. Up to $4,000 in total.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $4,000",
+   "tiers": [
+    {
+     "label": "2-piece package",
+     "value": "$100"
+    },
+    {
+     "label": "3-piece package",
+     "value": "$250"
+    },
+    {
+     "label": "4-piece package",
+     "value": "$400 + model bonuses"
+    },
+    {
+     "label": "5-piece package",
+     "value": "$700 + model bonuses"
+    },
+    {
+     "label": "6-piece package",
+     "value": "$1,000 + model bonuses"
+    },
+    {
+     "label": "7-piece package",
+     "value": "$1,400 + model bonuses"
+    },
+    {
+     "label": "8-piece package",
+     "value": "$2,000 + model bonuses"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Wall Ovens",
+    "Cooktops & Rangetops",
+    "Microwaves",
+    "Ventilation",
+    "Dishwashers",
+    "Other"
+   ],
+   "purchaseStart": "2026-07-09",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": "2027-02-01",
+   "serialBy": "2027-03-01",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at BoschApplianceRebate.com by Feb 1, 2027. The claim form and full terms are below.",
+    "Add the serial number or FD number of each appliance by Mar 1, 2027.",
+    "Allow 6 to 8 weeks for your Bosch Prepaid Mastercard."
+   ],
+   "claimUrl": "https://www.BoschApplianceRebate.com",
+   "claimUrlLabel": "BoschApplianceRebate.com",
+   "infoUrl": null,
+   "payout": "Bosch Prepaid Mastercard (physical or virtual)",
+   "conditions": [
+    "All appliances must be on the same sales invoice.",
+    "Include appliances from at least 2 product categories: refrigerators, ranges, wall ovens, cooktops, microwave ovens, ventilation and dishwashers. In a 2-piece package, a dishwasher does not count as one of the two categories.",
+    "One appliance per category, except dishwashers: up to 2 in packages of 3 or more. Up to 8 appliances per claim.",
+    "Laundry products, accessories, open-box, B-stock and clearance products do not qualify.",
+    "Limit one rebate per household.",
+    "Cannot be combined with other discounts — ask our team for details."
+   ],
+   "eligibleNote": "The amount next to a model is its bonus, paid on top of the package rebate in packages of 4 to 8 appliances. Models without an amount count toward the package but earn no bonus.",
+   "eligible": [
+    {
+     "label": "Built-In Coffee Systems",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "BCM8450UC",
+       "amount": 150
+      },
+      {
+       "model": "BCM8451UC",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "24\" W FS Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B24CB50ESS",
+       "amount": 100
+      },
+      {
+       "model": "B24CB80ESB",
+       "amount": 150
+      },
+      {
+       "model": "B24CB80ESS",
+       "amount": 150
+      },
+      {
+       "model": "B24CB80ESW",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "33\" W FS Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B33CM10SNS"
+      }
+     ]
+    },
+    {
+     "label": "Freestanding French-Door Bottom-Mount Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B36CD10ENS"
+      },
+      {
+       "model": "B36CD52SNB",
+       "amount": 100
+      },
+      {
+       "model": "B36CD52SNS",
+       "amount": 100
+      },
+      {
+       "model": "B36CL80ENS",
+       "amount": 150
+      },
+      {
+       "model": "B36CL80SNS",
+       "amount": 150
+      },
+      {
+       "model": "B36CL81ENG",
+       "amount": 150
+      },
+      {
+       "model": "B36CL81ENW",
+       "amount": 150
+      },
+      {
+       "model": "B36CL84ENG",
+       "amount": 150
+      },
+      {
+       "model": "B36CL84ENS",
+       "amount": 150
+      },
+      {
+       "model": "B36CL84ENW",
+       "amount": 150
+      },
+      {
+       "model": "B36CL84SNS",
+       "amount": 150
+      },
+      {
+       "model": "B36CT80SNB",
+       "amount": 150
+      },
+      {
+       "model": "B36CT80SNS",
+       "amount": 150
+      },
+      {
+       "model": "B36CT81ENS",
+       "amount": 150
+      },
+      {
+       "model": "B36CT84ENS",
+       "amount": 150
+      },
+      {
+       "model": "B36CT84SNB",
+       "amount": 150
+      },
+      {
+       "model": "B36CT84SNS",
+       "amount": 150
+      },
+      {
+       "model": "B36FD10ENS"
+      },
+      {
+       "model": "B36FD52SNB",
+       "amount": 100
+      },
+      {
+       "model": "B36FD52SNS",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Built-In Refrigerator Column",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B30IR905SP",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Built-In Freezer Column",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B18IF905SP",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Built-In Refrigeration Units",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B09IB91NSP",
+       "amount": 250
+      },
+      {
+       "model": "B30BB130SS",
+       "amount": 250
+      },
+      {
+       "model": "B30IB100SP",
+       "amount": 250
+      },
+      {
+       "model": "B36BT130NS",
+       "amount": 250
+      },
+      {
+       "model": "B36IT100NP",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "SHE41CM2N"
+      },
+      {
+       "model": "SHE41CM5N"
+      },
+      {
+       "model": "SHE41CM6N"
+      },
+      {
+       "model": "SHE43C75N",
+       "amount": 50
+      },
+      {
+       "model": "SHE43DM2N",
+       "amount": 50
+      },
+      {
+       "model": "SHE43DM5N",
+       "amount": 50
+      },
+      {
+       "model": "SHE43DM6N",
+       "amount": 50
+      },
+      {
+       "model": "SHE53C82N",
+       "amount": 50
+      },
+      {
+       "model": "SHE53C85N",
+       "amount": 50
+      },
+      {
+       "model": "SHE53C86N",
+       "amount": 50
+      },
+      {
+       "model": "SHE53CE5N",
+       "amount": 50
+      },
+      {
+       "model": "SHX41EB5N"
+      },
+      {
+       "model": "SHX53DM5N",
+       "amount": 50
+      },
+      {
+       "model": "SHX65DM5N",
+       "amount": 100
+      },
+      {
+       "model": "SHX78CM2N",
+       "amount": 150
+      },
+      {
+       "model": "SHX78CM4N",
+       "amount": 150
+      },
+      {
+       "model": "SHX78CM5N",
+       "amount": 150
+      },
+      {
+       "model": "SHX78CM6N",
+       "amount": 150
+      },
+      {
+       "model": "SHX78DM5N",
+       "amount": 150
+      },
+      {
+       "model": "SHX9PCM5N",
+       "amount": 250
+      },
+      {
+       "model": "SHV41DB3N"
+      },
+      {
+       "model": "SHV4AEB3N"
+      },
+      {
+       "model": "SHV53CM3N",
+       "amount": 50
+      },
+      {
+       "model": "SHV53EM3N",
+       "amount": 50
+      },
+      {
+       "model": "SHV78CM3N",
+       "amount": 150
+      },
+      {
+       "model": "SHV78DM3N",
+       "amount": 150
+      },
+      {
+       "model": "SHV9PCM3N",
+       "amount": 250
+      },
+      {
+       "model": "SHP53EM2N",
+       "amount": 50
+      },
+      {
+       "model": "SHP53EM5N",
+       "amount": 50
+      },
+      {
+       "model": "SHP53EM6N",
+       "amount": 50
+      },
+      {
+       "model": "SHP65DM2N",
+       "amount": 100
+      },
+      {
+       "model": "SHP65DM5N",
+       "amount": 100
+      },
+      {
+       "model": "SHP65DM6N",
+       "amount": 100
+      },
+      {
+       "model": "SHP65DP5N",
+       "amount": 100
+      },
+      {
+       "model": "SHP78CM2N",
+       "amount": 150
+      },
+      {
+       "model": "SHP78CM4N",
+       "amount": 150
+      },
+      {
+       "model": "SHP78CM5N",
+       "amount": 150
+      },
+      {
+       "model": "SHP78CM6N",
+       "amount": 150
+      },
+      {
+       "model": "SHP78DM5N",
+       "amount": 150
+      },
+      {
+       "model": "SHP78DP5N",
+       "amount": 150
+      },
+      {
+       "model": "SHP95CM5N",
+       "amount": 100
+      },
+      {
+       "model": "SHP9PCM5N",
+       "amount": 250
+      },
+      {
+       "model": "SHS53CD2N",
+       "amount": 50
+      },
+      {
+       "model": "SHS53CD5N",
+       "amount": 50
+      },
+      {
+       "model": "SGE53C55UC",
+       "amount": 50
+      },
+      {
+       "model": "SGV43C53UC",
+       "amount": 50
+      },
+      {
+       "model": "SGV78C53UC",
+       "amount": 150
+      },
+      {
+       "model": "SGX78C55UC",
+       "amount": 150
+      },
+      {
+       "model": "SPE53C55UC",
+       "amount": 150
+      },
+      {
+       "model": "SPE68C75UC",
+       "amount": 150
+      },
+      {
+       "model": "SPV68C73UC",
+       "amount": 150
+      },
+      {
+       "model": "SPX68C75UC",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Gas Slide-in Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HGF1050MUC"
+      },
+      {
+       "model": "HGF3050MUC",
+       "amount": 50
+      },
+      {
+       "model": "HGI8046UC",
+       "amount": 150
+      },
+      {
+       "model": "HGI8056UC",
+       "amount": 150
+      },
+      {
+       "model": "HGIP056UC",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Dual Fuel Slide-In Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HDI8056U",
+       "amount": 150
+      },
+      {
+       "model": "HDIP056U",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Electric Slide-In Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HEF1050MU"
+      },
+      {
+       "model": "HEF3050MU",
+       "amount": 50
+      },
+      {
+       "model": "HEI8056U",
+       "amount": 150
+      },
+      {
+       "model": "HIF5050MU",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Induction Slide-in Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HII8047U",
+       "amount": 150
+      },
+      {
+       "model": "HII8057U",
+       "amount": 150
+      },
+      {
+       "model": "HIIP057U",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Industrial-Style Induction Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HIS5057U",
+       "amount": 100
+      },
+      {
+       "model": "HIS5657U",
+       "amount": 100
+      },
+      {
+       "model": "HIS8055U",
+       "amount": 150
+      },
+      {
+       "model": "HIS8057U",
+       "amount": 150
+      },
+      {
+       "model": "HIS8655U",
+       "amount": 150
+      },
+      {
+       "model": "HIS8657U",
+       "amount": 150
+      },
+      {
+       "model": "HIS8857UC",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Gas Industrial Style Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HGS5057UC",
+       "amount": 100
+      },
+      {
+       "model": "HGS5657UC",
+       "amount": 100
+      },
+      {
+       "model": "HGS8045UC",
+       "amount": 150
+      },
+      {
+       "model": "HGS8055UC",
+       "amount": 150
+      },
+      {
+       "model": "HGS8057UC",
+       "amount": 150
+      },
+      {
+       "model": "HGS8645UC",
+       "amount": 150
+      },
+      {
+       "model": "HGS8655UC",
+       "amount": 150
+      },
+      {
+       "model": "HGS8657UC",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "DF Industrial Style Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HDS5057U",
+       "amount": 100
+      },
+      {
+       "model": "HDS5657U",
+       "amount": 100
+      },
+      {
+       "model": "HDS8045U",
+       "amount": 150
+      },
+      {
+       "model": "HDS8055U",
+       "amount": 150
+      },
+      {
+       "model": "HDS8057U",
+       "amount": 150
+      },
+      {
+       "model": "HDS8645U",
+       "amount": 150
+      },
+      {
+       "model": "HDS8655U",
+       "amount": 150
+      },
+      {
+       "model": "HDS8657U",
+       "amount": 150
+      },
+      {
+       "model": "HDS8857UC",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Gas Industrial-Style Rangetop",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "RGM8658UC",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Electric Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HBE5453UC",
+       "amount": 100
+      },
+      {
+       "model": "HBL5351UC",
+       "amount": 100
+      },
+      {
+       "model": "HBL5451UC",
+       "amount": 100
+      },
+      {
+       "model": "HBL5651UC",
+       "amount": 100
+      },
+      {
+       "model": "HBL5754UC",
+       "amount": 100
+      },
+      {
+       "model": "HBL57M52UC",
+       "amount": 100
+      },
+      {
+       "model": "HBL8443UC",
+       "amount": 150
+      },
+      {
+       "model": "HBL8454UC",
+       "amount": 150
+      },
+      {
+       "model": "HBL8642UC",
+       "amount": 150
+      },
+      {
+       "model": "HBL8651UC",
+       "amount": 150
+      },
+      {
+       "model": "HBL8743UC",
+       "amount": 150
+      },
+      {
+       "model": "HBL8753UC",
+       "amount": 150
+      },
+      {
+       "model": "HBL87M53UC",
+       "amount": 150
+      },
+      {
+       "model": "HBLP454UC",
+       "amount": 250
+      },
+      {
+       "model": "HBLP651UC",
+       "amount": 250
+      },
+      {
+       "model": "HBLP752UC",
+       "amount": 250
+      },
+      {
+       "model": "HBL5455LUC",
+       "amount": 100
+      },
+      {
+       "model": "HBLP451LUC",
+       "amount": 250
+      },
+      {
+       "model": "HBLP651LUC",
+       "amount": 250
+      },
+      {
+       "model": "HBL5455RUC",
+       "amount": 100
+      },
+      {
+       "model": "HBLP451RUC",
+       "amount": 250
+      },
+      {
+       "model": "HBLP651RUC",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Gas Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NGM5058UC",
+       "amount": 100
+      },
+      {
+       "model": "NGM5059UC",
+       "amount": 100
+      },
+      {
+       "model": "NGM5453UC",
+       "amount": 100
+      },
+      {
+       "model": "NGM5659UC",
+       "amount": 100
+      },
+      {
+       "model": "NGM8049UC",
+       "amount": 150
+      },
+      {
+       "model": "NGM8058UC",
+       "amount": 150
+      },
+      {
+       "model": "NGM8059UC",
+       "amount": 150
+      },
+      {
+       "model": "NGM8659UC",
+       "amount": 150
+      },
+      {
+       "model": "NGMP059UC",
+       "amount": 250
+      },
+      {
+       "model": "NGMP659UC",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Electric Radiant Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NEM5066UC",
+       "amount": 100
+      },
+      {
+       "model": "NEM5466UC",
+       "amount": 100
+      },
+      {
+       "model": "NET8062UC",
+       "amount": 150
+      },
+      {
+       "model": "NET8069UC",
+       "amount": 150
+      },
+      {
+       "model": "NET8669UC",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Induction Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NIT5063UC",
+       "amount": 100
+      },
+      {
+       "model": "NIT5663UC",
+       "amount": 100
+      },
+      {
+       "model": "NIT8061UC",
+       "amount": 150
+      },
+      {
+       "model": "NIT8461UC",
+       "amount": 150
+      },
+      {
+       "model": "NIT8661UC",
+       "amount": 150
+      },
+      {
+       "model": "NITP060UC",
+       "amount": 250
+      },
+      {
+       "model": "NITP660UC",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Warming Drawer",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HWD5051UC",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Built-In and Over-the-Range Microwaves",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HMB30155UC",
+       "amount": 50
+      },
+      {
+       "model": "HMB50152UC",
+       "amount": 100
+      },
+      {
+       "model": "HMC54151UC",
+       "amount": 100
+      },
+      {
+       "model": "HMC80152UC",
+       "amount": 150
+      },
+      {
+       "model": "HMC80242UC",
+       "amount": 150
+      },
+      {
+       "model": "HMC80252UC",
+       "amount": 150
+      },
+      {
+       "model": "HMCP0252UC",
+       "amount": 250
+      },
+      {
+       "model": "HMD8054UC",
+       "amount": 150
+      },
+      {
+       "model": "HMD8454UC",
+       "amount": 150
+      },
+      {
+       "model": "HMV1055U"
+      },
+      {
+       "model": "HMV3055U",
+       "amount": 50
+      },
+      {
+       "model": "HMV5053U",
+       "amount": 75
+      },
+      {
+       "model": "HMV8045U",
+       "amount": 100
+      },
+      {
+       "model": "HMV8054U",
+       "amount": 100
+      },
+      {
+       "model": "HMVP054U",
+       "amount": 125
+      }
+     ]
+    },
+    {
+     "label": "Ventilation",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "DUH30253UC",
+       "amount": 50
+      },
+      {
+       "model": "DUH36253UC",
+       "amount": 50
+      },
+      {
+       "model": "DUH50353UC",
+       "amount": 100
+      },
+      {
+       "model": "DUH56353UC",
+       "amount": 100
+      },
+      {
+       "model": "DUH80553UC",
+       "amount": 150
+      },
+      {
+       "model": "DUH86553UC",
+       "amount": 150
+      },
+      {
+       "model": "DUHP0853UC",
+       "amount": 250
+      },
+      {
+       "model": "DUHP6853UC",
+       "amount": 250
+      },
+      {
+       "model": "HCB50651UC",
+       "amount": 100
+      },
+      {
+       "model": "HCB56651UC",
+       "amount": 100
+      },
+      {
+       "model": "HCG56651UC",
+       "amount": 250
+      },
+      {
+       "model": "HCI86051UC",
+       "amount": 150
+      },
+      {
+       "model": "HCI88051UC",
+       "amount": 150
+      },
+      {
+       "model": "HCP30E52UC",
+       "amount": 50
+      },
+      {
+       "model": "HCP34E52UC",
+       "amount": 50
+      },
+      {
+       "model": "HCP36E52UC",
+       "amount": 50
+      },
+      {
+       "model": "HCP50652UC",
+       "amount": 100
+      },
+      {
+       "model": "HCP56652UC",
+       "amount": 100
+      },
+      {
+       "model": "HCP80641UC",
+       "amount": 100
+      },
+      {
+       "model": "HCP86641UC",
+       "amount": 150
+      },
+      {
+       "model": "HDD80052UC",
+       "amount": 150
+      },
+      {
+       "model": "HDD86052UC",
+       "amount": 150
+      },
+      {
+       "model": "HIB82651UC",
+       "amount": 150
+      },
+      {
+       "model": "HUI30253UC",
+       "amount": 50
+      },
+      {
+       "model": "HUI34253UC",
+       "amount": 50
+      },
+      {
+       "model": "HUI36253UC",
+       "amount": 50
+      },
+      {
+       "model": "HUI50351UC",
+       "amount": 100
+      },
+      {
+       "model": "HUI54452UC",
+       "amount": 100
+      },
+      {
+       "model": "HUI56551UC",
+       "amount": 100
+      },
+      {
+       "model": "HUI80553UC",
+       "amount": 150
+      },
+      {
+       "model": "HUI86553UC",
+       "amount": 150
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/bosch-kitchen-sales-event.pdf"
+    }
+   ]
+  },
+  {
+   "id": "fulgor-sofia-induction-instant",
+   "brands": [
+    "Fulgor Milano"
+   ],
+   "title": "Sofia Series Instant Rebate",
+   "offerCode": null,
+   "summary": "Get $500 to $1,500 off a Fulgor Milano Sofia Series induction range at checkout, depending on its width.",
+   "benefit": "amount-off",
+   "redemption": "instant-in-store",
+   "amountHeadline": "Up to $1,500",
+   "tiers": [
+    {
+     "label": "60\" induction range",
+     "value": "$1,500 off"
+    },
+    {
+     "label": "48\" induction range",
+     "value": "$1,000 off"
+    },
+    {
+     "label": "36\" induction range",
+     "value": "$500 off"
+    }
+   ],
+   "categories": [
+    "Ranges"
+   ],
+   "purchaseStart": "2026-10-19",
+   "purchaseEnd": "2026-12-31",
+   "deliverBy": null,
+   "claimBy": null,
+   "serialBy": null,
+   "claimNote": "Nothing to claim. The discount is taken off at checkout.",
+   "claimSteps": [
+    "Nothing to claim. The discount is taken off at checkout."
+   ],
+   "claimUrl": null,
+   "claimUrlLabel": null,
+   "infoUrl": null,
+   "payout": null,
+   "conditions": [
+    "In-store purchases only. Not available online.",
+    "Cannot be combined with other discounts — ask our team for details.",
+    "It can be used with current promotions that give a free or discounted product with your purchase."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Sofia Series induction ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "F6PIR365S1"
+      },
+      {
+       "model": "F6PIR487S1"
+      },
+      {
+       "model": "F6PIR485GS1"
+      },
+      {
+       "model": "F6PIR608S1"
+      },
+      {
+       "model": "F6PIR605GS1"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/fulgor-sofia-induction-instant.pdf"
+    }
+   ]
   }
  ]
 }
