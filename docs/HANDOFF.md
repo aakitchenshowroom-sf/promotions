@@ -3,16 +3,19 @@
 A one-page site listing manufacturer promotions and rebates for AA Kitchen's customers, built from the
 brand material the maintainer keeps in OneDrive. Start a new session with: "Read docs/HANDOFF.md".
 
-## Status (2026-11-09, round 3)
+## Status (2026-11-10)
 
 - **Live:** https://aakitchenshowroom-sf.github.io/promotions/ (GitHub Pages, deployed by
   `.github/workflows/pages.yml` on every push to `main`).
-- 24 promotions in the workspace data; **23 verified and published** (batch 1: 3 on 2026-11-09; batch 2:
-  20 on 2026-11-09). **1 on hold:** #10 KitchenAid (purchase dates to be checked by the maintainer).
+- 26 promotions in the workspace data; **25 verified and published** (batch 1: 3 on 2026-11-09; batch 2:
+  20 on 2026-11-09; first update: #25 Bosch Kitchen Sales Event and #26 Fulgor Sofia Instant Rebate on
+  2026-11-10). **1 on hold:** #10 KitchenAid (purchase dates to be checked by the maintainer).
 - Page design: version A (D-26), store contact info (D-27), header notice and final disclaimer (D-29).
+- **Updates:** when brand files are added or changed, follow `docs/UPDATE.md` ("Read docs/UPDATE.md and run
+  the update").
 - English only. A Chinese version was drafted and cancelled (D-30); do not restart it without the
   maintainer. Its draft is on the local branch `zh-draft`, which is never pushed.
-- **Next:** #10 KitchenAid once the maintainer answers; then round 4.
+- **Next:** #10 KitchenAid once the maintainer answers; further updates per `docs/UPDATE.md`.
 - Git operations that need the maintainer's OK first: see D-25. Commits need no OK, but list their files first.
 - Items waiting for the maintainer: see the workspace file `notes/open-items.md`. They are not written in
   this public repo.
@@ -97,7 +100,7 @@ edited to work around it (D-17).
 2. Round 2: local repo, data, page, visual design, local preview (done)
 3. Round 3: deploy in batches (D-16). Each batch: verify → build → preview → maintainer confirms → push →
    check live hashes.
-4. Round 4: folder-selection script and `docs/UPDATE.md` ("read docs/UPDATE.md and run the update")
+4. Round 4: `docs/UPDATE.md` (done, first update 2026-11-10); folder-selection script still to do
 
 Each round: read-only plan → maintainer confirms → work → local preview → maintainer confirms → commit, push,
 and check the live files' hashes against local.
