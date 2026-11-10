@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Promotions &amp; Rebates | AA Kitchen</title>
+  <meta name="description" content="Current manufacturer promotions and rebates on appliances at AA Kitchen, San Francisco.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-head wrap">
+    <p class="store">AA Kitchen</p>
+    <div class="head-row">
+      <h1 id="campaign">Promotions &amp; Rebates</h1>
+      <p class="updated" id="updated"></p>
+    </div>
+    <p class="intro">Manufacturer promotions and rebates on the appliances we sell. Each offer says whether the savings come off at checkout or you claim them after you buy.</p>
+  </header>
+
+  <main class="wrap">
+    <nav class="brands" id="brands" aria-label="Brands">
+      <div class="brand-grid" id="brand-grid"></div>
+      <p class="brand-chosen"><button type="button" id="brand-clear" aria-label="Show all brands"></button></p>
+    </nav>
+
+    <form class="filters" role="search" aria-label="Find a promotion" onsubmit="return false">
+      <label class="f-search">
+        <span class="visually-hidden">Search by model number</span>
+        <input id="q" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Search model number">
+      </label>
+      <details class="more-filters" id="more-filters">
+        <summary id="more-summary">More filters</summary>
+        <div class="more-body">
+          <label class="f-select">
+            <span>Product</span>
+            <select id="category"><option value="">All products</option></select>
+          </label>
+          <label class="f-select">
+            <span>How you get it</span>
+            <select id="how">
+              <option value="">Any way</option>
+              <option value="instant">At checkout or with your order</option>
+              <option value="claim">You claim it after purchase</option>
+            </select>
+          </label>
+          <label class="f-check"><input id="soon" type="checkbox"> Ending soon</label>
+        </div>
+      </details>
+    </form>
+    <p class="count" id="count" aria-live="polite"></p>
+    <p class="hint" id="hint" hidden>Some offers cover every model of a brand (for example JennAir) and are not listed model by model. Use the brand buttons to see them.</p>
+
+    <div id="list" class="list"></div>
+    <p id="empty" class="empty" hidden></p>
+  </main>
+
+  <footer class="page-foot wrap">
+    <h2>Please note</h2>
+    <p id="disclaimer">Promotions shown are offered by the manufacturers, not by AA Kitchen. Each offer is subject to the manufacturer's full terms, eligible models, dates and availability, and may be changed or ended by the manufacturer at any time. Rebates are paid by the manufacturer or its rebate processor. Please confirm eligibility with our sales team before you buy.</p>
+    <p>Offers are listed until their last purchase day (Pacific Time). Dates are from the manufacturers' materials.</p>
+  </footer>
+
+  <template id="item-tpl">
+    <article class="item">
+      <div class="item-grid">
+        <div class="col-amount">
+          <p class="amount"></p>
+          <p class="tag" hidden>Ending soon</p>
+        </div>
+        <div class="col-main">
+          <h3 class="title"></h3>
+          <p class="summary"></p>
+          <p class="meta"></p>
+          <p class="actions">
+            <button type="button" class="toggle" aria-expanded="false">Details</button>
+            <span class="downloads"></span>
+          </p>
+          <div class="details" hidden>
+            <dl class="rows tiers"></dl>
+            <dl class="rows dates"></dl>
+            <section class="block how">
+              <h4>How to claim</h4>
+              <ol class="steps"></ol>
+              <p class="claim-link"></p>
+              <dl class="rows claim-facts"></dl>
+            </section>
+            <section class="block conds">
+              <h4>Conditions</h4>
+              <ul class="conditions"></ul>
+            </section>
+            <details class="translation">
+              <summary></summary>
+              <ul class="translation-lines"></ul>
+            </details>
+            <details class="models">
+              <summary></summary>
+              <div class="model-groups"></div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

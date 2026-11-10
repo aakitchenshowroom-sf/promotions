@@ -1,0 +1,44 @@
+# Source documents never enter this public repository (brand and dealer material).
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.heic
+*.webp
+*.tif
+*.tiff
+*.xls
+*.xlsx
+*.xlsm
+*.csv
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.msg
+*.eml
+*.zip
+*.txt
+# Exception (maintainer's decision, round 2): the public page offers the original brand files for download. Only the build
+# writes here, only for promos on the public page, and tools/check-public.mjs checks each file byte-for-byte.
+!site/forms/*.pdf
+!site/forms/*.jpg
+
+# Internal data lives in the OneDrive workspace, not here.
+local.config.json
+config/
+data/
+notes/
+archive/
+promos.master.json
+fingerprints.json
+
+# Local preview output (contains source names, notes and review status).
+.preview/
+
+# Tooling
+node_modules/
+.claude/
+.DS_Store
+Thumbs.db
