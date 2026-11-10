@@ -83,27 +83,35 @@ r = run(["public"]);
 const wmPub = JSON.parse(readFileSync(join(repo, "site", "promos.json"), "utf8")).promos.find((p) => p.id === "whirlpool-maytag-black-friday");
 expect("identical Whirlpool/Maytag files offered once", r.ok && wmPub && wmPub.downloads.length === 1 && wmPub.downloads[0].label === "Claim form & full terms (PDF)", r.out + JSON.stringify(wmPub?.downloads));
 
-// 4. Contact info (D-27): the street name is allowed inside the header/footer contact blocks only.
+// 4. Contact info (D-27): the show rooms' street names are allowed inside the header/footer contact blocks only.
 const terms = JSON.parse(readFileSync(join(ws, "config", "private-terms.json"), "utf8"));
-const street = (terms.contactAllowed ?? [])[0];
-expect("private-terms.json lists the contact exception", Boolean(street), JSON.stringify(Object.keys(terms)));
+const streets = terms.contactAllowed ?? [];
+expect("private-terms.json lists both show rooms' streets as contact exceptions", streets.length >= 2, JSON.stringify(Object.keys(terms)));
 const pageNext = readFileSync(join(repo, "web", "index.html"), "utf8");
+const shops = JSON.parse(readFileSync(join(repo, "web", "contact.json"), "utf8")).stores;
 r = run(["public"]);
 const html = r.ok ? readFileSync(join(repo, "site", "index.html"), "utf8") : "";
 const blocks = html.match(/<!--contact-->[\s\S]*?<!--\/contact-->/g) ?? [];
-expect("contact info with the street name passes", r.ok && blocks.length === 2 && blocks.every((b) => b.includes(street)) && /href="tel:[0-9-]+"/.test(blocks[0]), r.out);
-expect("phone and email are in the header and the footer, as tel: and mailto: links", blocks.length === 2 &&
-  blocks.every((b) => /href="tel:[0-9-]+"/.test(b) && /href="mailto:[^"\s]+@[^"\s]+"/.test(b)) && (html.match(/href="mailto:/g) ?? []).length === 2, blocks.join("\n"));
+expect("contact info with both street names passes", r.ok && blocks.length === 2 && blocks.every((b) => streets.every((s) => b.includes(s))), r.out);
+const telCount = (b, p) => (b.match(new RegExp(`href="tel:${p}"`, "g")) ?? []).length;
+expect("every phone number is a tel: link in the header and the footer", blocks.length === 2 &&
+  shops.every((s) => s.phones.every((p) => blocks.every((b) => b.includes(`>${p}</a>`) && telCount(b, p) >= 1))), blocks.join("\n"));
+expect("email is a mailto: link in the header and the footer", blocks.length === 2 &&
+  blocks.every((b) => /href="mailto:[^"\s]+@[^"\s]+"/.test(b)) && (html.match(/href="mailto:/g) ?? []).length === 2, blocks.join("\n"));
+const calls = [...(blocks[0] ?? "").matchAll(/<a class="call" href="tel:([0-9-]+)">([^<]+)<\/a>/g)].map((m) => `${m[2]}|${m[1]}`);
+expect("header has one Call button per show room, dialing its first number", calls.join(",") === shops.map((s) => `Call ${s.name}|${s.phones[0]}`).join(","), calls.join(","));
 expect("no contact markers left unfilled", !html.includes("<!--CONTACT:"), "");
 const bluestar = master.promos.find((p) => p.id === "bluestar-bundle-save");
-bluestar.conditions.push(`Visit our store on ${street}.`);
-save();
-r = run(["public"]); expect("street name in promotion text is caught", !r.ok && /promos\.json: matches a private term .* outside the contact info/.test(r.out), r.out);
-bluestar.conditions.pop();
-save();
-writeFileSync(join(repo, "web", "index.html"), pageNext.replace('<p class="intro">', `<p class="intro">${street} `));
-r = run(["public"]); expect("street name in page text outside the contact blocks is caught", !r.ok && /index\.html: matches a private term .* outside the contact info/.test(r.out), r.out);
-writeFileSync(join(repo, "web", "index.html"), pageNext);
+for (const street of streets) {
+  bluestar.conditions.push(`Visit our store on ${street}.`);
+  save();
+  r = run(["public"]); expect(`street name ${streets.indexOf(street) + 1} in promotion text is caught`, !r.ok && /promos\.json: matches a private term .* outside the contact info/.test(r.out), r.out);
+  bluestar.conditions.pop();
+  save();
+  writeFileSync(join(repo, "web", "index.html"), pageNext.replace('<p class="intro">', `<p class="intro">${street} `));
+  r = run(["public"]); expect(`street name ${streets.indexOf(street) + 1} in page text outside the contact blocks is caught`, !r.ok && /index\.html: matches a private term .* outside the contact info/.test(r.out), r.out);
+  writeFileSync(join(repo, "web", "index.html"), pageNext);
+}
 const contactPath = join(repo, "web", "contact.json");
 const contact = JSON.parse(readFileSync(contactPath, "utf8"));
 writeFileSync(contactPath, JSON.stringify({ ...contact, storeName: `${contact.storeName} ${terms.wholeWords[0]}` }));

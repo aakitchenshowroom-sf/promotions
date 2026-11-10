@@ -1,7 +1,19 @@
 {
-  "storeName": "AA Kitchen Appliance Inc.",
-  "phone": "415-731-3386",
-  "address": "1605 Noriega St., San Francisco, CA 94122",
+  "storeName": "AA Kitchen Appliance, Inc.",
   "website": "https://aakitchenappliance.com/",
-  "email": "aakitchensf@gmail.com"
+  "stores": [
+    {
+      "name": "SF Show Room",
+      "street": "1605 Noriega Street",
+      "city": "San Francisco, CA 94122",
+      "phones": ["415-731-3386"],
+      "email": "aakitchensf@gmail.com"
+    },
+    {
+      "name": "San Mateo Show Room",
+      "street": "159 South Blvd",
+      "city": "San Mateo, CA 94402",
+      "phones": ["650-315-2238", "650-877-0938"]
+    }
+  ]
 }
