@@ -1,5 +1,1921 @@
 {
  "campaignName": "Black Friday & Holiday Savings 2026",
  "publishedAt": null,
- "promos": []
+ "promos": [
+  {
+   "id": "bosch-bf-delivery-install",
+   "brands": [
+    "Bosch"
+   ],
+   "title": "Black Friday Delivery & Install Rebate",
+   "offerCode": "NMG1126BSHDIBF",
+   "summary": "Get up to $100 back toward delivery or installation of qualifying Bosch appliances.",
+   "benefit": "install-credit",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $100",
+   "tiers": [
+    {
+     "label": "Buy 1 appliance",
+     "value": "$50"
+    },
+    {
+     "label": "Buy 2 appliances",
+     "value": "$100"
+    }
+   ],
+   "categories": [
+    "Dishwashers",
+    "Ranges",
+    "Wall Ovens",
+    "Cooktops & Rangetops",
+    "Refrigeration",
+    "Ventilation",
+    "Microwaves",
+    "Other"
+   ],
+   "purchaseStart": "2026-11-04",
+   "purchaseEnd": "2026-12-02",
+   "deliverBy": null,
+   "claimBy": "2027-01-01",
+   "serialBy": "2027-04-01",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 1, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "http://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard",
+   "conditions": [
+    "The rebate is limited to your delivery or installation charge, up to $100.",
+    "Prior sales, back orders and special orders do not qualify.",
+    "Limit one rebate per household."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Built-In Coffee Systems",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "BCM8451UC"
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "SHE41CM2N"
+      },
+      {
+       "model": "SHE41CM5N"
+      },
+      {
+       "model": "SHE41CM6N"
+      },
+      {
+       "model": "SHE43DM2N"
+      },
+      {
+       "model": "SHE43DM5N"
+      },
+      {
+       "model": "SHE43DM6N"
+      },
+      {
+       "model": "SHE53C82N"
+      },
+      {
+       "model": "SHE53C85N"
+      },
+      {
+       "model": "SHE53C86N"
+      },
+      {
+       "model": "SHX41EB5N"
+      },
+      {
+       "model": "SHX53DM5N"
+      },
+      {
+       "model": "SHX65DM5N"
+      },
+      {
+       "model": "SHX78CM5N"
+      },
+      {
+       "model": "SHX78DM5N"
+      },
+      {
+       "model": "SHX9PCM5N"
+      },
+      {
+       "model": "SHV41DB3N"
+      },
+      {
+       "model": "SHV53EM3N"
+      },
+      {
+       "model": "SHV78CM3N"
+      },
+      {
+       "model": "SHV78DM3N"
+      },
+      {
+       "model": "SHV9PCM3N"
+      },
+      {
+       "model": "SHP53EM2N"
+      },
+      {
+       "model": "SHP53EM5N"
+      },
+      {
+       "model": "SHP53EM6N"
+      },
+      {
+       "model": "SHP65DM2N"
+      },
+      {
+       "model": "SHP65DM5N"
+      },
+      {
+       "model": "SHP65DP5N"
+      },
+      {
+       "model": "SHP65DM6N"
+      },
+      {
+       "model": "SHP78CM2N"
+      },
+      {
+       "model": "SHP78CM4N"
+      },
+      {
+       "model": "SHP78CM5N"
+      },
+      {
+       "model": "SHP78CM6N"
+      },
+      {
+       "model": "SHP78DM5N"
+      },
+      {
+       "model": "SHP78DP5N"
+      },
+      {
+       "model": "SHP95CM5N"
+      },
+      {
+       "model": "SHP9PCM5N"
+      },
+      {
+       "model": "SHS53CD2N"
+      },
+      {
+       "model": "SHS53CD5N"
+      },
+      {
+       "model": "SGE53C55UC"
+      },
+      {
+       "model": "SGV43C53UC"
+      },
+      {
+       "model": "SGV78C53UC"
+      },
+      {
+       "model": "SGX78C55UC"
+      },
+      {
+       "model": "SPE53C55UC"
+      },
+      {
+       "model": "SPE68C75UC"
+      },
+      {
+       "model": "SPV68C73UC"
+      },
+      {
+       "model": "SPX68C75UC"
+      }
+     ]
+    },
+    {
+     "label": "Gas Slide-in Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HGF1050MUC"
+      },
+      {
+       "model": "HGF3050MUC"
+      },
+      {
+       "model": "HGI8046UC"
+      },
+      {
+       "model": "HGI8056UC"
+      },
+      {
+       "model": "HGIP056UC"
+      }
+     ]
+    },
+    {
+     "label": "Electric Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HBE5453UC"
+      },
+      {
+       "model": "HBL5351UC"
+      },
+      {
+       "model": "HBL5451UC"
+      },
+      {
+       "model": "HBL5651UC"
+      },
+      {
+       "model": "HBL5754UC"
+      },
+      {
+       "model": "HBL57M52UC"
+      },
+      {
+       "model": "HBL8443UC"
+      },
+      {
+       "model": "HBL8454UC"
+      },
+      {
+       "model": "HBL8642UC"
+      },
+      {
+       "model": "HBL8651UC"
+      },
+      {
+       "model": "HBL8743UC"
+      },
+      {
+       "model": "HBL8753UC"
+      },
+      {
+       "model": "HBL87M53UC"
+      },
+      {
+       "model": "HBLP454UC"
+      },
+      {
+       "model": "HBLP651UC"
+      },
+      {
+       "model": "HBLP752UC"
+      },
+      {
+       "model": "HBL5455LUC"
+      },
+      {
+       "model": "HBLP451LUC"
+      },
+      {
+       "model": "HBLP651LUC"
+      },
+      {
+       "model": "HBL5455RUC"
+      },
+      {
+       "model": "HBLP451RUC"
+      },
+      {
+       "model": "HBLP651RUC"
+      }
+     ]
+    },
+    {
+     "label": "Warming Drawer",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HWD5051UC"
+      }
+     ]
+    },
+    {
+     "label": "24\" W FS Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B24CB50ESS"
+      },
+      {
+       "model": "B24CB80ESB"
+      },
+      {
+       "model": "B24CB80ESS"
+      },
+      {
+       "model": "B24CB80ESW"
+      }
+     ]
+    },
+    {
+     "label": "Built-In and Over-the-Range Microwaves",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HMB30155UC"
+      },
+      {
+       "model": "HMB50152UC"
+      },
+      {
+       "model": "HMC54151UC"
+      },
+      {
+       "model": "HMC80152UC"
+      },
+      {
+       "model": "HMC80242UC"
+      },
+      {
+       "model": "HMC80252UC"
+      },
+      {
+       "model": "HMCP0252UC"
+      },
+      {
+       "model": "HMD8054UC"
+      },
+      {
+       "model": "HMD8454UC"
+      },
+      {
+       "model": "HMV1055U"
+      },
+      {
+       "model": "HMV3055U"
+      },
+      {
+       "model": "HMV5053U"
+      },
+      {
+       "model": "HMV8045U"
+      },
+      {
+       "model": "HMV8054U"
+      }
+     ]
+    },
+    {
+     "label": "Dual Fuel Slide-In Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HDI8056U"
+      },
+      {
+       "model": "HDIP056U"
+      }
+     ]
+    },
+    {
+     "label": "33\" W FS Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B33CM10SNS"
+      }
+     ]
+    },
+    {
+     "label": "Electric Slide-In Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HEF1050MU"
+      },
+      {
+       "model": "HEF3050MU"
+      },
+      {
+       "model": "HEI8056U"
+      },
+      {
+       "model": "HIF5050MU"
+      }
+     ]
+    },
+    {
+     "label": "Freestanding French-Door Bottom-Mount Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B36CD10ENS"
+      },
+      {
+       "model": "B36CD52SNB"
+      },
+      {
+       "model": "B36CD52SNS"
+      },
+      {
+       "model": "B36CL80ENS"
+      },
+      {
+       "model": "B36CL80SNS"
+      },
+      {
+       "model": "B36CL81ENG"
+      },
+      {
+       "model": "B36CL81ENW"
+      },
+      {
+       "model": "B36CL84ENG"
+      },
+      {
+       "model": "B36CL84ENS"
+      },
+      {
+       "model": "B36CL84ENW"
+      },
+      {
+       "model": "B36CL84SNS"
+      },
+      {
+       "model": "B36CT80SNB"
+      },
+      {
+       "model": "B36CT80SNS"
+      },
+      {
+       "model": "B36CT81ENS"
+      },
+      {
+       "model": "B36CT84ENS"
+      },
+      {
+       "model": "B36CT84SNB"
+      },
+      {
+       "model": "B36CT84SNS"
+      },
+      {
+       "model": "B36FD10ENS"
+      },
+      {
+       "model": "B36FD52SNB"
+      },
+      {
+       "model": "B36FD52SNS"
+      }
+     ]
+    },
+    {
+     "label": "Induction Slide-in Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HII8047U"
+      },
+      {
+       "model": "HII8057U"
+      },
+      {
+       "model": "HIIP057U"
+      }
+     ]
+    },
+    {
+     "label": "Ventilation",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "DUH30253UC"
+      },
+      {
+       "model": "DUH36253UC"
+      },
+      {
+       "model": "DUH50353UC"
+      },
+      {
+       "model": "DUH56353UC"
+      },
+      {
+       "model": "DUH80553UC"
+      },
+      {
+       "model": "DUH86553UC"
+      },
+      {
+       "model": "DUHP0853UC"
+      },
+      {
+       "model": "DUHP6853UC"
+      },
+      {
+       "model": "HCB50651UC"
+      },
+      {
+       "model": "HCB56651UC"
+      },
+      {
+       "model": "HCG56651UC"
+      },
+      {
+       "model": "HCI86051UC"
+      },
+      {
+       "model": "HCI88051UC"
+      },
+      {
+       "model": "HCP30E52UC"
+      },
+      {
+       "model": "HCP34E52UC"
+      },
+      {
+       "model": "HCP36E52UC"
+      },
+      {
+       "model": "HCP50652UC"
+      },
+      {
+       "model": "HCP56652UC"
+      },
+      {
+       "model": "HCP80641UC"
+      },
+      {
+       "model": "HCP86641UC"
+      },
+      {
+       "model": "HDD80052UC"
+      },
+      {
+       "model": "HDD86052UC"
+      },
+      {
+       "model": "HIB82651UC"
+      },
+      {
+       "model": "HUI30253UC"
+      },
+      {
+       "model": "HUI34253UC"
+      },
+      {
+       "model": "HUI36253UC"
+      },
+      {
+       "model": "HUI50351UC"
+      },
+      {
+       "model": "HUI54452UC"
+      },
+      {
+       "model": "HUI56551UC"
+      },
+      {
+       "model": "HUI80553UC"
+      },
+      {
+       "model": "HUI86553UC"
+      }
+     ]
+    },
+    {
+     "label": "Industrial-Style Induction Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HIS5057U"
+      },
+      {
+       "model": "HIS5657U"
+      },
+      {
+       "model": "HIS8057U"
+      },
+      {
+       "model": "HIS8657U"
+      },
+      {
+       "model": "HIS8857UC"
+      }
+     ]
+    },
+    {
+     "label": "Gas Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NGM5059UC"
+      },
+      {
+       "model": "NGM5453UC"
+      },
+      {
+       "model": "NGM5659UC"
+      },
+      {
+       "model": "NGM8049UC"
+      },
+      {
+       "model": "NGM8059UC"
+      },
+      {
+       "model": "NGM8659UC"
+      },
+      {
+       "model": "NGMP059UC"
+      },
+      {
+       "model": "NGMP659UC"
+      }
+     ]
+    },
+    {
+     "label": "Gas Industrial Style Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HGS5057UC"
+      },
+      {
+       "model": "HGS5657UC"
+      },
+      {
+       "model": "HGS8057UC"
+      },
+      {
+       "model": "HGS8657UC"
+      }
+     ]
+    },
+    {
+     "label": "Built-In Refrigerator Column",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B30IR905SP"
+      }
+     ]
+    },
+    {
+     "label": "DF Industrial Style Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HDS5057U"
+      },
+      {
+       "model": "HDS5657U"
+      },
+      {
+       "model": "HDS8057U"
+      },
+      {
+       "model": "HDS8657U"
+      },
+      {
+       "model": "HDS8857UC"
+      }
+     ]
+    },
+    {
+     "label": "Electric Radiant Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NEM5066UC"
+      },
+      {
+       "model": "NEM5466UC"
+      },
+      {
+       "model": "NET8062UC"
+      },
+      {
+       "model": "NET8669UC"
+      }
+     ]
+    },
+    {
+     "label": "Built-In Freezer Column",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B18IF905SP"
+      }
+     ]
+    },
+    {
+     "label": "Built-In Refrigeration Units",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B09IB91NSP"
+      },
+      {
+       "model": "B30BB130SS"
+      },
+      {
+       "model": "B30IB100SP"
+      },
+      {
+       "model": "B36BT130NS"
+      },
+      {
+       "model": "B36IT100NP"
+      }
+     ]
+    },
+    {
+     "label": "Gas Industrial-Style Rangetop",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "RGM8658UC"
+      }
+     ]
+    },
+    {
+     "label": "Induction Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NIT5063UC"
+      },
+      {
+       "model": "NIT5663UC"
+      },
+      {
+       "model": "NIT8061UC"
+      },
+      {
+       "model": "NIT8461UC"
+      },
+      {
+       "model": "NIT8661UC"
+      },
+      {
+       "model": "NITP060UC"
+      },
+      {
+       "model": "NITP660UC"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/bosch-bf-delivery-install.pdf"
+    }
+   ]
+  },
+  {
+   "id": "whirlpool-maytag-black-friday",
+   "brands": [
+    "Whirlpool",
+    "Maytag"
+   ],
+   "title": "Whirlpool & Maytag Black Friday Event",
+   "offerCode": "NMG1126WPLBF",
+   "summary": "Up to $150 back on each qualifying Whirlpool or Maytag appliance, plus a $450 bonus when you buy 6: up to $900.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $900",
+   "tiers": [
+    {
+     "label": "Each qualifying appliance",
+     "value": "Up to $150 (see models)"
+    },
+    {
+     "label": "Buy 6",
+     "value": "+$450 bonus"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Dishwashers",
+    "Microwaves",
+    "Laundry"
+   ],
+   "purchaseStart": "2026-11-04",
+   "purchaseEnd": "2026-12-02",
+   "deliverBy": null,
+   "claimBy": "2027-01-01",
+   "serialBy": "2027-04-01",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 1, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "http://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard",
+   "conditions": [
+    "Limit one per category, up to 6 models per claim.",
+    "Washers and dryers must be bought as a pair.",
+    "A laundry center counts as 2 appliances.",
+    "Prior sales, back orders and special orders do not qualify."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WRFC5036RZ",
+       "amount": 100
+      },
+      {
+       "model": "WRFF5333PZ",
+       "amount": 75
+      },
+      {
+       "model": "WRFC3036RZ",
+       "amount": 50
+      },
+      {
+       "model": "WRFF3736SZ",
+       "amount": 50
+      },
+      {
+       "model": "WRMF3636SZ",
+       "amount": 50
+      },
+      {
+       "model": "MRSF6636RZ",
+       "amount": 50
+      },
+      {
+       "model": "MRFF4336TZ",
+       "amount": 50
+      },
+      {
+       "model": "WRFF3336SZ",
+       "amount": 50
+      },
+      {
+       "model": "WRSC5536RZ",
+       "amount": 50
+      },
+      {
+       "model": "WRSF5536RZ",
+       "amount": 50
+      },
+      {
+       "model": "WRFF3136SZ",
+       "amount": 50
+      },
+      {
+       "model": "WRF560SMHZ",
+       "amount": 50
+      },
+      {
+       "model": "WRB322DMBM",
+       "amount": 50
+      },
+      {
+       "model": "WRB329DMBM",
+       "amount": 50
+      },
+      {
+       "model": "MRSF4036PZ",
+       "amount": 50
+      },
+      {
+       "model": "WRS325SDHZ",
+       "amount": 50
+      },
+      {
+       "model": "WRS315SDHM",
+       "amount": 50
+      },
+      {
+       "model": "WRS315SNHM",
+       "amount": 50
+      },
+      {
+       "model": "WRTX3021TZ",
+       "amount": 25
+      },
+      {
+       "model": "WRTX3119SZ",
+       "amount": 20
+      },
+      {
+       "model": "WRTX5118TZ",
+       "amount": 20
+      },
+      {
+       "model": "MRTX5119SZ",
+       "amount": 20
+      },
+      {
+       "model": "WRTX3119SW",
+       "amount": 20
+      }
+     ]
+    },
+    {
+     "label": "Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WFGS3030RB",
+       "amount": 75
+      },
+      {
+       "model": "WFGS3030RS",
+       "amount": 75
+      },
+      {
+       "model": "WFGS3030RW",
+       "amount": 75
+      },
+      {
+       "model": "WSES5030SZ",
+       "amount": 50
+      },
+      {
+       "model": "WSGS5030SZ",
+       "amount": 50
+      },
+      {
+       "model": "MFES4030RS",
+       "amount": 25
+      },
+      {
+       "model": "MFGS4030RS",
+       "amount": 25
+      },
+      {
+       "model": "WFES3030RB",
+       "amount": 25
+      },
+      {
+       "model": "WFES3030RS",
+       "amount": 25
+      },
+      {
+       "model": "WFES3030RW",
+       "amount": 25
+      },
+      {
+       "model": "WFES3330RS",
+       "amount": 25
+      },
+      {
+       "model": "WFES4530SS",
+       "amount": 25
+      },
+      {
+       "model": "WFES5030RZ",
+       "amount": 25
+      },
+      {
+       "model": "WFG320M0MB",
+       "amount": 25
+      },
+      {
+       "model": "WFG320M0MS",
+       "amount": 25
+      },
+      {
+       "model": "WFG320M0MW",
+       "amount": 25
+      },
+      {
+       "model": "WFG505M0MS",
+       "amount": 25
+      },
+      {
+       "model": "WFGS4530SS",
+       "amount": 25
+      },
+      {
+       "model": "WFGS5030RZ",
+       "amount": 25
+      },
+      {
+       "model": "WSES3330TS",
+       "amount": 25
+      },
+      {
+       "model": "WSGS3330TS",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Commercial Laundry",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "MEDP586KW",
+       "amount": 75
+      },
+      {
+       "model": "MGDP586KW",
+       "amount": 75
+      },
+      {
+       "model": "MVWP586GW",
+       "amount": 75
+      }
+     ]
+    },
+    {
+     "label": "Washers (buy as a pair)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "MHW5630HW",
+       "amount": 25
+      },
+      {
+       "model": "MHW5630MBK",
+       "amount": 25
+      },
+      {
+       "model": "MHW6630HC",
+       "amount": 25
+      },
+      {
+       "model": "MHW6630HW",
+       "amount": 25
+      },
+      {
+       "model": "MHW6630MBK",
+       "amount": 25
+      },
+      {
+       "model": "MTW5205TW",
+       "amount": 25
+      },
+      {
+       "model": "MTW5600RU",
+       "amount": 25
+      },
+      {
+       "model": "MTW5600RW",
+       "amount": 25
+      },
+      {
+       "model": "MTW5605RU",
+       "amount": 25
+      },
+      {
+       "model": "MTW5605RW",
+       "amount": 25
+      },
+      {
+       "model": "MTW6200RF",
+       "amount": 25
+      },
+      {
+       "model": "MTW6200RR",
+       "amount": 25
+      },
+      {
+       "model": "MTW6200RW",
+       "amount": 25
+      },
+      {
+       "model": "MTW6205RF",
+       "amount": 25
+      },
+      {
+       "model": "MTW6205RR",
+       "amount": 25
+      },
+      {
+       "model": "MTW6205RW",
+       "amount": 25
+      },
+      {
+       "model": "MTW7405RR",
+       "amount": 25
+      },
+      {
+       "model": "MVW5430MW",
+       "amount": 25
+      },
+      {
+       "model": "WFW4720RW",
+       "amount": 25
+      },
+      {
+       "model": "WFW5720RR",
+       "amount": 25
+      },
+      {
+       "model": "WFC682CLW",
+       "amount": 50
+      },
+      {
+       "model": "WFW5720RU",
+       "amount": 25
+      },
+      {
+       "model": "WFW8620HC",
+       "amount": 50
+      },
+      {
+       "model": "WFW5720RW",
+       "amount": 25
+      },
+      {
+       "model": "WFW8620HW",
+       "amount": 50
+      },
+      {
+       "model": "WTW4100SW",
+       "amount": 25
+      },
+      {
+       "model": "MHW8630HC",
+       "amount": 50
+      },
+      {
+       "model": "WTW4107SW",
+       "amount": 25
+      },
+      {
+       "model": "MHW8630HW",
+       "amount": 50
+      },
+      {
+       "model": "WTW4307SW",
+       "amount": 25
+      },
+      {
+       "model": "MVW7232HW",
+       "amount": 50
+      },
+      {
+       "model": "WTW5020SW",
+       "amount": 25
+      },
+      {
+       "model": "WTW8127LC",
+       "amount": 50
+      },
+      {
+       "model": "WTW5025SW",
+       "amount": 25
+      },
+      {
+       "model": "WTW8127LW",
+       "amount": 50
+      },
+      {
+       "model": "WTW5057LW",
+       "amount": 25
+      },
+      {
+       "model": "MTW7200RF",
+       "amount": 50
+      },
+      {
+       "model": "WTW6157PB",
+       "amount": 25
+      },
+      {
+       "model": "MTW7200RR",
+       "amount": 50
+      },
+      {
+       "model": "WTW6157PW",
+       "amount": 25
+      },
+      {
+       "model": "MTW7205RF",
+       "amount": 50
+      },
+      {
+       "model": "MTW7205RR",
+       "amount": 50
+      },
+      {
+       "model": "MTW7200RW",
+       "amount": 50
+      },
+      {
+       "model": "MTW7205RW",
+       "amount": 50
+      },
+      {
+       "model": "MFW7020RF",
+       "amount": 50
+      },
+      {
+       "model": "MFW7020RU",
+       "amount": 50
+      },
+      {
+       "model": "MFW7020RW",
+       "amount": 50
+      },
+      {
+       "model": "WFW6720RR",
+       "amount": 50
+      },
+      {
+       "model": "WFW6720RU",
+       "amount": 50
+      },
+      {
+       "model": "WFW6720RW",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Dryers (buy as a pair)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WGD8127LC",
+       "amount": 50
+      },
+      {
+       "model": "WGD5720RU",
+       "amount": 50
+      },
+      {
+       "model": "WGD8127LW",
+       "amount": 50
+      },
+      {
+       "model": "WGD5720RW",
+       "amount": 50
+      },
+      {
+       "model": "MGD7205RF",
+       "amount": 50
+      },
+      {
+       "model": "MED4500MW",
+       "amount": 25
+      },
+      {
+       "model": "MGD7205RR",
+       "amount": 50
+      },
+      {
+       "model": "MED5430MW",
+       "amount": 25
+      },
+      {
+       "model": "WED8620HC",
+       "amount": 50
+      },
+      {
+       "model": "MED5605RU",
+       "amount": 25
+      },
+      {
+       "model": "MED8630HC",
+       "amount": 50
+      },
+      {
+       "model": "MED5605RW",
+       "amount": 25
+      },
+      {
+       "model": "MED8630HW",
+       "amount": 50
+      },
+      {
+       "model": "MED5630HW",
+       "amount": 25
+      },
+      {
+       "model": "WGD5620HW",
+       "amount": 50
+      },
+      {
+       "model": "MED5630MBK",
+       "amount": 25
+      },
+      {
+       "model": "MGD7020RF",
+       "amount": 50
+      },
+      {
+       "model": "MED6205RF",
+       "amount": 25
+      },
+      {
+       "model": "MGD7020RU",
+       "amount": 50
+      },
+      {
+       "model": "MED6205RR",
+       "amount": 25
+      },
+      {
+       "model": "MED6230HC",
+       "amount": 50
+      },
+      {
+       "model": "MED6205RW",
+       "amount": 25
+      },
+      {
+       "model": "MGD6230HW",
+       "amount": 50
+      },
+      {
+       "model": "MED6230HW",
+       "amount": 25
+      },
+      {
+       "model": "WGD500CMW",
+       "amount": 50
+      },
+      {
+       "model": "MED6630HC",
+       "amount": 25
+      },
+      {
+       "model": "MGD7020RW",
+       "amount": 50
+      },
+      {
+       "model": "MED6630HW",
+       "amount": 25
+      },
+      {
+       "model": "WGD6720RR",
+       "amount": 50
+      },
+      {
+       "model": "MED6630MBK",
+       "amount": 25
+      },
+      {
+       "model": "WGD6720RU",
+       "amount": 50
+      },
+      {
+       "model": "MED7230HW",
+       "amount": 25
+      },
+      {
+       "model": "WGD6720RW",
+       "amount": 50
+      },
+      {
+       "model": "MED7405RR",
+       "amount": 25
+      },
+      {
+       "model": "WED8127LC",
+       "amount": 50
+      },
+      {
+       "model": "MGD4005SW",
+       "amount": 25
+      },
+      {
+       "model": "WED8127LW",
+       "amount": 50
+      },
+      {
+       "model": "MGD4500MW",
+       "amount": 25
+      },
+      {
+       "model": "MED7205RF",
+       "amount": 50
+      },
+      {
+       "model": "MGD5030MW",
+       "amount": 25
+      },
+      {
+       "model": "MED7205RR",
+       "amount": 50
+      },
+      {
+       "model": "MGD5430MW",
+       "amount": 25
+      },
+      {
+       "model": "MGD7405RR",
+       "amount": 50
+      },
+      {
+       "model": "MGD5605RU",
+       "amount": 25
+      },
+      {
+       "model": "WED5620HW",
+       "amount": 50
+      },
+      {
+       "model": "MGD5605RW",
+       "amount": 25
+      },
+      {
+       "model": "MED7205RW",
+       "amount": 50
+      },
+      {
+       "model": "MGD5630HW",
+       "amount": 25
+      },
+      {
+       "model": "MGD6630HC",
+       "amount": 50
+      },
+      {
+       "model": "MGD5630MBK",
+       "amount": 25
+      },
+      {
+       "model": "MGD6630MBK",
+       "amount": 50
+      },
+      {
+       "model": "MGD6205RW",
+       "amount": 25
+      },
+      {
+       "model": "MGD7205RW",
+       "amount": 50
+      },
+      {
+       "model": "MTW4205SW",
+       "amount": 25
+      },
+      {
+       "model": "MED7020RF",
+       "amount": 50
+      },
+      {
+       "model": "WED4107SW",
+       "amount": 25
+      },
+      {
+       "model": "MED7020RU",
+       "amount": 50
+      },
+      {
+       "model": "WED4307SW",
+       "amount": 25
+      },
+      {
+       "model": "WGD6150PB",
+       "amount": 50
+      },
+      {
+       "model": "WED4720RW",
+       "amount": 25
+      },
+      {
+       "model": "WGD6150PW",
+       "amount": 50
+      },
+      {
+       "model": "WED4950HW",
+       "amount": 25
+      },
+      {
+       "model": "WED500CMW",
+       "amount": 50
+      },
+      {
+       "model": "WED5010LW",
+       "amount": 25
+      },
+      {
+       "model": "MGD7230HC",
+       "amount": 50
+      },
+      {
+       "model": "MGD6205RF",
+       "amount": 50
+      },
+      {
+       "model": "WED5050LW",
+       "amount": 25
+      },
+      {
+       "model": "WGD8620HC",
+       "amount": 50
+      },
+      {
+       "model": "MGD6205RR",
+       "amount": 50
+      },
+      {
+       "model": "WED5720RR",
+       "amount": 25
+      },
+      {
+       "model": "WGD8620HW",
+       "amount": 50
+      },
+      {
+       "model": "MED7020RW",
+       "amount": 50
+      },
+      {
+       "model": "WED5720RU",
+       "amount": 25
+      },
+      {
+       "model": "MGD8630HC",
+       "amount": 50
+      },
+      {
+       "model": "MGD6630HW",
+       "amount": 50
+      },
+      {
+       "model": "WED5720RW",
+       "amount": 25
+      },
+      {
+       "model": "MGD8630HW",
+       "amount": 50
+      },
+      {
+       "model": "WED6720RR",
+       "amount": 50
+      },
+      {
+       "model": "WED6150PB",
+       "amount": 25
+      },
+      {
+       "model": "MGD6500MW",
+       "amount": 50
+      },
+      {
+       "model": "WED6720RU",
+       "amount": 50
+      },
+      {
+       "model": "WED6150PW",
+       "amount": 25
+      },
+      {
+       "model": "MGD6230HC",
+       "amount": 50
+      },
+      {
+       "model": "WED6720RW",
+       "amount": 50
+      },
+      {
+       "model": "WGD4107SW",
+       "amount": 25
+      },
+      {
+       "model": "MGD6230RHW",
+       "amount": 50
+      },
+      {
+       "model": "WGD5720RR",
+       "amount": 50
+      },
+      {
+       "model": "WGD4307SW",
+       "amount": 25
+      },
+      {
+       "model": "WED8620HW",
+       "amount": 50
+      },
+      {
+       "model": "WGD4720RW",
+       "amount": 25
+      },
+      {
+       "model": "WGD4950HW",
+       "amount": 25
+      },
+      {
+       "model": "WGD5010LW",
+       "amount": 25
+      },
+      {
+       "model": "WGD5050LW",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Laundry Centers (count as 2)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WFH5424SJ",
+       "amount": 75
+      },
+      {
+       "model": "WFH5424SW",
+       "amount": 75
+      },
+      {
+       "model": "WGF5727TW",
+       "amount": 75
+      },
+      {
+       "model": "WEF5727TW",
+       "amount": 75
+      },
+      {
+       "model": "WGF5727TR",
+       "amount": 75
+      },
+      {
+       "model": "WGTLV27HW",
+       "amount": 75
+      },
+      {
+       "model": "WEF5727TR",
+       "amount": 75
+      },
+      {
+       "model": "WETLV27HW",
+       "amount": 75
+      },
+      {
+       "model": "WGT4027HW",
+       "amount": 75
+      },
+      {
+       "model": "WET4124HW",
+       "amount": 75
+      },
+      {
+       "model": "WET4027HW",
+       "amount": 75
+      },
+      {
+       "model": "WET4024HW",
+       "amount": 75
+      }
+     ]
+    },
+    {
+     "label": "Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WCIT7530SB",
+       "amount": 50
+      },
+      {
+       "model": "WCIT7536SB",
+       "amount": 50
+      },
+      {
+       "model": "WCE55US0HB",
+       "amount": 25
+      },
+      {
+       "model": "WCE55US6HB",
+       "amount": 25
+      },
+      {
+       "model": "WCE77US0HB",
+       "amount": 25
+      },
+      {
+       "model": "WCE77US6HB",
+       "amount": 25
+      },
+      {
+       "model": "WCGK5030PS",
+       "amount": 25
+      },
+      {
+       "model": "WCGK5036PS",
+       "amount": 25
+      },
+      {
+       "model": "WCGK7030PS",
+       "amount": 25
+      },
+      {
+       "model": "WCGK7036PS",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Freezers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WZCC5519TW",
+       "amount": 25
+      },
+      {
+       "model": "MZCC4316TG",
+       "amount": 25
+      },
+      {
+       "model": "WZCC5516TW",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WDT550SAPZ",
+       "amount": 50
+      },
+      {
+       "model": "WDTA50SAKZ",
+       "amount": 25
+      },
+      {
+       "model": "WDT750SAKZ",
+       "amount": 25
+      },
+      {
+       "model": "MDB4949SKZ",
+       "amount": 25
+      },
+      {
+       "model": "WDT730HAMZ",
+       "amount": 25
+      },
+      {
+       "model": "WDP540HAMZ",
+       "amount": 25
+      },
+      {
+       "model": "WDF341PAPM",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WOEC5030LZ",
+       "amount": 150
+      },
+      {
+       "model": "WOED5030LZ",
+       "amount": 75
+      },
+      {
+       "model": "WOEC3030LS",
+       "amount": 75
+      },
+      {
+       "model": "WOED3030LS",
+       "amount": 75
+      },
+      {
+       "model": "WOES5030LZ",
+       "amount": 50
+      },
+      {
+       "model": "WOES3030LS",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Microwaves",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WML55011HS",
+       "amount": 15
+      },
+      {
+       "model": "MMMS4230PZ",
+       "amount": 15
+      },
+      {
+       "model": "WMMS3230SS",
+       "amount": 15
+      },
+      {
+       "model": "WMH31017HS",
+       "amount": 15
+      },
+      {
+       "model": "WMMS3130RZ",
+       "amount": 15
+      },
+      {
+       "model": "WMMS3130RS",
+       "amount": 15
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/whirlpool-maytag-black-friday.pdf"
+    }
+   ]
+  },
+  {
+   "id": "speed-queen-dryer",
+   "brands": [
+    "Speed Queen"
+   ],
+   "title": "Workhorse Performance in a Black-Tie Finish",
+   "offerCode": null,
+   "summary": "Get $150 back on a white DR7 or DC5 dryer, or $200 back on matte black.",
+   "benefit": "cash-rebate",
+   "redemption": "online",
+   "amountHeadline": "Up to $200",
+   "tiers": [
+    {
+     "label": "White DR7 or DC5",
+     "value": "$150"
+    },
+    {
+     "label": "Matte Black DR7 or DC5",
+     "value": "$200"
+    }
+   ],
+   "categories": [
+    "Laundry"
+   ],
+   "purchaseStart": "2026-10-26",
+   "purchaseEnd": "2026-11-30",
+   "deliverBy": null,
+   "claimBy": "2026-12-30",
+   "serialBy": null,
+   "claimNote": "Corrections or missing information must be completed by February 28, 2027.",
+   "claimSteps": [
+    "Buy an eligible Speed Queen dryer.",
+    "Submit your claim online at SpeedQueenPromotions.com by December 30, 2026, with a clear copy of your invoice and the serial number.",
+    "Questions: 1-833-215-8217."
+   ],
+   "claimUrl": "https://SpeedQueenPromotions.com",
+   "claimUrlLabel": "SpeedQueenPromotions.com",
+   "infoUrl": null,
+   "payout": "Speed Queen Prepaid Mastercard (digital or physical)",
+   "conditions": [
+    "One eligible machine; limit one rebate per household.",
+    "Residential use only."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Dryers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "DC5004WE/G"
+      },
+      {
+       "model": "DC5004BE/G"
+      },
+      {
+       "model": "DR7004WE/G"
+      },
+      {
+       "model": "DR7004BE/G"
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Full terms (PDF)",
+     "href": "forms/speed-queen-dryer.pdf"
+    }
+   ]
+  }
+ ]
 }
