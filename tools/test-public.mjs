@@ -155,6 +155,54 @@ writeFileSync(join(repo, "web", "index.html"), pageNext.replace("<!--NOTICE:head
 r = run(["public"]); expect("a header notice outside the header is caught", !r.ok && /not inside the page header/.test(r.out), r.out);
 writeFileSync(join(repo, "web", "index.html"), pageNext);
 
+// 6. Pre-push history scan (tools/scan-history.mjs) on throwaway git repositories. The private words come from
+//    the workspace list at run time; this file never contains them.
+{
+  const { scanHistory } = await import("./scan-history.mjs");
+  const NOREPLY = "tester@users.noreply.github.com";
+  const contactJson = readFileSync(join(repoDir, "web", "contact.json"), "utf8");
+  r = run(["public"]);
+  const builtIndex = readFileSync(join(repo, "site", "index.html"), "utf8");
+  const street = (terms.contactAllowed ?? [])[0];
+  const word = terms.anywhere.find((w) => !(terms.contactAllowed ?? []).includes(w));
+  let n = 0;
+  // commits: [{ files: { path: text }, message, email }], one after another in a new repository.
+  const scan = (commits) => {
+    const g = join(tmp, `scan-${++n}`);
+    mkdirSync(g, { recursive: true });
+    const git = (args, email = NOREPLY) => execFileSync("git", ["-C", g, "-c", "user.name=tester", "-c", `user.email=${email}`, ...args], { stdio: "pipe" });
+    git(["init", "-q"]);
+    for (const c of commits) {
+      for (const [p, text] of Object.entries(c.files)) { mkdirSync(join(g, p, ".."), { recursive: true }); writeFileSync(join(g, p), text); }
+      git(["add", "-A"]);
+      git(["commit", "-q", "--allow-empty", "-m", c.message ?? "test commit"], c.email);
+    }
+    return scanHistory(g, ws);
+  };
+  const base = { "web/contact.json": contactJson, "site/index.html": builtIndex, "docs/notes.md": "Public notes.\n" };
+  let s = scan([{ files: base }]);
+  expect("history scan: contact info with both street names and the store email passes", s.findings.length === 0 && s.blobs === 3, JSON.stringify(s));
+  s = scan([{ files: { ...base, "docs/notes.md": `Notes ${word}.\n` } }]);
+  expect("history scan: a private term in a file is caught (and not printed)", s.findings.length === 1 && /docs\/notes\.md: private term \d+/.test(s.findings[0]) && !s.findings[0].includes(word), JSON.stringify(s.findings));
+  s = scan([{ files: { ...base, "docs/notes.md": `Notes ${word}.\n` } }, { files: { "docs/notes.md": "Public notes.\n" } }]);
+  expect("history scan: a private term removed in a later commit is still caught", s.findings.length === 1, JSON.stringify(s.findings));
+  s = scan([{ files: { ...base, "site/index.html": builtIndex.replace("<main", `<p>${street}</p><main`) } }]);
+  expect("history scan: a street name outside the page's contact blocks is caught", s.findings.some((f) => /site\/index\.html: private term \d+ outside the contact info/.test(f)), JSON.stringify(s.findings));
+  s = scan([{ files: { ...base, "docs/notes.md": `Our store is on ${street}.\n` } }]);
+  expect("history scan: a street name in any other file is caught", s.findings.some((f) => /docs\/notes\.md: private term \d+ outside the contact info/.test(f)), JSON.stringify(s.findings));
+  s = scan([{ files: base, message: `Update for ${word}` }]);
+  expect("history scan: a private term in a commit message is caught", s.findings.some((f) => /commit \w+: message or author contains private term/.test(f)), JSON.stringify(s.findings));
+  s = scan([{ files: base, email: "tester@mail.invalid" }]);
+  expect("history scan: a non-noreply author email is caught", s.findings.some((f) => /author or committer email tester@mail\.invalid/.test(f)), JSON.stringify(s.findings));
+  const storeEmail = JSON.parse(contactJson).stores.find((x) => x.email).email;
+  s = scan([{ files: { ...base, "docs/notes.md": `Write to ${storeEmail} or someone@mail.invalid.\n` } }]);
+  expect("history scan: emails outside the contact files are caught", s.findings.length === 2, JSON.stringify(s.findings));
+  s = scan([{ files: { ...base, "docs/notes.md": "Data is in " + ["C:", "Users", "someone", "data"].join("\\") + "\n" } }]);
+  expect("history scan: a local user path is caught", s.findings.some((f) => /local path with a user folder/.test(f)), JSON.stringify(s.findings));
+  s = scan([{ files: { ...base, "site/forms/brand.pdf": `imprint ${street} ${word}` } }]);
+  expect("history scan: original brand files in site/forms are not scanned (D-28)", s.findings.length === 0 && s.skipped === 1, JSON.stringify(s));
+}
+
 rmSync(tmp, { recursive: true, force: true });
 console.log(failures ? `\n${failures} FAILED` : "\nAll publish-rule tests passed.");
 process.exit(failures ? 1 : 0);
