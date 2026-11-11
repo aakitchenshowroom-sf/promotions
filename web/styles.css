@@ -3,7 +3,8 @@
    small tinted tags; one card per brand with a light block per promotion.
    Still not allowed: gradients, glow, large shadows, emoji, marketing copy.
    One font, sizes 32 / 24 / 20 / 16 / 14. One red (--red) for the company name and the amounts.
-   All text colors reach WCAG AA (4.5:1) on the background they sit on, in light and dark mode. */
+   All text colors reach WCAG AA (4.5:1) on the background they sit on, in light and dark mode, in every
+   interactive state; the build checks this (tools/lib/contrast.mjs, D-32). */
 :root {
   --page: #f1f2f4;            /* very light grey page */
   --surface: #ffffff;         /* cards */
@@ -121,9 +122,11 @@ h1 { font-size: 32px; font-weight: 700; }
 main.wrap { display: grid; gap: 24px; padding-top: 24px; }
 .brand-grid { display: flex; flex-wrap: wrap; gap: 8px; }
 .brand-btn, #brand-clear {
-  font-size: 14px; line-height: 20px; padding: 10px 16px; text-align: left;
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-btn); cursor: pointer;
+  font-size: 14px; line-height: 20px; padding: 10px 16px; text-align: left; border-radius: var(--r-btn); cursor: pointer;
 }
+/* Unpicked brands only. The picked brand and the collapsed "Brand ✕" button keep the solid style above
+   (the contrast check, tools/lib/contrast.mjs, covers both in light and dark mode). */
+.brand-btn { background: var(--surface); border: 1px solid var(--line); }
 .brand-btn[aria-pressed="true"], #brand-clear { font-weight: 700; }
 .brand-chosen { display: none; }
 @media (max-width: 719px) {
@@ -141,6 +144,7 @@ main.wrap { display: grid; gap: 24px; padding-top: 24px; }
   width: 100%; background: var(--control-bg);
   border: 1px solid var(--line); border-radius: var(--r-btn); padding: 10px 12px;
 }
+.filters input::placeholder { color: var(--muted); opacity: 1; }
 .more-filters summary { cursor: pointer; font-size: 14px; color: var(--muted); padding: 8px 0 0; }
 .more-body { display: grid; gap: 8px; padding-top: 8px; }
 .f-select { display: grid; gap: 4px; font-size: 14px; color: var(--muted); }

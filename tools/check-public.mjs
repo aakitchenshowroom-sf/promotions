@@ -9,6 +9,7 @@ import { locations, readJson, repoDir, sourcePath } from "./lib/paths.mjs";
 import { PUBLIC_FIELDS, publishable, downloadsOf, DOWNLOAD_EXT } from "./lib/publish.mjs";
 import { readNotices, headerNoticeHtml } from "./lib/notices.mjs";
 import { contactVisibilityProblems } from "./lib/contact-visibility.mjs";
+import { contrastProblems } from "./lib/contrast.mjs";
 
 // Card text (index.html, app.js, styles.css, promos.json) must never contain these. Personal and store
 // identifiers are not listed here (this repo is public); they come from the workspace's
@@ -69,6 +70,9 @@ export function checkPublic(siteDir, master, root, workspace) {
   if (/<!--(CONTACT|NOTICE):/.test(index)) problems.push("index.html: a contact or notice marker was left unfilled");
   // D-27: at every width, each show room's details are visible in the header or the footer.
   try { problems.push(...contactVisibilityProblems(readFileSync(join(siteDir, "styles.css"), "utf8"))); }
+  catch (e) { problems.push(e.message); }
+  // D-32: every text, in every interactive state, light and dark, phone and desktop, reaches 4.5:1.
+  try { problems.push(...contrastProblems(readFileSync(join(siteDir, "styles.css"), "utf8"))); }
   catch (e) { problems.push(e.message); }
 
   const pub = JSON.parse(readFileSync(join(siteDir, "promos.json"), "utf8"));

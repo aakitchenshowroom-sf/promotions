@@ -121,6 +121,21 @@ r = run(["public"]); expect("footer details hidden at phone widths too is caught
 writeFileSync(cssPath, cssNow + "\n@media (min-width: 600px) { .head-band .stores { display: none; } }\n");
 r = run(["public"]); expect("header details hidden at wide widths is caught", !r.ok && /hidden in both the header and the footer at widths 720px/.test(r.out), r.out);
 writeFileSync(cssPath, cssNow);
+
+// D-32: contrast of every text in every interactive state, light and dark, checked from the stylesheet.
+r = run(["public"]); expect("every text reaches 4.5:1 in every state, light and dark", r.ok && !/below 4\.5/.test(r.out), r.out);
+const chipFix = ".brand-btn { background: var(--surface); border: 1px solid var(--line); }";
+expect("the collapsed brand button has its own solid style", cssNow.includes(chipFix), "");
+writeFileSync(cssPath, cssNow.replace(chipFix, ".brand-btn, #brand-clear { background: var(--surface); border: 1px solid var(--line); }"));
+r = run(["public"]); expect("collapsed brand button back to dark text on a dark card is caught", !r.ok &&
+  /Chosen brand, collapsed \(phone\) \(dark, 390px\): text #12151b on #181b21 is 1\.06:1/.test(r.out) && /Chosen brand, collapsed \(phone\) \(light, 390px\)/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow + "\n@media (prefers-color-scheme: dark) { .toggle:hover { color: var(--solid); } }\n");
+r = run(["public"]); expect("a hover color too weak in dark mode only is caught", !r.ok && /Details button, closed :hover \(dark, 390px\)/.test(r.out) && !/\(light, [0-9]+px\)/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow + "\n.list a:focus-visible { outline: 2px solid var(--line); }\n");
+r = run(["public"]); expect("a focus ring too weak against its background is caught", !r.ok && /focus ring \(light, 390px\): outline #e2e5ea/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow + "\n.item + .item .title { color: #777777; }\n");
+r = run(["public"]); expect("a color rule the check cannot read fails the build", !r.ok && /cannot read this selector/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow);
 const contactPath = join(repo, "web", "contact.json");
 const contact = JSON.parse(readFileSync(contactPath, "utf8"));
 writeFileSync(contactPath, JSON.stringify({ ...contact, storeName: `${contact.storeName} ${terms.wholeWords[0]}` }));
