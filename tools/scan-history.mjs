@@ -6,8 +6,8 @@
 //     in contactAllowed (the show rooms' street names, D-27) are allowed only in web/contact.json and inside
 //     the <!--contact--> blocks of site/index.html, the same rule as the public check;
 //   - local paths that would reveal a user folder (a drive letter followed by the Users folder);
-//   - email addresses other than GitHub noreply addresses and the store's public emails (web/contact.json,
-//     allowed in web/contact.json and site/index.html only);
+//   - email addresses other than GitHub noreply addresses, the store's public emails (web/contact.json,
+//     allowed in web/contact.json and site/index.html only) and reserved example/test domains (.invalid, …);
 //   - commits whose author or committer email is not a GitHub noreply address.
 // The original brand files in site/forms/ are not scanned: they are byte-exact copies of the originals and
 // carry the store's imprint by decision (D-28). Terms are reported by their position in the list, never shown.
@@ -25,6 +25,8 @@ const SKIP = (path) => path.startsWith("site/forms/");
 const USER_PATH = /[A-Za-z]:\\+Users\\+|\/c\/Users\/|\/Users\/[A-Za-z]/;
 const EMAIL = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g;
 const NOREPLY = /^(noreply@|[^@]+@users\.noreply\.github\.com$)/i;
+// Domains reserved for examples and tests (RFC 2606 / 6761): never a real mailbox, so allowed (used by the tests).
+const RESERVED = /@([\w-]+\.)*(example\.(com|org|net)|example|invalid|test|localhost)$/i;
 
 export function scanHistory(repo, workspace) {
   const git = (args, input) => execFileSync("git", ["-C", repo, ...args], { input, maxBuffer: 1 << 30 });
@@ -60,7 +62,7 @@ export function scanHistory(repo, workspace) {
     if (USER_PATH.test(text)) add(`${path}|userpath`, `${path}: a local path with a user folder (blob ${sha.slice(0, 7)})`);
     for (const m of text.match(EMAIL) ?? []) {
       const e = m.toLowerCase();
-      if (NOREPLY.test(e) || /@example\.(com|org|net)$/.test(e)) continue;
+      if (NOREPLY.test(e) || RESERVED.test(e)) continue;
       if (storeEmails.has(e) && CONTACT_FILES.has(path)) continue;
       add(`${path}|email|${e}`, `${path}: email address ${m} (blob ${sha.slice(0, 7)})`);
     }

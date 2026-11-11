@@ -195,8 +195,10 @@ writeFileSync(join(repo, "web", "index.html"), pageNext);
   s = scan([{ files: base, email: "tester@mail.invalid" }]);
   expect("history scan: a non-noreply author email is caught", s.findings.some((f) => /author or committer email tester@mail\.invalid/.test(f)), JSON.stringify(s.findings));
   const storeEmail = JSON.parse(contactJson).stores.find((x) => x.email).email;
-  s = scan([{ files: { ...base, "docs/notes.md": `Write to ${storeEmail} or someone@mail.invalid.\n` } }]);
-  expect("history scan: emails outside the contact files are caught", s.findings.length === 2, JSON.stringify(s.findings));
+  const realLooking = ["someone", "mail-provider.net"].join("@"); // built here so this file holds no address
+  s = scan([{ files: { ...base, "docs/notes.md": `Write to ${storeEmail} or ${realLooking}. Example: a@b.invalid, c@example.com.\n` } }]);
+  expect("history scan: emails outside the contact files are caught; reserved example domains are not", s.findings.length === 2 &&
+    s.findings.some((f) => f.includes(storeEmail)) && s.findings.some((f) => f.includes(realLooking)), JSON.stringify(s.findings));
   s = scan([{ files: { ...base, "docs/notes.md": "Data is in " + ["C:", "Users", "someone", "data"].join("\\") + "\n" } }]);
   expect("history scan: a local user path is caught", s.findings.some((f) => /local path with a user folder/.test(f)), JSON.stringify(s.findings));
   s = scan([{ files: { ...base, "site/forms/brand.pdf": `imprint ${street} ${word}` } }]);
