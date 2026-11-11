@@ -205,3 +205,25 @@ General decisions only. Brand-specific notes live in the private workspace.
   - Decided with the maintainer: the red above; width 960px; footer order contact card, then Disclaimer;
     light solid buttons in dark mode. The one further adjustment (company name size, footer contact by width)
     was made and confirmed on 2026-11-10; the visual design is final.
+- **D-32 Contrast is checked automatically (2026-11-10).** On the live site, after choosing a brand on a phone,
+  the collapsed "Brand ✕" button had text the same color as its background: dark on dark in dark mode
+  (1.06:1) and white on white in light mode (1.00:1). Cause: the button was in two rules, the solid-button rule
+  and the unpicked-brand rule, and the later one reset its background to the card color. Fixed: the
+  unpicked-brand background applies to `.brand-btn` only, so the collapsed button keeps the solid style
+  (light: white on navy 16:1; dark: dark on light 15:1). The search box placeholder color is now set in the
+  stylesheet (muted) instead of left to the browser.
+  - `tools/lib/contrast.mjs` runs in every public build. It reads the stylesheet, resolves the cascade
+    (selectors, specificity, !important, inheritance, custom properties, media queries) and checks every text
+    on the page against the background behind it: about 60 elements, interactive ones also in :hover,
+    :active, :focus-visible and (links) :visited, in light and dark mode, at 390 and 1440px. Keyboard focus
+    rings are checked against the background around the element. Anything below 4.5:1 fails the build.
+  - It fails safe: a color rule with a selector it cannot read (sibling combinators, :not(), :has()), a color
+    it cannot read, or a form control or placeholder whose colors the stylesheet leaves to the browser also
+    fails the build. Decorative ::before/::after marks (arrows, separators) are not checked.
+  - Its results were compared with a real browser (computed colors, 184 element/mode/width combinations):
+    no differences.
+  - Tests: the current stylesheet passes; the old collapsed-button rule is caught (dark 1.06:1 and light);
+    a hover color too weak in dark mode only is caught; a weak focus ring is caught; a color rule it cannot
+    read fails the build.
+  - Screenshots before each push of a visual change include every interactive state in dark mode
+    (UPDATE.md step 7, HANDOFF "Before every push").
