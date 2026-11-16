@@ -3,13 +3,15 @@
 A one-page site listing manufacturer promotions and rebates for AA Kitchen's customers, built from the
 brand material the maintainer keeps in OneDrive. Start a new session with: "Read docs/HANDOFF.md".
 
-## Status (2026-11-10)
+## Status (2026-11-16)
 
 - **Live:** https://aakitchenshowroom-sf.github.io/promotions/ (GitHub Pages, deployed by
   `.github/workflows/pages.yml` on every push to `main`).
-- 26 promotions in the workspace data; **25 verified and published** (batch 1: 3 on 2026-11-09; batch 2:
+- 27 promotions in the workspace data; **26 verified and published** (batch 1: 3 on 2026-11-09; batch 2:
   20 on 2026-11-09; first update: #25 Bosch Kitchen Sales Event and #26 Fulgor Sofia Instant Rebate on
-  2026-11-10). **1 on hold:** #10 KitchenAid (purchase dates to be checked by the maintainer).
+  2026-11-10; second update: #27 LG Black Friday Event on 2026-11-16, with #11 re-verified the same day after
+  both cards were changed to say the two LG rebates can be combined). **1 on hold:** #10 KitchenAid (purchase
+  dates to be checked by the maintainer).
 - Page design: card layout (D-31, final since 2026-11-10), two show rooms' contact info (D-27), header notice
   and final disclaimer (D-29).
 - **Updates:** when brand files are added or changed, follow `docs/UPDATE.md` ("Read docs/UPDATE.md and run
