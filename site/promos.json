@@ -4165,7 +4165,7 @@
     "Up to 2 appliances per category count (1 over-the-range microwave).",
     "WashTower and WashCombo count as one appliance.",
     "Not included: LG SIGNATURE, countertop microwaves, air care, floor care, open-box items and display units.",
-    "Cannot be combined with other discounts — ask our team for details."
+    "Can be combined with the LG Black Friday Event rebate. Each offer has its own terms and eligible models — ask our team for details."
    ],
    "eligibleNote": null,
    "eligible": [
@@ -11136,6 +11136,756 @@
     {
      "label": "Full terms (PDF)",
      "href": "forms/fulgor-sofia-induction-instant.pdf"
+    }
+   ]
+  },
+  {
+   "id": "lg-black-friday-event",
+   "brands": [
+    "LG"
+   ],
+   "title": "LG Black Friday Event",
+   "offerCode": "NMG1126LGABF",
+   "summary": "Up to $150 back on each qualifying LG appliance, plus a $450 bonus when you buy 6: up to $900.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $900",
+   "tiers": [
+    {
+     "label": "Each qualifying appliance",
+     "value": "Up to $150 (see models)"
+    },
+    {
+     "label": "Buy 6",
+     "value": "+$450 bonus"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Dishwashers",
+    "Microwaves",
+    "Laundry"
+   ],
+   "purchaseStart": "2026-11-04",
+   "purchaseEnd": "2026-12-02",
+   "deliverBy": null,
+   "claimBy": "2027-01-01",
+   "serialBy": "2027-04-01",
+   "claimNote": null,
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 1, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "https://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard",
+   "conditions": [
+    "Limit one per category, up to 6 models per claim.",
+    "Washers and dryers must be bought as a pair.",
+    "A WashTower or a 2-in-1 laundry unit counts as 2 appliances.",
+    "Prior sales, back orders and special orders do not qualify.",
+    "Limit one rebate per household.",
+    "Can be combined with the LG Buy More, Save More rebate. Each offer has its own terms and eligible models — ask our team for details."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Refrigeration",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "LF29S9775S",
+       "amount": 100
+      },
+      {
+       "model": "LF25G8330S",
+       "amount": 75
+      },
+      {
+       "model": "LF29H8330D",
+       "amount": 75
+      },
+      {
+       "model": "LF29H8330S",
+       "amount": 75
+      },
+      {
+       "model": "LF29N8330S",
+       "amount": 75
+      },
+      {
+       "model": "LF29S8365S",
+       "amount": 75
+      },
+      {
+       "model": "LF29S9730S",
+       "amount": 75
+      },
+      {
+       "model": "LRYKC2606D",
+       "amount": 75
+      },
+      {
+       "model": "LRYKC2606S",
+       "amount": 75
+      },
+      {
+       "model": "LRYXC2606D",
+       "amount": 75
+      },
+      {
+       "model": "LRYXC2606S",
+       "amount": 75
+      },
+      {
+       "model": "LF20G6331S",
+       "amount": 50
+      },
+      {
+       "model": "LF21G6201S",
+       "amount": 50
+      },
+      {
+       "model": "LF24Z6530S",
+       "amount": 50
+      },
+      {
+       "model": "LF25H6200S",
+       "amount": 50
+      },
+      {
+       "model": "LF25H6330D",
+       "amount": 50
+      },
+      {
+       "model": "LF25H6330S",
+       "amount": 50
+      },
+      {
+       "model": "LF25Z6211S",
+       "amount": 50
+      },
+      {
+       "model": "LF30S8210S",
+       "amount": 50
+      },
+      {
+       "model": "LRFLC2706D",
+       "amount": 50
+      },
+      {
+       "model": "LRFLC2706S",
+       "amount": 50
+      },
+      {
+       "model": "LRFLC2716D",
+       "amount": 50
+      },
+      {
+       "model": "LRFLC2716S",
+       "amount": 50
+      },
+      {
+       "model": "LRFLC2726S",
+       "amount": 50
+      },
+      {
+       "model": "LRFLS3206S",
+       "amount": 50
+      },
+      {
+       "model": "LRFLS3216S",
+       "amount": 50
+      },
+      {
+       "model": "LRFXS3106S",
+       "amount": 50
+      },
+      {
+       "model": "LRRXC2606S",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "LDPS6762S",
+       "amount": 50
+      },
+      {
+       "model": "LDNPH753D",
+       "amount": 50
+      },
+      {
+       "model": "LDNPH753S",
+       "amount": 50
+      },
+      {
+       "model": "LDNTH753D",
+       "amount": 50
+      },
+      {
+       "model": "LDNTH753S",
+       "amount": 50
+      },
+      {
+       "model": "LDNTH862S",
+       "amount": 50
+      },
+      {
+       "model": "LDPS6762D",
+       "amount": 50
+      },
+      {
+       "model": "LDNPH654S",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "LTGL6937D",
+       "amount": 100
+      },
+      {
+       "model": "LDEL7324YE",
+       "amount": 50
+      },
+      {
+       "model": "LDGL6924Y",
+       "amount": 50
+      },
+      {
+       "model": "LSEL6335DE",
+       "amount": 50
+      },
+      {
+       "model": "LSEL6335XE",
+       "amount": 50
+      },
+      {
+       "model": "LSEL6335ZE",
+       "amount": 50
+      },
+      {
+       "model": "LSEL6337XE",
+       "amount": 50
+      },
+      {
+       "model": "LSGL6335X",
+       "amount": 50
+      },
+      {
+       "model": "LSGL6335Z",
+       "amount": 50
+      },
+      {
+       "model": "LSGL6337X",
+       "amount": 50
+      },
+      {
+       "model": "LSIL6332FE",
+       "amount": 50
+      },
+      {
+       "model": "LSIL6334FE",
+       "amount": 50
+      },
+      {
+       "model": "LSIL6334XE",
+       "amount": 50
+      },
+      {
+       "model": "LSIL6336XE",
+       "amount": 50
+      },
+      {
+       "model": "LTEL7337D",
+       "amount": 50
+      },
+      {
+       "model": "LTEL7337F",
+       "amount": 50
+      },
+      {
+       "model": "LTGL6937F",
+       "amount": 50
+      },
+      {
+       "model": "LREN6325XE",
+       "amount": 25
+      },
+      {
+       "model": "LREN6325ZE",
+       "amount": 25
+      },
+      {
+       "model": "LRGN6325X",
+       "amount": 25
+      },
+      {
+       "model": "LRGN6325Z",
+       "amount": 25
+      },
+      {
+       "model": "LRIN6323YE",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "CBGJ3627S",
+       "amount": 50
+      },
+      {
+       "model": "CBIH3017BE",
+       "amount": 50
+      },
+      {
+       "model": "CBIH3613BE",
+       "amount": 50
+      },
+      {
+       "model": "CBIH3617BE",
+       "amount": 50
+      },
+      {
+       "model": "LCE3681ST",
+       "amount": 50
+      },
+      {
+       "model": "CBEW3017BE",
+       "amount": 25
+      },
+      {
+       "model": "CBEW3617BE",
+       "amount": 25
+      },
+      {
+       "model": "CBGJ3023D",
+       "amount": 25
+      },
+      {
+       "model": "CBGJ3023S",
+       "amount": 25
+      },
+      {
+       "model": "CBGJ3027S",
+       "amount": 25
+      },
+      {
+       "model": "CBGJ3623D",
+       "amount": 25
+      },
+      {
+       "model": "CBGJ3623S",
+       "amount": 25
+      },
+      {
+       "model": "CBIH3013BE",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WDEP9427X",
+       "amount": 150
+      },
+      {
+       "model": "WCEP6427F",
+       "amount": 75
+      },
+      {
+       "model": "WCEP6427X",
+       "amount": 75
+      },
+      {
+       "model": "WDEP9423D",
+       "amount": 75
+      },
+      {
+       "model": "WDEP9427F",
+       "amount": 75
+      },
+      {
+       "model": "WSEP4727F",
+       "amount": 75
+      },
+      {
+       "model": "WSEP4727X",
+       "amount": 75
+      },
+      {
+       "model": "WCEP6423D",
+       "amount": 50
+      },
+      {
+       "model": "WCEP6423F",
+       "amount": 50
+      },
+      {
+       "model": "WCEP6423X",
+       "amount": 50
+      },
+      {
+       "model": "WDEP9423F",
+       "amount": 50
+      },
+      {
+       "model": "WDEP9423X",
+       "amount": 50
+      },
+      {
+       "model": "WSED3023B",
+       "amount": 50
+      },
+      {
+       "model": "WSEP4723D",
+       "amount": 50
+      },
+      {
+       "model": "WSEP4723F",
+       "amount": 50
+      },
+      {
+       "model": "WSEP4723X",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Microwaves",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "MHEC1737D",
+       "amount": 15
+      },
+      {
+       "model": "MHEC1737F",
+       "amount": 15
+      },
+      {
+       "model": "MVEF1323F",
+       "amount": 15
+      },
+      {
+       "model": "MVEF1337F",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2033D",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2033F",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2035X",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2035Z",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2125F",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2125X",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2137D",
+       "amount": 15
+      },
+      {
+       "model": "MVEL2137F",
+       "amount": 15
+      },
+      {
+       "model": "MVEM1825D",
+       "amount": 15
+      },
+      {
+       "model": "MVEM1825F",
+       "amount": 15
+      },
+      {
+       "model": "MVEM1825X",
+       "amount": 15
+      },
+      {
+       "model": "MVEM1825Z",
+       "amount": 15
+      }
+     ]
+    },
+    {
+     "label": "WashTower (counts as 2)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WKE100HWA",
+       "amount": 75
+      },
+      {
+       "model": "WKG101HWA",
+       "amount": 75
+      },
+      {
+       "model": "WKE100HVA",
+       "amount": 75
+      },
+      {
+       "model": "WKG101HVA",
+       "amount": 75
+      },
+      {
+       "model": "WKEX200HWA",
+       "amount": 75
+      },
+      {
+       "model": "WKGX201HWA",
+       "amount": 75
+      },
+      {
+       "model": "WKEX200HBA",
+       "amount": 75
+      },
+      {
+       "model": "WKGX201HBA",
+       "amount": 75
+      },
+      {
+       "model": "WKEX200HGA",
+       "amount": 75
+      },
+      {
+       "model": "WKGX201HGA",
+       "amount": 75
+      },
+      {
+       "model": "WKEX300HBA",
+       "amount": 75
+      },
+      {
+       "model": "WKGX301HBA",
+       "amount": 75
+      }
+     ]
+    },
+    {
+     "label": "Washers (buy as a pair)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WM5800HAA",
+       "amount": 50
+      },
+      {
+       "model": "WM5800HVA",
+       "amount": 50
+      },
+      {
+       "model": "WM6500HBA",
+       "amount": 50
+      },
+      {
+       "model": "WM6500HWA",
+       "amount": 50
+      },
+      {
+       "model": "WM6700HBA",
+       "amount": 50
+      },
+      {
+       "model": "WM8900HBA",
+       "amount": 50
+      },
+      {
+       "model": "WT8600CB",
+       "amount": 50
+      },
+      {
+       "model": "WT8600CW",
+       "amount": 50
+      },
+      {
+       "model": "WT8200CL",
+       "amount": 25
+      },
+      {
+       "model": "WT8200CW",
+       "amount": 25
+      },
+      {
+       "model": "WT8205CL",
+       "amount": 25
+      },
+      {
+       "model": "WT8205CW",
+       "amount": 25
+      },
+      {
+       "model": "WT8400CB",
+       "amount": 25
+      },
+      {
+       "model": "WT8400CW",
+       "amount": 25
+      },
+      {
+       "model": "WT8405CB",
+       "amount": 25
+      },
+      {
+       "model": "WT8405CW",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "Dryers (buy as a pair)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "DLEX5800A",
+       "amount": 50
+      },
+      {
+       "model": "DLEX5800V",
+       "amount": 50
+      },
+      {
+       "model": "DLEX6500B",
+       "amount": 50
+      },
+      {
+       "model": "DLEX6500W",
+       "amount": 50
+      },
+      {
+       "model": "DLEX6700B",
+       "amount": 50
+      },
+      {
+       "model": "DLEX8600BE",
+       "amount": 50
+      },
+      {
+       "model": "DLEX8600WE",
+       "amount": 50
+      },
+      {
+       "model": "DLEX8900B",
+       "amount": 50
+      },
+      {
+       "model": "DLGX5801A",
+       "amount": 50
+      },
+      {
+       "model": "DLGX5801V",
+       "amount": 50
+      },
+      {
+       "model": "DLGX6501B",
+       "amount": 50
+      },
+      {
+       "model": "DLGX6501W",
+       "amount": 50
+      },
+      {
+       "model": "DLGX6701B",
+       "amount": 50
+      },
+      {
+       "model": "DLGX8601BE",
+       "amount": 50
+      },
+      {
+       "model": "DLGX8601WE",
+       "amount": 50
+      },
+      {
+       "model": "DLGX8901B",
+       "amount": 50
+      },
+      {
+       "model": "DLE8200L",
+       "amount": 25
+      },
+      {
+       "model": "DLE8200W",
+       "amount": 25
+      },
+      {
+       "model": "DLE8400BE",
+       "amount": 25
+      },
+      {
+       "model": "DLE8400WE",
+       "amount": 25
+      },
+      {
+       "model": "DLG8201L",
+       "amount": 25
+      },
+      {
+       "model": "DLG8201W",
+       "amount": 25
+      },
+      {
+       "model": "DLG8401BE",
+       "amount": 25
+      },
+      {
+       "model": "DLG8401WE",
+       "amount": 25
+      }
+     ]
+    },
+    {
+     "label": "2-in-1 Laundry (counts as 2)",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "WM6998HBA",
+       "amount": 75
+      },
+      {
+       "model": "WM6998HVA",
+       "amount": 75
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/lg-black-friday-event.pdf"
     }
    ]
   }
