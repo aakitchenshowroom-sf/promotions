@@ -88,7 +88,7 @@
    "deliverBy": null,
    "claimBy": "2027-01-01",
    "serialBy": "2027-04-01",
-   "claimNote": null,
+   "claimNote": "Rebate program: Nationwide Marketing Group.",
    "claimSteps": [
     "Claim online at NationwideRebateCenter.com by Jan 1, 2027. The claim form and full terms are below."
    ],
@@ -99,7 +99,8 @@
    "conditions": [
     "The rebate is limited to your delivery or installation charge, up to $100.",
     "Prior sales, back orders and special orders do not qualify.",
-    "Limit one rebate per household."
+    "Limit one rebate per household.",
+    "Can be combined with the AA Kitchen Exclusive: Bosch Black Friday Rebate and The Bosch Kitchen Sales Event. Each offer has its own terms — ask our team for details."
    ],
    "eligibleNote": null,
    "eligible": [
@@ -10058,7 +10059,7 @@
     "One appliance per category, except dishwashers: up to 2 in packages of 3 or more. Up to 8 appliances per claim.",
     "Laundry products, accessories, open-box, B-stock and clearance products do not qualify.",
     "Limit one rebate per household.",
-    "Cannot be combined with other discounts — ask our team for details."
+    "Cannot be combined with other Bosch mail-in rebates. It can be combined with the Nationwide Marketing Group rebates on this page (Black Friday Delivery & Install Rebate and AA Kitchen Exclusive: Bosch Black Friday Rebate), because those are not Bosch rebates. Ask our team for details."
    ],
    "eligibleNote": "The amount next to a model is its bonus, paid on top of the package rebate in packages of 4 to 8 appliances. Models without an amount count toward the package but earn no bonus.",
    "eligible": [
@@ -11886,6 +11887,354 @@
     {
      "label": "Claim form & full terms (PDF)",
      "href": "forms/lg-black-friday-event.pdf"
+    }
+   ]
+  },
+  {
+   "id": "bosch-black-friday-shop-local",
+   "brands": [
+    "Bosch"
+   ],
+   "title": "AA Kitchen Exclusive: Bosch Black Friday Rebate",
+   "offerCode": "AAKA1126BSHBF",
+   "summary": "Get $50 to $350 back on each qualifying Bosch appliance, one per product category and up to 6 per claim. Up to $2,200 in total.",
+   "benefit": "cash-rebate",
+   "redemption": "online-or-mail",
+   "amountHeadline": "Up to $2,200",
+   "tiers": [
+    {
+     "label": "Each qualifying appliance",
+     "value": "$50 to $350 (see models)"
+    }
+   ],
+   "categories": [
+    "Refrigeration",
+    "Ranges",
+    "Cooktops & Rangetops",
+    "Wall Ovens",
+    "Microwaves",
+    "Dishwashers",
+    "Ventilation"
+   ],
+   "purchaseStart": "2026-11-04",
+   "purchaseEnd": "2026-12-02",
+   "deliverBy": null,
+   "claimBy": "2027-01-01",
+   "serialBy": "2027-04-01",
+   "claimNote": "Rebate program: Nationwide Marketing Group.",
+   "claimSteps": [
+    "Claim online at NationwideRebateCenter.com by Jan 1, 2027. The claim form and full terms are below."
+   ],
+   "claimUrl": "https://www.nationwiderebatecenter.com/",
+   "claimUrlLabel": "NationwideRebateCenter.com",
+   "infoUrl": null,
+   "payout": "Prepaid Mastercard",
+   "conditions": [
+    "One model per product category, up to 6 appliances per claim.",
+    "Prior sales, back orders and special orders do not qualify.",
+    "Limit one rebate per household.",
+    "Can be combined with the Black Friday Delivery & Install Rebate and The Bosch Kitchen Sales Event. Each offer has its own terms — ask our team for details."
+   ],
+   "eligibleNote": null,
+   "eligible": [
+    {
+     "label": "Refrigerators",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "B36CD52SNS",
+       "amount": 200
+      },
+      {
+       "model": "B36FD52SNS",
+       "amount": 150
+      },
+      {
+       "model": "B36CL80ENS",
+       "amount": 300
+      },
+      {
+       "model": "B36CL80SNS",
+       "amount": 200
+      },
+      {
+       "model": "B36CL81ENG",
+       "amount": 250
+      },
+      {
+       "model": "B36CT80SNS",
+       "amount": 250
+      },
+      {
+       "model": "B36CT81ENS",
+       "amount": 200
+      },
+      {
+       "model": "B36CL81ENW",
+       "amount": 250
+      }
+     ]
+    },
+    {
+     "label": "Dishwashers",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "SHE53C85N",
+       "amount": 50
+      },
+      {
+       "model": "SHX53DM5N",
+       "amount": 50
+      },
+      {
+       "model": "SHV53CM3N",
+       "amount": 50
+      },
+      {
+       "model": "SHP65DM5N",
+       "amount": 100
+      },
+      {
+       "model": "SHX65DM5N",
+       "amount": 100
+      },
+      {
+       "model": "SPE68C75UC",
+       "amount": 100
+      },
+      {
+       "model": "SPX68C75UC",
+       "amount": 100
+      },
+      {
+       "model": "SHP95CM5N",
+       "amount": 120
+      },
+      {
+       "model": "SHP78CM5N",
+       "amount": 120
+      },
+      {
+       "model": "SHX78CM5N",
+       "amount": 120
+      },
+      {
+       "model": "SHV78CM3N",
+       "amount": 120
+      },
+      {
+       "model": "SGV78C53UC",
+       "amount": 100
+      },
+      {
+       "model": "SHP78DM5N",
+       "amount": 120
+      },
+      {
+       "model": "SHX78DM5N",
+       "amount": 120
+      },
+      {
+       "model": "SHP9PCM5N",
+       "amount": 150
+      },
+      {
+       "model": "SHV9PCM3N",
+       "amount": 150
+      },
+      {
+       "model": "SHX9PCM5N",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Gas Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HGI8056UC",
+       "amount": 150
+      },
+      {
+       "model": "HGIP056UC",
+       "amount": 200
+      },
+      {
+       "model": "HGS8655UC",
+       "amount": 300
+      },
+      {
+       "model": "HGS8055UC",
+       "amount": 200
+      }
+     ]
+    },
+    {
+     "label": "Induction Ranges",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HII8057U",
+       "amount": 200
+      },
+      {
+       "model": "HIIP057U",
+       "amount": 250
+      },
+      {
+       "model": "HIS8055U",
+       "amount": 300
+      },
+      {
+       "model": "HIS8655U",
+       "amount": 350
+      }
+     ]
+    },
+    {
+     "label": "Gas Rangetop",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "RGM8658UC",
+       "amount": 200
+      }
+     ]
+    },
+    {
+     "label": "Electric Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NET8062UC",
+       "amount": 50
+      },
+      {
+       "model": "NEM5066UC",
+       "amount": 50
+      },
+      {
+       "model": "NEM5466UC",
+       "amount": 50
+      },
+      {
+       "model": "NET8669UC",
+       "amount": 50
+      }
+     ]
+    },
+    {
+     "label": "Induction Cooktops",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "NIT5060UC",
+       "amount": 50
+      },
+      {
+       "model": "NIT5660UC",
+       "amount": 50
+      },
+      {
+       "model": "NIT8061UC",
+       "amount": 100
+      },
+      {
+       "model": "NIT8661UC",
+       "amount": 100
+      },
+      {
+       "model": "NITP060UC",
+       "amount": 150
+      }
+     ]
+    },
+    {
+     "label": "Wall Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HBL8454UC",
+       "amount": 200
+      },
+      {
+       "model": "HBL8753UC",
+       "amount": 300
+      },
+      {
+       "model": "HBL87M53UC",
+       "amount": 250
+      },
+      {
+       "model": "HBLP454UC",
+       "amount": 200
+      }
+     ]
+    },
+    {
+     "label": "Speed Ovens",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "HMC54151UC",
+       "amount": 50
+      },
+      {
+       "model": "HMC80152UC",
+       "amount": 50
+      },
+      {
+       "model": "HMC80252UC",
+       "amount": 100
+      }
+     ]
+    },
+    {
+     "label": "Ventilation",
+     "role": "qualifying",
+     "items": [
+      {
+       "model": "DUHP0853UC",
+       "amount": 50
+      },
+      {
+       "model": "DUHP6853UC",
+       "amount": 50
+      },
+      {
+       "model": "HCP50652UC",
+       "amount": 50
+      },
+      {
+       "model": "HCP56652UC",
+       "amount": 50
+      },
+      {
+       "model": "HCP80641UC",
+       "amount": 50
+      },
+      {
+       "model": "HCP86641UC",
+       "amount": 50
+      },
+      {
+       "model": "HUI80553UC",
+       "amount": 50
+      },
+      {
+       "model": "HUI86553UC",
+       "amount": 50
+      }
+     ]
+    }
+   ],
+   "translation": null,
+   "downloads": [
+    {
+     "label": "Claim form & full terms (PDF)",
+     "href": "forms/bosch-black-friday-shop-local.pdf"
     }
    ]
   }
