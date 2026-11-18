@@ -30,6 +30,7 @@
     return e;
   }
   function norm(s) { return String(s || "").toUpperCase().replace(/[^A-Z0-9]/g, ""); }
+  function money(n) { return "$" + Number(n).toLocaleString("en-US"); }
 
   // Today's date in San Francisco, as YYYY-MM-DD.
   function todayPacific() {
@@ -101,6 +102,24 @@
     meta.appendChild(el("span", "how-get " + kind[0], kind[1]));
     if (p.purchaseEnd) meta.appendChild(el("span", null, "Buy by " + fmt(p.purchaseEnd)));
     if (p.claimBy) meta.appendChild(el("span", null, "Claim by " + fmt(p.claimBy)));
+    // Model search: the amount of the matching model in this promotion, from its model list. One match:
+    // "This model: $50"; several (partial search): each with its amount. No per-model amount: no line.
+    var amountLine = node.querySelector(".model-amount");
+    var hitAmounts = [];
+    (p.eligible || []).forEach(function (g) {
+      g.items.forEach(function (it) {
+        if (it.amount != null && hits.indexOf(it.model) !== -1 && !hitAmounts.some(function (h) { return h.model === it.model; })) hitAmounts.push(it);
+      });
+    });
+    if (hitAmounts.length === 1) {
+      amountLine.textContent = "This model: " + money(hitAmounts[0].amount);
+      amountLine.hidden = false;
+    } else if (hitAmounts.length > 1) {
+      amountLine.textContent = "Matching models: " + hitAmounts.map(function (h) { return h.model + " " + money(h.amount); }).join(" · ");
+      amountLine.hidden = false;
+    } else {
+      amountLine.remove();
+    }
     var dl = node.querySelector(".downloads");
     (p.downloads || []).forEach(function (d) { dl.appendChild(link(d.href, d.label)); });
     if (!dl.children.length) dl.remove();
@@ -174,8 +193,9 @@
       });
     }
 
-    // A model search hit opens Details and the model list.
-    if (hits.length) { setOpen(true); models.open = true; }
+    // A model search hit keeps the card collapsed (summary only). The model list inside Details is pre-opened, so
+    // the highlighted model is visible as soon as the customer opens Details.
+    if (hits.length) models.open = true;
 
     hooks.forEach(function (h) { if (h.card) h.card(node, p, today); });
     return node;
@@ -243,10 +263,25 @@
 
     $("count").textContent = shown.length === 1 ? "1 promotion" : shown.length + " promotions";
     $("hint").hidden = state.q.length < 3;
+    // Model search: one summary line above the results instead of the plain count.
+    var searching = state.q.length >= 3;
+    var summary = $("search-summary");
+    summary.hidden = !searching;
+    $("count").hidden = searching;
+    if (searching) {
+      var matched = [];
+      shown.forEach(function (p) {
+        modelHits(p, state.q).forEach(function (m) { if (matched.indexOf(m) === -1) matched.push(m); });
+      });
+      var n = shown.length, word = n === 1 ? " promotion" : " promotions";
+      summary.textContent = !n ? "No promotions found for this model"
+        : matched.length === 1 ? matched[0] + " qualifies for " + n + word
+        : n + word + (n === 1 ? " has" : " have") + " models matching " + state.q;
+    }
     var active = (state.category ? 1 : 0) + (state.how ? 1 : 0) + (state.soon ? 1 : 0);
     $("more-summary").textContent = active ? "More filters (" + active + " on)" : "More filters";
     var empty = $("empty");
-    empty.hidden = shown.length !== 0;
+    empty.hidden = shown.length !== 0 || searching; // a model search says so in its summary line
     if (!shown.length) {
       var anyLive = data.promos.some(function (p) { return !isExpired(p, today); });
       empty.textContent = anyLive

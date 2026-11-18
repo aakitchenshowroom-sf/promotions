@@ -40,7 +40,8 @@ const NOTES = [...FOOT, "div.card.foot-notes"];
 
 export const STATES = [
   // Header and hero
-  ["Company name (header)", [...HEAD, "p.store-name"]],
+  ["Company name (header)", [...HEAD, "div.company", "p.store-name"]],
+  ["Website link (header)", [...HEAD, "div.company", "p.website", "a"]],
   ["Show room heading (header)", [...HEAD_STORE, "p.store-title"]],
   ["Show room address (header)", [...HEAD_STORE, "p.addr"]],
   ["Phone link (header)", [...HEAD_STORE, "p.phone", "a.tel"]],
@@ -64,6 +65,7 @@ export const STATES = [
   ["More filters, select", [...FILTERS, "details.more-filters#more-filters[open]", "div.more-body", "label.f-select", "select#category"]],
   ["More filters, checkbox label", [...FILTERS, "details.more-filters#more-filters[open]", "div.more-body", "label.f-check"]],
   ["Count", [...MAIN, "p.count#count"]],
+  ["Search summary line", [...MAIN, "p.search-summary#search-summary"]],
   ["Search hint", [...MAIN, "p.hint#hint"]],
   ["No results message", [...MAIN, "p.empty#empty"]],
   // Brand cards and promotions
@@ -77,6 +79,7 @@ export const STATES = [
   ["Claim tag", [...MAINCOL, "p.meta", "span.how-get.claim"]],
   ["Instant tag", [...MAINCOL, "p.meta", "span.how-get.instant"]],
   ["Buy by / Claim by", [...MAINCOL, "p.meta", "span"]],
+  ["This model amount (search)", [...MAINCOL, "p.model-amount"]],
   ["Details button, closed", [...MAINCOL, "p.actions", "button.toggle[aria-expanded=false]"]],
   ["Details button, open", [...MAINCOL, "p.actions", "button.toggle[aria-expanded=true]"]],
   ["Download button", [...MAINCOL, "p.actions", "span.downloads", "a"]],

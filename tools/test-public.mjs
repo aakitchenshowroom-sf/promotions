@@ -122,6 +122,22 @@ writeFileSync(cssPath, cssNow + "\n@media (min-width: 600px) { .head-band .store
 r = run(["public"]); expect("header details hidden at wide widths is caught", !r.ok && /hidden in both the header and the footer at widths 720px/.test(r.out), r.out);
 writeFileSync(cssPath, cssNow);
 
+// D-33: the company website is in the page header at every width.
+r = run(["public"]);
+const head33 = r.ok ? (readFileSync(join(repo, "site", "index.html"), "utf8").match(/<!--contact-->[\s\S]*?<!--\/contact-->/) ?? [""])[0] : "";
+const site33 = JSON.parse(readFileSync(join(repo, "web", "contact.json"), "utf8")).website;
+expect("header shows the company website under the company name", r.ok && head33.includes(`<p class="website"><a href="${site33}">${site33.replace(/^https?:\/\//, "").replace(/\/+$/, "")}</a></p>`), (r.ok ? "" : r.out) + head33.slice(0, 400));
+writeFileSync(cssPath, cssNow + "\n@media (max-width: 719px) { .head-band .website { display: none; } }\n");
+r = run(["public"]); expect("company website hidden in the header on phones is caught", !r.ok && /company website is hidden in the header at widths 0px to 719px/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow + "\n.company { display: none; }\n");
+r = run(["public"]); expect("company block hidden at every width is caught", !r.ok && /company website is hidden in the header at widths 0px to any/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow);
+
+// D-33: the search card's own tint is covered by the contrast check.
+writeFileSync(cssPath, cssNow + "\n@media (prefers-color-scheme: dark) { :root { --search-bg: #6f7686; } }\n");
+r = run(["public"]); expect("a search card tint too close to its text in dark mode is caught", !r.ok && /More filters, field label \(dark, 390px\)/.test(r.out) && !/\(light, 390px\)/.test(r.out), r.out);
+writeFileSync(cssPath, cssNow);
+
 // D-32: contrast of every text in every interactive state, light and dark, checked from the stylesheet.
 r = run(["public"]); expect("every text reaches 4.5:1 in every state, light and dark", r.ok && !/below 4\.5/.test(r.out), r.out);
 const chipFix = ".brand-btn { background: var(--surface); border: 1px solid var(--line); }";

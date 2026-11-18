@@ -1,7 +1,8 @@
 // The stores' contact info, from web/contact.json (public information, one place to change it).
 // The build puts it into the page where index.html has <!--CONTACT:head--> or <!--CONTACT:foot-->.
-// Header: company name; on wide screens each show room's full info in its own column; on phones only one
-// "Call <show room>" button per show room (its first number). Footer: every show room in full, then the website.
+// Header: company name with the website ("aakitchenappliance.com") under it, at every width; on wide screens
+// each show room's full info in its own column; on phones only one "Call <show room>" button per show room (its
+// first number). Footer (phones only, styles.css): every show room in full, then the website.
 // Every phone is a tel: link, every email a mailto: link, text exactly as written in web/contact.json.
 // Each rendered block is wrapped in <!--contact--> … <!--/contact-->: the public check allows the show rooms'
 // street names only inside these blocks (tools/check-public.mjs).
@@ -42,10 +43,14 @@ function storeHtml(s, titleTag) {
   );
 }
 
+// The website as shown under the company name: "aakitchenappliance.com" (no https://, no trailing slash).
+export const websiteLabel = (url) => url.replace(/^https?:\/\//i, "").replace(/\/+$/, "");
+
 export function contactBlocks(c) {
   return {
     head:
-      `<!--contact--><div class="contact"><p class="store-name">${esc(c.storeName)}</p>` +
+      `<!--contact--><div class="contact"><div class="company"><p class="store-name">${esc(c.storeName)}</p>` +
+      `<p class="website"><a href="${esc(c.website)}">${esc(websiteLabel(c.website))}</a></p></div>` +
       `<div class="stores">${c.stores.map((s) => storeHtml(s, "p")).join("")}</div>` +
       `<p class="call-buttons">${c.stores.map((s) => `<a class="call" href="${esc(tel(s.phones[0]))}">Call ${esc(s.name)}</a>`).join("")}</p>` +
       `</div><!--/contact-->`,

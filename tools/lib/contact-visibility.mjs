@@ -27,10 +27,27 @@ export function hiddenRanges(cssText) {
   return out;
 }
 
-// Problems: widths at which the details are hidden on both sides.
+// The company website is shown under the company name in the header at every width (D-33): width ranges at which
+// a rule hides it (the link, its line, the company block, or a header container around it).
+const WEBSITE = /(\.(website|company|contact|head-band|site-head)|\bheader)(?![\w-])(\s+a)?\s*$/;
+export function headerWebsiteHidden(cssText) {
+  const out = [];
+  for (const r of cssRules(cssText)) {
+    if (r.media.never || !r.decls.some(hides)) continue;
+    for (const sel of splitSelectors(r.selector)) {
+      if (WEBSITE.test(sel) && !FOOTER_SIDE.test(sel)) out.push([r.media.min, r.media.max]);
+    }
+  }
+  return out;
+}
+
+// Problems: widths at which the details are hidden on both sides, or the website is hidden in the header.
 export function contactVisibilityProblems(cssText) {
   const { header, footer } = hiddenRanges(cssText);
   const problems = [];
+  for (const [lo, hi] of headerWebsiteHidden(cssText)) {
+    problems.push(`styles.css: the company website is hidden in the header at widths ${lo}px to ${hi === Infinity ? "any" : hi + "px"}`);
+  }
   for (const a of header) for (const b of footer) {
     const lo = Math.max(a[0], b[0]), hi = Math.min(a[1], b[1]);
     if (lo <= hi) problems.push(`styles.css: show-room details are hidden in both the header and the footer at widths ${lo}px to ${hi === Infinity ? "any" : hi + "px"}`);

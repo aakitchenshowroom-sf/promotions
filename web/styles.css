@@ -23,6 +23,8 @@
   --tag-claim-bg: #e3ebf7;   --tag-claim: #1d4479;
   --tag-soon-bg: #fbe9c8;    --tag-soon: #6a3f00;
   --control-bg: #ffffff;
+  --search-bg: #e3eaf5;       /* search card: light navy tint (secondary text 5.6:1, body text 14:1) */
+  --search-line: #c9d4e8;
   --link: #1d4479;
   --amount-col: 192px;        /* "Up to $5,368" at 28px bold fits on one line */
   --label-col: 144px;
@@ -51,6 +53,8 @@
     --tag-claim-bg: #1b2d4a;   --tag-claim: #a9c8f4;
     --tag-soon-bg: #3f2e10;    --tag-soon: #f3cf86;
     --control-bg: #12151b;
+    --search-bg: #1d2638;     /* search card: navy tint (secondary text 6.9:1, body text 13:1) */
+    --search-line: #34446a;
     --link: #a9c8f4;
   }
 }
@@ -85,6 +89,9 @@ a:hover { text-decoration-thickness: 2px; }
 /* Header: white band, company name in red on the left, the two show rooms in two columns on the right. */
 .head-band { padding: 24px 0; background: var(--surface); border-bottom: 1px solid var(--line); }
 .contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; }
+/* Company name with the website under it, one size smaller, in the link color; shown at every width. */
+.head-band .website { margin-top: 4px; font-size: 16px; line-height: 1.4; }
+.head-band .website a { color: var(--link); }
 /* Company name sized to balance the two show-room columns; centered on them vertically (align-items above). */
 .head-band .store-name { font-size: 38px; font-weight: 700; line-height: 1.15; color: var(--red); white-space: nowrap; }
 .head-band .stores { display: grid; grid-template-columns: repeat(2, auto); gap: 0 40px; font-size: 14px; }
@@ -110,6 +117,8 @@ h1 { font-size: 32px; font-weight: 700; }
   .contact { display: block; }
   /* One line on every phone: scales with the screen width, 26px at 390px and above. */
   .head-band .store-name { font-size: clamp(18px, 6.6vw, 26px); }
+  .head-band .website { margin-top: 2px; font-size: 15px; }
+  .head-band .website a { display: inline-block; line-height: 32px; }
   /* Phones: only the company name and one Call button per show room (48px high). Full details are in the footer. */
   .head-band .stores { display: none; }
   .call-buttons { display: grid; gap: 8px; margin-top: 16px; }
@@ -140,6 +149,8 @@ main.wrap { display: grid; gap: 24px; padding-top: 24px; }
 
 /* Search and the extra filters: one card. */
 .filters { display: grid; gap: 8px; }
+/* The search card has its own light navy tint, so it reads apart from the white cards (D-33). */
+.filters.card { background: var(--search-bg); border-color: var(--search-line); }
 .filters input[type="search"], .filters select {
   width: 100%; background: var(--control-bg);
   border: 1px solid var(--line); border-radius: var(--r-btn); padding: 10px 12px;
@@ -155,6 +166,8 @@ main.wrap { display: grid; gap: 24px; padding-top: 24px; }
   .more-body { grid-template-columns: repeat(2, minmax(0, 240px)) auto; align-items: end; }
 }
 .count, .hint { font-size: 14px; color: var(--muted); margin-bottom: -8px; }
+/* Model search: one line above the results, e.g. "WM5800HAA qualifies for 2 promotions". */
+.search-summary { font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: -8px; }
 .count:empty { display: none; }
 
 /* One card per brand; inside it one light block per promotion, 16px apart. Brand cards 32px apart. */
@@ -186,6 +199,8 @@ main.wrap { display: grid; gap: 24px; padding-top: 24px; }
 .title { font-size: 20px; font-weight: 600; }
 .summary { color: var(--muted); max-width: 720px; }
 .meta { display: flex; flex-wrap: wrap; align-items: center; column-gap: 8px; row-gap: 4px; font-size: 14px; }
+/* Model search: "This model: $50" under the dates, on cards whose model list has amounts. */
+.model-amount { font-size: 14px; font-weight: 700; color: var(--ink); }
 .meta > span + span:not(:nth-child(2))::before { content: "·"; margin-right: 8px; color: var(--muted); }
 .meta > .how-get { margin-right: 4px; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
@@ -254,14 +269,11 @@ details summary { cursor: pointer; }
 .foot-contact .tel { display: inline-block; line-height: 32px; }
 .foot-contact .website { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
 .foot-contact .website a { color: var(--link); }
-/* Wide screens: the header already shows both show rooms in full, so the footer card is one line, the company
-   name and the website. The breakpoint is the header's (719/720px): at every width each show room's address,
-   phones and email are visible in the header or the footer (tools/lib/contact-visibility.mjs checks this). */
+/* Wide screens: the header shows both show rooms in full and the website, so there is no footer contact card.
+   The breakpoint is the header's (719/720px): at every width each show room's address, phones and email are
+   visible in the header or the footer, and the website in the header (tools/lib/contact-visibility.mjs). */
 @media (min-width: 720px) {
-  .foot-contact { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; }
-  .foot-contact .stores { display: none; }
-  .foot-contact .store-name { margin-bottom: 0; }
-  .foot-contact .website { margin-top: 0; padding-top: 0; border-top: 0; }
+  .foot-contact { display: none; }
 }
 .page-foot .note-head { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
 /* Disclaimer: full ink color (not muted) so it reads as part of the page, not fine print. */

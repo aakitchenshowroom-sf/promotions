@@ -11,7 +11,7 @@
 <body>
   <header class="site-head">
     <div class="head-band">
-      <div class="wrap"><!--contact--><div class="contact"><p class="store-name">AA Kitchen Appliance, Inc.</p><div class="stores"><section class="store" aria-label="SF Show Room"><p class="store-title">SF Show Room</p><p class="addr">1605 Noriega Street<br>San Francisco, CA 94122</p><p class="phone">T: <a class="tel" href="tel:415-731-3386">415-731-3386</a></p><p class="email"><a class="mail" href="mailto:aakitchensf@gmail.com">aakitchensf@gmail.com</a></p></section><section class="store" aria-label="San Mateo Show Room"><p class="store-title">San Mateo Show Room</p><p class="addr">159 South Blvd<br>San Mateo, CA 94402</p><p class="phone">T: <a class="tel" href="tel:650-315-2238">650-315-2238</a></p><p class="phone">T: <a class="tel" href="tel:650-877-0938">650-877-0938</a></p></section></div><p class="call-buttons"><a class="call" href="tel:415-731-3386">Call SF Show Room</a><a class="call" href="tel:650-315-2238">Call San Mateo Show Room</a></p></div><!--/contact--></div>
+      <div class="wrap"><!--contact--><div class="contact"><div class="company"><p class="store-name">AA Kitchen Appliance, Inc.</p><p class="website"><a href="https://aakitchenappliance.com/">aakitchenappliance.com</a></p></div><div class="stores"><section class="store" aria-label="SF Show Room"><p class="store-title">SF Show Room</p><p class="addr">1605 Noriega Street<br>San Francisco, CA 94122</p><p class="phone">T: <a class="tel" href="tel:415-731-3386">415-731-3386</a></p><p class="email"><a class="mail" href="mailto:aakitchensf@gmail.com">aakitchensf@gmail.com</a></p></section><section class="store" aria-label="San Mateo Show Room"><p class="store-title">San Mateo Show Room</p><p class="addr">159 South Blvd<br>San Mateo, CA 94402</p><p class="phone">T: <a class="tel" href="tel:650-315-2238">650-315-2238</a></p><p class="phone">T: <a class="tel" href="tel:650-877-0938">650-877-0938</a></p></section></div><p class="call-buttons"><a class="call" href="tel:415-731-3386">Call SF Show Room</a><a class="call" href="tel:650-315-2238">Call San Mateo Show Room</a></p></div><!--/contact--></div>
     </div>
     <div class="wrap">
       <div class="hero">
@@ -56,6 +56,7 @@
       </details>
     </form>
     <p class="count" id="count" aria-live="polite"></p>
+    <p class="search-summary" id="search-summary" aria-live="polite" hidden></p>
     <p class="hint" id="hint" hidden>Some offers cover every model of a brand (for example JennAir) and are not listed model by model. Use the brand buttons to see them.</p>
 
     <div id="list" class="list"></div>
@@ -81,6 +82,7 @@
           <h3 class="title"></h3>
           <p class="summary"></p>
           <p class="meta"></p>
+          <p class="model-amount" hidden></p>
           <p class="actions">
             <button type="button" class="toggle" aria-expanded="false">Details</button>
             <span class="downloads"></span>
