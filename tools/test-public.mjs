@@ -153,6 +153,18 @@ writeFileSync(join(repo, "web", "index.html"), pageNext.replace("<!--NOTICE:head
 r = run(["public"]); expect("a page without the header notice is caught", !r.ok && /header notice from web\/notices\.json is missing/.test(r.out), r.out);
 writeFileSync(join(repo, "web", "index.html"), pageNext.replace("<!--NOTICE:head-->", "").replace("<!--NOTICE:foot-->", "<!--NOTICE:head--><!--NOTICE:foot-->"));
 r = run(["public"]); expect("a header notice outside the header is caught", !r.ok && /not inside the page header/.test(r.out), r.out);
+// The footer Disclaimer is checked word for word as well (D-29, revised 2026-11-18).
+expect("listing note names the official offer materials, not only the manufacturers'", page5.includes("Dates are from the official offer materials.") && !page5.includes("manufacturers' materials"), "");
+writeFileSync(join(repo, "web", "index.html"), pageNext.replace("<!--NOTICE:foot-->", ""));
+r = run(["public"]); expect("a page without the footer Disclaimer is caught", !r.ok && /footer Disclaimer from web\/notices\.json is missing/.test(r.out), r.out);
+writeFileSync(join(repo, "web", "index.html"), pageNext.replace("<!--NOTICE:foot-->", "").replace("<!--NOTICE:head-->", "<!--NOTICE:head--><!--NOTICE:foot-->"));
+r = run(["public"]); expect("a footer Disclaimer outside the footer is caught", !r.ok && /footer Disclaimer is not inside the page footer/.test(r.out), r.out);
+const firstPoint = `<li>${notices.footer.points[0]}</li>`;
+writeFileSync(join(repo, "web", "index.html"), pageNext);
+r = run(["public"]);
+const built5 = r.ok ? readFileSync(join(repo, "site", "index.html"), "utf8") : "";
+writeFileSync(join(repo, "site", "index.html"), built5.replace(firstPoint, "<li>The manufacturers offer and pay these promotions and rebates.</li>"));
+r = check(); expect("a Disclaimer that differs from web/notices.json is caught", !r.ok && /footer Disclaimer from web\/notices\.json is missing or not word for word/.test(r.out), r.out);
 writeFileSync(join(repo, "web", "index.html"), pageNext);
 
 // 6. Pre-push history scan (tools/scan-history.mjs) on throwaway git repositories. The private words come from

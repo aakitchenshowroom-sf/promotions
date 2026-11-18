@@ -7,7 +7,7 @@ import { join, basename, extname } from "node:path";
 import { pathToFileURL } from "node:url";
 import { locations, readJson, repoDir, sourcePath } from "./lib/paths.mjs";
 import { PUBLIC_FIELDS, publishable, downloadsOf, DOWNLOAD_EXT } from "./lib/publish.mjs";
-import { readNotices, headerNoticeHtml } from "./lib/notices.mjs";
+import { readNotices, headerNoticeHtml, noticeBlocks } from "./lib/notices.mjs";
 import { contactVisibilityProblems } from "./lib/contact-visibility.mjs";
 import { contrastProblems } from "./lib/contrast.mjs";
 
@@ -63,10 +63,16 @@ export function checkPublic(siteDir, master, root, workspace) {
   // D-29: the header notice must be on the public page, word for word from web/notices.json, inside the header.
   let index = "";
   try { index = readFileSync(join(siteDir, "index.html"), "utf8"); } catch { /* reported above */ }
-  const notice = headerNoticeHtml(readNotices());
+  const notices = readNotices();
+  const notice = headerNoticeHtml(notices);
   const at = index.indexOf(notice);
   if (at < 0) problems.push("index.html: the header notice from web/notices.json is missing");
   else if (!(index.indexOf("<header") < at && at < index.indexOf("</header>"))) problems.push("index.html: the header notice is not inside the page header");
+  // The footer Disclaimer too (D-29, since 2026-11-18): word for word from web/notices.json, inside the footer.
+  const disclaimer = noticeBlocks(notices).foot;
+  const dt = index.indexOf(disclaimer);
+  if (dt < 0) problems.push("index.html: the footer Disclaimer from web/notices.json is missing or not word for word");
+  else if (!(index.indexOf("<footer") < dt && dt < index.indexOf("</footer>"))) problems.push("index.html: the footer Disclaimer is not inside the page footer");
   if (/<!--(CONTACT|NOTICE):/.test(index)) problems.push("index.html: a contact or notice marker was left unfilled");
   // D-27: at every width, each show room's details are visible in the header or the footer.
   try { problems.push(...contactVisibilityProblems(readFileSync(join(siteDir, "styles.css"), "utf8"))); }
