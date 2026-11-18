@@ -150,15 +150,34 @@ General decisions only. Brand-specific notes live in the private workspace.
   promos.json) and does not look inside the files in `site/forms/`; it only checks that each one is an
   exact copy of its original. Before each push, the maintainer is told which store information appears in
   each new file. The private terms list still applies to all page text.
-- **D-29 Disclaimer and header notice (replaces the D-14 draft).** Final wording from the maintainer,
-  2026-11-09, kept word for word in `web/notices.json` (one place to change it); the build writes it into
+- **D-29 Disclaimer and header notice (replaces the D-14 draft; revised 2026-11-18).** Wording from the
+  maintainer, kept word for word in `web/notices.json` (one place to change it); the build writes it into
   the page.
-  - Header notice: under the campaign name and intro, above the brand buttons; a light, bordered box;
-    "Important:" in bold, the rest regular; always shown in full on desktop and phone. The public check
+  - Header notice: under the campaign name and intro, above the brand buttons (inside the dark hero card,
+    D-31); "Important:" in bold, the rest regular; always shown in full on desktop and phone. The public check
     fails the build if the notice is missing or not inside the page header.
-  - Footer: "Disclaimer" with an intro sentence, six points and a closing sentence, above the listing note.
+  - Footer: "Disclaimer" with an intro sentence, six points and a closing sentence, then the listing note.
+    Since 2026-11-18 the public check also fails the build if the Disclaimer is missing, not word for word
+    from `web/notices.json`, or not inside the page footer.
   - Under each promotion's download links: "See the official terms for full details."
   - The page intro no longer starts with "Manufacturer", so it does not repeat the notice.
+  - Revised 2026-11-18 (owner approved): not every rebate is paid by the manufacturer. Some come from rebate
+    programs such as Nationwide Marketing Group (#2, #28 are Nationwide Marketing Group / AA Kitchen rebates).
+    - Header: "These offers come from the manufacturers and their rebate partners, such as Nationwide
+      Marketing Group. The official terms of each offer decide it. AA Kitchen provides this page as a summary
+      only. Always check the official terms or the official form before you buy." (was: "These offers come
+      from the manufacturers. The manufacturer's official terms decide each offer. … Always check the
+      manufacturer's website or the official form before you buy.")
+    - Disclaimer points 1-4: instant savings are taken off at checkout and each rebate is paid after a claim,
+      by the manufacturer or the rebate program named on the offer (was: "The manufacturers offer and pay
+      these promotions and rebates. AA Kitchen does not."); "The official terms decide each offer" (was "The
+      manufacturer's official terms"); the manufacturer or the rebate program can change or end an offer
+      (was: a manufacturer); the rebate processor named on each offer approves or rejects claims (was: the
+      manufacturer or its rebate processor). Points 5-6 unchanged.
+    - Closing: "Please check the official terms of each offer, or ask our team, before you buy." (was: confirm
+      on the manufacturer's website).
+    - Listing note (in `web/index.html`): "Dates are from the official offer materials." (was: the
+      manufacturers' materials).
 - **D-30 Chinese version: cancelled.** A Simplified Chinese version was planned and drafted on 2026-11-09
   (language switch, translated text with its own checking status, number-consistency check). The
   maintainer cancelled it the same day: keeping translations accurate and checking them again after every
