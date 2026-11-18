@@ -246,3 +246,28 @@ General decisions only. Brand-specific notes live in the private workspace.
     read fails the build.
   - Screenshots before each push of a visual change include every interactive state in dark mode
     (UPDATE.md step 7, HANDOFF "Before every push").
+- **D-33 Search card, model search results, website in the header (2026-11-18).** Styles, template and page
+  script only; no promotion data changed.
+  - Search card: its own light navy tint, so it reads apart from the white cards (it echoes the dark navy hero
+    card). Light `#e3eaf5` with a `#c9d4e8` edge, dark `#1d2638` with a `#34446a` edge; the search box keeps its
+    own white (dark) field. Secondary text 5.64:1 (dark 6.94:1), body text 13.95:1 (dark 13.04:1), typed text
+    16.88:1 (dark 15.74:1), placeholder 6.83:1 (dark 8.38:1), focus ring 8.05:1 (dark 8.84:1). The contrast
+    check (D-32) covers the tint; a test makes the dark tint too weak and expects the build to fail.
+  - Model search (3 characters or more): one summary line above the results replaces the plain count:
+    "<MODEL> qualifies for N promotion(s)" when one model matches, "N promotions have models matching <text>"
+    for a partial number that matches several models, "No promotions found for this model" when nothing
+    matches (the general "No promotions match" message is not shown then). Every matching card stays
+    collapsed (summary only); the customer opens Details. The model list inside Details is pre-opened, so the
+    matching model is highlighted as soon as Details opens. Clearing the search box restores the page.
+  - Per-model amount: on a matching card whose model list has amounts, a line under the dates: "This model: $50"
+    (one matching model) or "Matching models: A $50 · B $75" (several). Cards without per-model amounts show
+    no line. Note: the amount is the one printed next to the model in that promotion's list; for #25 it is the
+    package bonus (see that card's model note).
+  - Example: WM5800HAA matches 3 promotions: #11 Buy More, Save More, #27 LG Black Friday Event ("This model:
+    $50") and #12 the ThinQ 2-year warranty, whose model list also includes it.
+  - Company website: under the company name in the header, as "aakitchenappliance.com" linking to
+    https://aakitchenappliance.com/ (from `web/contact.json`), one size smaller, in the link color (9.74:1, dark
+    10.07:1), on desktop and phone. The desktop footer no longer has a contact card (it only repeated the
+    company name and website); on phones the footer still shows both show rooms in full and the website.
+  - The contact visibility check (D-27) now also fails the build if a rule hides the company website in the
+    header at any width; tests cover a phone-only rule and hiding the whole company block.

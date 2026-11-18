@@ -16,7 +16,8 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
   maintainer).
 - Page design: card layout (D-31, final since 2026-11-10), two show rooms' contact info (D-27), header notice
   and final disclaimer (D-29, wording revised 2026-11-18 for rebates paid by rebate programs such as
-  Nationwide Marketing Group).
+  Nationwide Marketing Group), tinted search card, collapsed model-search results with a summary line, and the
+  website under the company name (D-33).
 - **Updates:** when brand files are added or changed, follow `docs/UPDATE.md` ("Read docs/UPDATE.md and run
   the update").
 - English only. A Chinese version was drafted and cancelled (D-30); do not restart it without the
@@ -52,9 +53,11 @@ brand material the maintainer keeps in OneDrive. Start a new session with: "Read
   The show rooms' street names are allowed only inside the contact blocks (`contactAllowed` in the
   workspace's `config/private-terms.json`); a new show room's street name goes on that list too. Wide
   screens show the show rooms in the header, phones in the footer; the public check
-  (`tools/lib/contact-visibility.mjs`) fails the build if any width would hide them in both places.
+  (`tools/lib/contact-visibility.mjs`) fails the build if any width would hide them in both places, or would
+  hide the company website in the header (D-33).
 - `web/notices.json`: the header notice, the footer Disclaimer and the line under the downloads (D-29).
-  Change that wording only there. The public check fails if the header notice is missing.
+  Change that wording only there. The public check fails if the header notice or the footer Disclaimer is
+  missing, not word for word, or not in its place.
 - `.github/workflows/pages.yml`: on every push to `main` (or by hand), uploads the committed `site/` folder,
   and nothing else, to GitHub Pages. It does not build anything.
 - `node tools/test-public.mjs`: publish-rule self-test on a throwaway copy (run after any change to tools or web).
